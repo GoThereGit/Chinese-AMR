@@ -21,11 +21,11 @@ Chinese AMR Corpus
 # 3 评价标准
 ## 3.1 作为参考标准的Smatch评测指标
 作为目前最主要的AMR评测指标，Smatch主要考虑的是两个AMR图之间的重叠程度。对于两个需要进行匹配的AMR图，Smatch首先将每个AMR图转化为三元组（Triple）的集合（S. Cai，2013），每个集合一般包含三种数据类型的三元组：
-(1).  表示节点的三元组：instance(node_index, concept)。
+1.  **表示节点的三元组：instance(node_index, concept)。**
 其中，instance表示对概念节点的实例化；node_index为节点索引，记作$a_i$，$i∈${$0,1,…,n$}；concept为由词抽象出的概念。如表2所示，在例句“希望我惨痛的经历给大家一个教训呀”对应的AMR三元组中，节点三元组包含了所有节点的实例、节点索引和对应的概念。如三元组“instance($a_0$, 希望-01)”表示“希望”一词的实例化，该词的节点索引为$a_0$，AMR抽象出的概念为“希望-01”。
-(2).  表示有向弧的三元组：relation(node_index1, node_index2)。
+2.  **表示有向弧的三元组：relation(node_index1, node_index2)。**
 node_index1和node_index2表示为两个不同概念节点的索引，分别对应$a_i$和$a_j$，同理，$j∈${$0,1,…,n$}，节点索引的分配可以是完全随机的，如图5所示（本文选用完全二叉树的顺序存储方式对节点索引进行编号，仅供参考）；relation为$a_i$、$a_j$节点对应的两个词之间的语义关系。如表2所示，有向弧三元组“arg1($a_1$,$a_4$)”表示$a_1$索引和$a_4$索引所对应的词“给”和“大家”之间的语义关系为“arg1（受事）”。
-(3).  表示节点属性的三元组：property(node_index, value)。
+3.  **表示节点属性的三元组：property(node_index, value)。**
 如表2所示，节点属性三元组root($a_0$, top)表示$a_0$节点的属性为根节点，其中，value=top。
 完成了AMR三元组的转化之后，Smatch使用爬山算法（Hill-climbing Method）进行贪婪搜索以获取黄金AMR（Gold AMR）三元组集合和解析生成的AMR（Generated AMR）三元组集合之间的最大匹配个数，最终返回准确率（P）、召回率（R）和F值（F-score）：
 其中，Smatch里的准确率P为黄金AMR的三元组集合和解析生成的AMR三元组集合间的最大匹配个数与解析生成的AMR的三元组总个数之比；召回率R为黄金AMR三元组集合和解析生成的AMR三元组集合间的最大匹配个数与黄金AMR的三元组总个数之比；F值为准确率和召回率的调和平均值（Harmonic Mean），$β∈R^+$，表示为影响权重：当$β>1$时，召回率比准确率更重要；反之，当$β<1$时，准确率比召回率更重要；当$β=1$时，召回率和确准率同样重要（即$F_β=F_1$）。
