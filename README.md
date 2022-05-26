@@ -40,7 +40,7 @@
 图3为评测语料的CAMR数据样例，具体包括句子ID、词序列、词编号（x）、概念对齐信息、关系对齐信息和CAMR文本表示；语料编码格式为UTF-8。
 ## 2.2 数据集
 中文抽象语义表示语料库（Chinese Abstract Meaning Representation Corpus）于2015年开始，由南京师范大学和美国布兰迪斯大学合作构建。语料库为在LDC发布的CAMR v2.0 ，约含2万中文句子，原始语料选自于宾州中文树库（Chinese Tree Bank 8.0，CTB 8.0），分为训练集、验证集和测试集，该语料已经在CoNLL2020进行评测。本次评测任务中，继续沿用该语料库，以比较两年来中文AMR语义解析的进展。为了防止参赛队将测试集用于训练，本次评测设置了盲测集，约含2000句语料。该部分语料没有公开，亦可观察各个系统在盲测数据集上，可用来评测解析模型处理不同语体风格的文本数据时的泛化能力。提供的各项数据分布如表1所示：
-<table>
+<table style="margin:0 auto;">
 <caption>表1 评测数据集</caption>
 <thead>
   <tr>
@@ -87,7 +87,7 @@ $$ R = \frac{\#Matching\enspace Triples}{\#Gold\enspace Triples} $$
 $$ F_β=(1+β^2)*\frac{(P*R)}{(β^2*P)+R} $$
 
 其中，Smatch里的准确率P为黄金AMR的三元组集合和解析生成的AMR三元组集合间的最大匹配个数与解析生成的AMR的三元组总个数之比；召回率R为黄金AMR三元组集合和解析生成的AMR三元组集合间的最大匹配个数与黄金AMR的三元组总个数之比；F值为准确率和召回率的调和平均值（Harmonic Mean），$β∈R^+$，表示为影响权重：当$β>1$时，召回率比准确率更重要；反之，当$β<1$时，准确率比召回率更重要；当$β=1$时，召回率和确准率同样重要（即$F_β=F_1$）。
-<table width='500'>
+<table width='500' style="margin:0 auto;">
 <caption>表2 Smatch三元组表示</caption>
 <thead>
   <tr>
@@ -148,7 +148,7 @@ $$ R = \frac{\#Matching\enspace Tuples}{\#Gold\enspace Tuples} $$
 $$ F_β=(1+β^2)*\frac{(P*R)}{(β^2*P)+R} $$
 
 同样的，Align-smatch中的准确率P为黄金AMR的多元组集合和解析生成的AMR多元组集合间的最大匹配个数与解析生成的AMR多元组总个数之比；召回率R为黄金AMR的多元组集合和解析生成的AMR多元组集合之间的最大匹配个数与黄金AMR的多元组总个数之比；F值同上。
-<table width='500'>
+<table width='500' style="margin:0 auto;">
 <caption>表3 Align-smatch多元组表示</caption>
 <thead>
   <tr>
@@ -209,7 +209,7 @@ $$ F_β=(1+β^2)*\frac{(P*R)}{(β^2*P)+R} $$
 
 ## 3.3 总结
 为了更加完整、精确地解析CAMR，本次评测任务采用Align-smatch评测标准。各参赛队最终生成的CAMR中需包含概念对齐信息和关系对齐信息，最终成绩评分按照Align-smatch评测标准，取F值进行排名。表4为完整的评分样例，一共八个实验测试，分别包含两种评测指标和两种模态（详见下文4.1）。其中，Smatch评分仅用于和其他语言的AMR解析进行对比，不计入最终排名。
-<table>
+<table style="margin:0 auto;">
 <caption>表4 评分样例</caption>
 <thead>
   <tr>
@@ -281,7 +281,7 @@ $$ F_β=(1+β^2)*\frac{(P*R)}{(β^2*P)+R} $$
 # 4 评测赛程
 ## 4.1 模态选择
 本次评测任务包含开放测试（Open Modality）和封闭测试（Closed Modality）：
-<table>
+<table style="margin:0 auto;">
 <caption>表5 两种模态的评测要求</caption>
 <thead>
   <tr>
