@@ -18,7 +18,6 @@
 # 1 评测内容	
 随着词法、句法分析技术的日益成熟，自然语言处理（Natural Language Processing，NLP）已整体推进到了语义分析层面（孙茂松等，2014）。句子语义作为重点和难点，更是占据了语义分析的核心地位。针对整句语义形式化表示的缺失，以及句子语义标注存在的领域相关性的问题，Banarescu et al.（2013）提出了一种与领域无关的、通用的整句语义表示方法——抽象语义表示（Abstract Meaning Representation，AMR）。该方法使用单根有向无环图，来表示一个句子的语义结构，并且建设了规模较大的语料库，进行了两次国际AMR语义解析评测。中文抽象语义表示（Chinese AMR，简称CAMR）语料库的构建已初具规模，也在CoNLL2020上进行了语义解析评测。
 
-
 本次评测任务是在中文抽象语义语料库上，自动解析出句子的AMR图。与英文AMR不同的是，中文AMR增加了概念关系对齐信息，并针对中文特点增加了一些语义标签。概念关系对齐信息并没有用于CoNLL2020的评测。因此，本次评测重新设计了包含了概念关系对齐的信息的新评测指标Align-smatch，能够更好地评估自动解析的性能。
 ## 1.1 AMR介绍
   AMR可以将一个句子的语义抽象为一个单根有向无环图，其中词抽象为概念节点（Node），词之间的语义关系抽象为带有语义角色标签的有向弧（Arc）。这种表示方法不仅可以描写一个名词由多个谓词支配所形成的论元共享（Argument Sharing）现象，还允许增加、删除、修改概念节点以补充隐含语义，进而更加完整地表达句子语义。
@@ -91,9 +90,9 @@ node_index1和node_index2表示为两个不同概念节点的索引，分别对�
 3.  **表示节点属性的三元组：property(node_index, value)。**
 如表2所示，节点属性三元组root($a_0$, top)表示$a_0$节点的属性为根节点，其中，value=top。
 完成了AMR三元组的转化之后，Smatch使用爬山算法（Hill-climbing Method）进行贪婪搜索以获取黄金AMR（Gold AMR）三元组集合和解析生成的AMR（Generated AMR）三元组集合之间的最大匹配个数，最终返回准确率（P）、召回率（R）和F值（F-score）：
-$$ P = \frac{\#Matching\enspace Triples}{\#Generated\enspace Triples} $$
-$$ R = \frac{\#Matching\enspace Triples}{\#Gold\enspace Triples} $$
-$$ F_β=(1+β^2)*\frac{(P*R)}{(β^2*P)+R} $$
+$$ P = {{count(Matching\enspace Triples)} \over {count(Generated\enspace Triples)}} $$
+$$ R = {{count(Matching\enspace Triples)} \over {count(Gold\enspace Triples)}} $$
+$$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 
 其中，Smatch里的准确率P为黄金AMR的三元组集合和解析生成的AMR三元组集合间的最大匹配个数与解析生成的AMR的三元组总个数之比；召回率R为黄金AMR三元组集合和解析生成的AMR三元组集合间的最大匹配个数与黄金AMR的三元组总个数之比；F值为准确率和召回率的调和平均值（Harmonic Mean），$β∈R^+$，表示为影响权重：当$β>1$时，召回率比准确率更重要；反之，当$β<1$时，准确率比召回率更重要；当$β=1$时，召回率和确准率同样重要（即$F_β=F_1$）。
 
@@ -160,9 +159,9 @@ Align-smatch在Smatch的基础上增添了两种新的数据：概念对齐信�
 
 如表2所示，在Smatch指标下，例句中的根节点的三元组表示为：root($a_0$, top)。如表3所示，Align-smatch中该节点的表示则修改为：root($a_0$, $a_0$)。
 Align-smatch评测公式如下：
-$$ P = \frac{\#Matching\enspace Tuples}{\#Generated\enspace Tuples} $$
-$$ R = \frac{\#Matching\enspace Tuples}{\#Gold\enspace Tuples} $$
-$$ F_β=(1+β^2)*\frac{(P*R)}{(β^2*P)+R} $$
+$$ P = {{count(Matching\enspace Tuples)} \over {count(Generated\enspace Tuples)}} $$
+$$ R = {{count(Matching\enspace Tuples)} \over {count(Gold\enspace Tuples)}} $$
+$$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 
 同样的，Align-smatch中的准确率P为黄金AMR的多元组集合和解析生成的AMR多元组集合间的最大匹配个数与解析生成的AMR多元组总个数之比；召回率R为黄金AMR的多元组集合和解析生成的AMR多元组集合之间的最大匹配个数与黄金AMR的多元组总个数之比；F值同上。
 
