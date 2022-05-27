@@ -30,8 +30,17 @@
 ## 1.2 中文AMR介绍
 在英文AMR的标注中，一般使用词语的首字母作为概念节点的编号，或者按照节点的出现顺序来直接分配编号，这导致计算机处理时无法对概念溯源，一定程度上影响了解析的精度。为了解决这一问题，Li et al.（2019）根据汉语的特点对AMR进行了改进，在保留了AMR较强语义表示能力的同时，在CAMR中增加了“词与概念”的对齐信息和“词与关系”的对齐信息。通过对分词后对原始句子按照线性排序的原则，采用“x+数字”的形式，依次给每个词赋予不同的编号，而对应的概念节点也获得相同的编号。如图1中，“惨痛”为句子中的第3个词，因而被赋予了“x3”的编号，同时与概念节点“x3/惨痛-01”完成了对齐。
 
+<div align=center>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_1.png">
+ <p>图1 例句“希望我惨痛的经历给大家一个教训呀”CAMR文本表示</p>
+</div>
 
 除了编号方案的处理不同，CAMR对虚词的处理也不一样。英文AMR一般直接忽略了句子中如介词、冠词等对句子语义没有贡献的虚词。而考虑到语言的不同特点，CAMR选择保留虚词并对其进行标注，将表示句子体意义和语气意义的虚词处理为概念节点，将表示实词间关系意义的虚词看作语义关系的映射，并将其与语义角色标签一同标注在有向弧上（戴玉玲等，2020）。最后，沿用概念对齐中编号的方案，有向弧上的虚词同样被赋予了顺序的编号，以实现关系对齐。如图2所示，虚词“的”和语义角色标签“arg0-of”一起被标注在了有向弧上，又由于它是第4个词，因而被编号为“x4”，以上两个步骤完成了语义关系“arg0-of”和虚词“x4/的”的对齐。
+
+<div align=center>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_2.png" width="500">
+ <p>图2 例句“希望我惨痛的经历给大家一个教训呀”的CAMR图示</p>
+</div>
 
 ## 1.3 小结
 因此，为了更好地推进中文抽象语义表示解析工作的展开，南京师范大学提出了本次中文抽象语义表示评测任务。不同于CoNLL 2020举办的MRP跨语言/跨语义框架评测，本次评测任务是对中文AMR解析评测，评测标准选用更加细致的Align-smatch评测标准，包括了概念对齐信息和关系对齐信息（详见下文3.2）。
@@ -39,6 +48,11 @@
 # 2 评测数据
 
 ## 2.1 数据样例
+
+<div align=center>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_3.png">
+ <p>图3 CAMR数据样例</p>
+</div>
 
 图3为评测语料的CAMR数据样例，具体包括句子ID、词序列、词编号（x）、概念对齐信息、关系对齐信息和CAMR文本表示；语料编码格式为UTF-8。
 ## 2.2 数据集
@@ -89,6 +103,12 @@ node_index1和node_index2表示为两个不同概念节点的索引，分别对�
 
 3.  **表示节点属性的三元组：property(node_index, value)。**
 如表2所示，节点属性三元组root($a_0$, top)表示$a_0$节点的属性为根节点，其中，value=top。
+
+<div align=center>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_4.png" width="500">
+ <p>图4 例句“希望我惨痛的经历给大家一个教训呀”的CAMR图示（带有节点索引）</p>
+</div>
+
 完成了AMR三元组的转化之后，Smatch使用爬山算法（Hill-climbing Method）进行贪婪搜索以获取黄金AMR（Gold AMR）三元组集合和解析生成的AMR（Generated AMR）三元组集合之间的最大匹配个数，最终返回准确率（P）、召回率（R）和F值（F-score）：
 $$ P = {{count(Matching\enspace Triples)} \over {count(Generated\enspace Triples)}} $$
 $$ R = {{count(Matching\enspace Triples)} \over {count(Gold\enspace Triples)}} $$
