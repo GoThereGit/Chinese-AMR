@@ -58,8 +58,9 @@
 ## 2.2 数据集
 中文抽象语义表示语料库（Chinese Abstract Meaning Representation Corpus）于2015年开始，由南京师范大学和美国布兰迪斯大学合作构建。语料库为在LDC发布的CAMR v2.0 ，约含2万中文句子，原始语料选自于宾州中文树库（Chinese Tree Bank 8.0，CTB 8.0），分为训练集、验证集和测试集，该语料已经在CoNLL2020进行评测。本次评测任务中，继续沿用该语料库，以比较两年来中文AMR语义解析的进展。为了防止参赛队将测试集用于训练，本次评测设置了盲测集，约含2000句语料。该部分语料没有公开，亦可观察各个系统在盲测数据集上，可用来评测解析模型处理不同语体风格的文本数据时的泛化能力。提供的各项数据分布如表1所示：
 
-<table style="margin:0 auto;">
-<caption>表1 评测数据集</caption>
+
+<table align="center">
+<p align="center">表1 评测数据集</p>
 <thead>
   <tr>
     <th style="text-align:center">数据集（Data Sets）</th>
@@ -119,8 +120,8 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 
 其中，Smatch里的准确率P为黄金AMR的三元组集合和解析生成的AMR三元组集合间的最大匹配个数与解析生成的AMR的三元组总个数之比；召回率R为黄金AMR三元组集合和解析生成的AMR三元组集合间的最大匹配个数与黄金AMR的三元组总个数之比；F值为准确率和召回率的调和平均值（Harmonic Mean），$β∈R^+$，表示为影响权重：当$β>1$时，召回率比准确率更重要；反之，当$β<1$时，准确率比召回率更重要；当$β=1$时，召回率和确准率同样重要（即$F_β=F_1$）。
 
-<table width='500' style="margin:0 auto;">
-<caption>表2 Smatch三元组表示</caption>
+<table width='500' align="center">
+<p align="center">表2 Smatch三元组表示</p>
 <thead>
   <tr>
     <th style="text-align:center">类型</th>
@@ -188,8 +189,8 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 
 同样的，Align-smatch中的准确率P为黄金AMR的多元组集合和解析生成的AMR多元组集合间的最大匹配个数与解析生成的AMR多元组总个数之比；召回率R为黄金AMR的多元组集合和解析生成的AMR多元组集合之间的最大匹配个数与黄金AMR的多元组总个数之比；F值同上。
 
-<table width='500' style="margin:0 auto;">
-<caption>表3 Align-smatch多元组表示</caption>
+<table width='500' align="center">
+ <p align="center">表3 Align-smatch多元组表示</p>
 <thead>
   <tr>
     <th style="text-align:center">类型</th>
@@ -251,8 +252,8 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 ## 3.3 总结
 为了更加完整、精确地解析CAMR，本次评测任务采用Align-smatch评测标准。各参赛队最终生成的CAMR中需包含概念对齐信息和关系对齐信息，最终成绩评分按照Align-smatch评测标准，取F值进行排名。表4为完整的评分样例，一共八个实验测试，分别包含两种评测指标和两种模态（详见下文4.1）。其中，Smatch评分仅用于和其他语言的AMR解析进行对比，不计入最终排名。
 
-<table style="margin:0 auto;">
-<caption>表4 评分样例</caption>
+<table align="center">
+<p align="center">表4 评分样例</p>
 <thead>
   <tr>
     <th>Metrics</th>
@@ -327,8 +328,8 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 1. 若参赛队选择封闭测试，则必须使用指定的训练集、测试集和预训练语言模型，不可自行替换为别的资源。在封闭测试中，主办方提供训练集的依存分析结果，并推荐使用哈工大的HIT_Roberta预训练模型（Cui et al.，2021）。
 2. 若参赛队也选择开放测试，预训练语言模型可自由选择，允许使用外部资源，如专名识别、依存句法分析结果等。开放测试中，参赛队使用的所有资源需要在最终提交的技术报告中给予详细说明。但无论哪种模态，均不可使用人工修正自动解析结果的方式。
 
-<table style="margin:0 auto;">
-<caption>表5 两种模态的评测要求</caption>
+<table align="center">
+<p align="center">表5 两种模态的评测要求</p>
 <thead>
   <tr>
     <th align='center'>可用资源</th>
