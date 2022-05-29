@@ -2,7 +2,7 @@
 **Chinese Abstract Meaning Representation Parsing 2022**
 # 中文抽象语义表示解析评测任务
 * 组织者：
-  * 李斌（南京师范大学）  
+  * 李斌（南京师范大学）（联系邮箱：<libin.njnu@gmail.com>）
   * 曲维光（南京师范大学）
   * 周俊生（南京师范大学）
   * 薛念文（布兰迪斯大学）
@@ -15,8 +15,17 @@
   * 谢媛媛（南京师范大学）
   * 袁义国（南京师范大学）
 
+
+**报名入口：**
+<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">点我报名</a>
+
+
+**Entry Form:**
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
+  
+
 # 1 评测内容	
-随着词法、句法分析技术的日益成熟，自然语言处理（Natural Language Processing，NLP）已整体推进到了语义分析层面（孙茂松等，2014）。句子语义作为重点和难点，更是占据了语义分析的核心地位。针对整句语义形式化表示的缺失，以及句子语义标注存在的领域相关性的问题，Banarescu et al.（2013）提出了一种与领域无关的、通用的整句语义表示方法——抽象语义表示（Abstract Meaning Representation，AMR）。该方法使用单根有向无环图，来表示一个句子的语义结构，并且建设了规模较大的语料库，进行了两次国际AMR语义解析评测。中文抽象语义表示（Chinese AMR，简称CAMR）语料库的构建已初具规模，也在CoNLL2020上进行了语义解析评测。
+随着词法、句法分析技术的日益成熟，自然语言处理（Natural Language Processing，NLP）已整体推进到了语义分析层面（孙茂松等，2014）。句子语义作为重点和难点，更是占据了语义分析的核心地位。针对整句语义形式化表示的缺失，以及句子语义标注存在的领域相关性的问题，Banarescu et al.（2013）提出了一种与领域无关的、通用的整句语义表示方法——抽象语义表示（Abstract Meaning Representation，AMR）。该方法使用单根有向无环图，来表示一个句子的语义结构，并且建设了规模较大的语料库，进行了两次国际AMR语义解析评测。中文抽象语义表示（Chinese AMR，简称CAMR）语料库的构建已初具规模，也在CoNLL 2020上进行了语义解析评测。
 
 本次评测任务是在中文抽象语义语料库上，自动解析出句子的AMR图。与英文AMR不同的是，中文AMR增加了概念关系对齐信息，并针对中文特点增加了一些语义标签。概念关系对齐信息并没有用于CoNLL2020的评测。因此，本次评测重新设计了包含了概念关系对齐的信息的新评测指标Align-smatch，能够更好地评估自动解析的性能。
 ## 1.1 AMR介绍
@@ -27,6 +36,7 @@
   
   
   然而，英文AMR的缺点在于不包含概念和关系对齐信息，这给语料的训练与自动解析都带来了困扰。CAMR增加了概念关系对齐的机制，但为了和英文AMR保持格式相融，没有能在CoNLL2020的评测中使用对齐信息。目前包括CoNLL在内的所有实验和评测所使用的指标都是基于英文AMR设计的，并不能很好地针对CAMR的特点进行兼容。评测所使用的Smatch评测指标无法对CAMR的概念和关系对齐信息进行解析和评测。因此，为了弥补CAMR解析评测在对齐信息上的空缺，为CAMR自动解析工作的提供新的标准，肖力铭等（2022）在Smatch评测指标的基础上，加入了概念对齐指标和关系对齐指标——Align-smatch。以下将详细介绍CAMR的特点和Align-smatch评测指标。
+  
 ## 1.2 中文AMR介绍
 在英文AMR的标注中，一般使用词语的首字母作为概念节点的编号，或者按照节点的出现顺序来直接分配编号，这导致计算机处理时无法对概念溯源，一定程度上影响了解析的精度。为了解决这一问题，Li et al.（2019）根据汉语的特点对AMR进行了改进，在保留了AMR较强语义表示能力的同时，在CAMR中增加了“词与概念”的对齐信息和“词与关系”的对齐信息。通过对分词后对原始句子按照线性排序的原则，采用“x+数字”的形式，依次给每个词赋予不同的编号，而对应的概念节点也获得相同的编号。如图1中，“惨痛”为句子中的第3个词，因而被赋予了“x3”的编号，同时与概念节点“x3/惨痛-01”完成了对齐。
 
@@ -215,7 +225,7 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
     <td align='center'>10</td>
   </tr>
   <tr>
-    <td style="text-align:center">有向弧</td>
+    <td align="center">有向弧</td>
     <td align='center'>
     root(a0, a0)<br>
     mode(a0, a2)<br>
@@ -265,7 +275,7 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 </thead>
 <tbody>
   <tr>
-    <td rowspan="4" >Smatch</td>
+    <td rowspan="4" align="center">Smatch</td>
     <td rowspan="2">Closed Modality</td>
     <td>Test A</td>
     <td align='center'>0.68</td>
@@ -363,7 +373,7 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 
 
 ## 4.2 赛程
-2022年6月1日：评测报名开始，参赛队发邮件至<libin.njnu@gmail.com>统一报名；发布训练集以及验证集给参赛队；提供Align-smatch评测软件下载地址。
+2022年6月10日：评测报名开始，发布训练集以及验证集给参赛队，提供Align-smatch评测软件下载地址。
 
 2022年8月8日：报名截止。
 
@@ -373,9 +383,9 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 
 2022年8月26日：发布测试集（Test A）和盲测（Test B）的黄金标准答案给参赛队。
 
-2022年9月5日：参赛队提交中文抽象语义表示评测任务技术报告。
+2022年9月5日：参赛队提交中文抽象语义表示评测任务技术报告，用于审稿。
 
-2022年9月30日：参赛队提交技术报告。
+2022年9月30日：参赛队提交技术报告最终版。
 
 2022年10月14日-16日：CCL 2022评测研讨会，线上公布最终排名，评测结束。
 
@@ -386,13 +396,9 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 4.  报告应至少包含以下四个部分：模型介绍、评测结果、结果分析与讨论和参考文献。
 
 
-**报名入口：**
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CAMRP 2022</a>
 
 # 5 奖项设置
-本次评测将设置如下奖项：
-
-由中国中文信息学会为本次评测获奖队伍提供荣誉证书。
+本次评测将设置一、二、三等奖，由中国中文信息学会为本次评测获奖队伍提供荣誉证书。
 
 # 6 参考文献
 1. Banarescu, Laura, et al. "Abstract meaning representation for sembanking." Proceedings of the 7th linguistic annotation workshop and interoperability with discourse. 2013.
