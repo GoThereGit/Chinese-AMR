@@ -1,6 +1,11 @@
-# CAMRP 2022
-**Chinese Abstract Meaning Representation Parsing 2022**
-# 中文抽象语义表示解析评测任务
+<div align="center">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/logo.png" width="200">
+</div>
+
+# <p align="center">Chinese Abstract Meaning Representation Parsing 2022</p>
+
+# <p align="center"><font size=50><strong>中文抽象语义表示解析评测任务</strong></font></p>
+
 * 组织者：
   * 李斌（南京师范大学）（联系邮箱：<libin.njnu@gmail.com>）
   * 曲维光（南京师范大学）
@@ -32,7 +37,7 @@
   AMR可以将一个句子的语义抽象为一个单根有向无环图，其中词抽象为概念节点（Node），词之间的语义关系抽象为带有语义角色标签的有向弧（Arc）。这种表示方法不仅可以描写一个名词由多个谓词支配所形成的论元共享（Argument Sharing）现象，还允许增加、删除、修改概念节点以补充隐含语义，进而更加完整地表达句子语义。
   
   
-  整句的语义表示能力，使得AMR一经问世便引起了关注，成为了国际的热点。AMR自动解析等相关的技术也被广泛用于机器问答和文本摘要等自然语言处理下游任务中，并取得了优异的成果。在CoNLL 2020举办的跨语言跨框架语义表示解析（Meaning Representation Parsing，MRP） 评测比赛中， Hitachi和ÚFAL两支队伍在中文AMR解析评测任务中分别以为0.80和0.78的分数拿到了第一和第二的成绩（ÚFAL赛后补交了优化后的模型，以0.81的分数刷新了第一名的成绩）（Hiroaki O. et al.，2020）（Samuel D. et al.，2020）。这两支队伍实现的CAMR的解析精度接近了英文AMR的解析精度（0.82）（Hiroaki O. et al.，2020）。
+  整句的语义表示能力，使得AMR一经问世便引起了关注，成为了国际的热点。AMR自动解析等相关的技术也被广泛用于机器问答和文本摘要等自然语言处理下游任务中，并取得了优异的成果。在<a href="http://mrp.nlpl.eu/2020/index.php">CoNLL 2020</a>举办的跨语言跨框架语义表示解析（Meaning Representation Parsing，MRP） 评测比赛中， Hitachi和ÚFAL两支队伍在中文AMR解析评测任务中分别以为0.80和0.78的分数拿到了第一和第二的成绩（ÚFAL赛后补交了优化后的模型，以0.81的分数刷新了第一名的成绩）（Hiroaki O. et al.，2020）（Samuel D. et al.，2020）。这两支队伍实现的CAMR的解析精度接近了英文AMR的解析精度（0.82）（Hiroaki O. et al.，2020）。
   
   
   然而，英文AMR的缺点在于不包含概念和关系对齐信息，这给语料的训练与自动解析都带来了困扰。CAMR增加了概念关系对齐的机制，但为了和英文AMR保持格式相融，没有能在CoNLL2020的评测中使用对齐信息。目前包括CoNLL在内的所有实验和评测所使用的指标都是基于英文AMR设计的，并不能很好地针对CAMR的特点进行兼容。评测所使用的Smatch评测指标无法对CAMR的概念和关系对齐信息进行解析和评测。因此，为了弥补CAMR解析评测在对齐信息上的空缺，为CAMR自动解析工作的提供新的标准，肖力铭等（2022）在Smatch评测指标的基础上，加入了概念对齐指标和关系对齐指标——Align-smatch。以下将详细介绍CAMR的特点和Align-smatch评测指标。
@@ -275,7 +280,7 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 </thead>
 <tbody>
   <tr>
-    <td rowspan="4" align="center">Smatch</td>
+    <td rowspan="4" align="center">Smatch (FYI)</td>
     <td rowspan="2">Closed Modality</td>
     <td>Test A</td>
     <td align='center'>0.68</td>
@@ -302,7 +307,7 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
     <td align='center'>0.80</td>
   </tr>
   <tr>
-    <td rowspan="4">Align-smatch</td>
+    <td rowspan="4">Align-smatch (Main)</td>
     <td rowspan="2">Closed Modality</td>
     <td>Test A</td>
     <td align='center'>0.75</td>
