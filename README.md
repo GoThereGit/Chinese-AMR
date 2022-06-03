@@ -124,7 +124,7 @@ node_index1和node_index2表示为两个不同概念节点的索引，分别对�
 如表2所示，节点属性三元组root($a_0$, top)表示$a_0$节点的属性为根节点，其中，value=top。
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_4.png" width="500">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_4.png" width="700">
  <p>图4 例句“希望我惨痛的经历给大家一个教训呀”的CAMR图示（带有节点索引）</p>
 </div>
 
