@@ -280,7 +280,7 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 </thead>
 <tbody>
   <tr>
-    <td rowspan="4" align="center">Smatch (FYI)</td>
+    <td rowspan="4" align="center">Smatch (仅供参考)</td>
     <td rowspan="2">Closed Modality</td>
     <td>Test A</td>
     <td align='center'>0.68</td>
@@ -307,7 +307,7 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
     <td align='center'>0.80</td>
   </tr>
   <tr>
-    <td rowspan="4">Align-smatch (Main)</td>
+    <td rowspan="4">Align-smatch (主要指标)</td>
     <td rowspan="2">Closed Modality</td>
     <td>Test A</td>
     <td align='center'>0.75</td>
