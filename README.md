@@ -53,7 +53,7 @@
 除了编号方案的处理不同，CAMR对虚词的处理也不一样。英文AMR一般直接忽略了句子中如介词、冠词等对句子语义没有贡献的虚词。而考虑到语言的不同特点，CAMR选择保留虚词并对其进行标注，将表示句子体意义和语气意义的虚词处理为概念节点，将表示实词间关系意义的虚词看作语义关系的映射，并将其与语义角色标签一同标注在有向弧上（戴玉玲等，2020）。最后，沿用概念对齐中编号的方案，有向弧上的虚词同样被赋予了顺序的编号，以实现关系对齐。如图2所示，虚词“的”和语义角色标签“arg0-of”一起被标注在了有向弧上，又由于它是第4个词，因而被编号为“x4”，以上两个步骤完成了语义关系“arg0-of”和虚词“x4/的”的对齐。
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_2.png" width="700">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_2.png" >
  <p>图2 例句“希望我惨痛的经历给大家一个教训呀”的CAMR图示</p>
 </div>
 
@@ -124,7 +124,7 @@ node_index1和node_index2表示为两个不同概念节点的索引，分别对�
 如表2所示，节点属性三元组root($a_0$, top)表示$a_0$节点的属性为根节点，其中，value=top。
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_4.png" width="700">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_4.png" >
  <p>图4 例句“希望我惨痛的经历给大家一个教训呀”的CAMR图示（带有节点索引）</p>
 </div>
 
