@@ -6,6 +6,9 @@
 
 # <p align="center"><font size=50><strong>中文抽象语义表示解析评测任务</strong></font></p>
 
+**报名入口：**
+<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">点我报名</a>
+
 * 组织者：
   * 李斌（南京师范大学）（联系邮箱：<libin.njnu@gmail.com>）
   * 曲维光（南京师范大学）
@@ -19,14 +22,6 @@
   * 陈瑾（南京师范大学）
   * 谢媛媛（南京师范大学）
   * 袁义国（南京师范大学）
-
-
-**报名入口：**
-<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">点我报名</a>
-
-
-**Entry Form:**
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
   
 
 # 1 评测内容	
@@ -400,7 +395,8 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 3.  报告正文不得超过4页，参考文献页数不限。
 4.  报告应至少包含以下四个部分：模型介绍、评测结果、结果分析与讨论和参考文献。
 
-
+**报名入口：**
+<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">点我报名</a>
 
 # 5 奖项设置
 本次评测将设置一、二、三等奖，由中国中文信息学会为本次评测获奖队伍提供荣誉证书。
