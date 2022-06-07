@@ -6,10 +6,20 @@
 
 # <p align="center"><font size=50><strong>中文抽象语义表示解析评测任务</strong></font></p>
 
+**English Version**: <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/README_Eng.md">README_Eng.md</a>
+
 **报名入口：**
 <a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">点我报名</a>
 
-**English Version**: <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/README_Eng.md">README_Eng.md</a>
+[![注意事项](https://img.shields.io/badge/CAMRP评测语料许可协议-LDC-red.svg "highlight")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
+
+**参赛队伍需自行向LDC申请CAMRP 2022评测语料使用权，并签署保密协议：**
+1.	每支参赛队伍需指派一名联系负责人。
+2.	参赛队伍联系负责人需填写[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)，并自行提交给LDC（<ldc@ldc.upenn.edu>）。
+3.	申请通过后，LDC将返回CAMRP v2.0E版本语料库给参赛队伍联系负责人，以供参赛队伍使用。该语料数据只可用于本次CAMRP 2022评测任务，不可有其他任何用途。
+4.	本次评测语料数据集的版权归<a href="https://www.ldc.upenn.edu/">LDC</a>所有。详见[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)。
+
+
 
 * 组织者：
   * 李斌（南京师范大学）（联系邮箱：<libin.njnu@gmail.com>）
@@ -391,14 +401,22 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 
 2022年10月14日-16日：CCL 2022评测研讨会，线上公布最终排名，评测结束。
 
+**报名入口：**
+<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">点我报名</a>
+
 ## 4.3 报告格式
 1.  报告可由中文或英文撰写。
 2.  报告统一使用<a href="http://cips-cl.org/static/CCL2022/downloads/ccl2022_template.zip">CCL 2022</a>的论文模版。
 3.  报告正文不得超过4页，参考文献页数不限。
 4.  报告应至少包含以下四个部分：模型介绍、评测结果、结果分析与讨论和参考文献。
 
-**报名入口：**
-<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">点我报名</a>
+
+## 4.4 语料来源
+参赛队伍需自行向LDC申请CAMRP 2022评测语料使用权，并签署保密协议：
+1.	每支参赛队伍需指派一名联系负责人。
+2.	参赛队伍联系负责人需填写[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)，并自行提交给LDC（<ldc@ldc.upenn.edu>）。
+3.	申请通过后，LDC将返回CAMRP v2.0E版本语料库给参赛队伍联系负责人，以供参赛队伍使用。该语料数据只可用于本次CAMRP 2022评测任务，不可有其他任何用途。
+4.	本次评测语料数据集的版权归<a href="https://www.ldc.upenn.edu/">LDC</a>所有。详见[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)。
 
 # 5 奖项设置
 本次评测将设置一、二、三等奖，由中国中文信息学会为本次评测获奖队伍提供荣誉证书。
