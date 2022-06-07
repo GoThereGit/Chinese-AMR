@@ -7,6 +7,8 @@
 **Entry Form:**
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
 
+**Chinese Version**: <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/README.md">README.md</a>
+
 * Orgnizers:
   * **Bin Li** (Nanjing Normal University, Nanjing, China) (E-mail: <libin.njnu@gmail.com>)
   * **Weiguang Qu** (Nanjing Normal University, Nanjing, China)
@@ -171,6 +173,9 @@ The data in blind test is not released yet. Table 1 shows the distribution of ea
   * Evaluation Period 
   * Release of Final Rankings Online
   * Workshop for Technical Evaluation Tasks of <a href="http://www.cips-cl.org/static/CCL2022/en/cclEval/taskCollection/index.html">CCL 2022</a>
+
+**Entry Form:**
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
 
 # 4 Task Requirements
 # 4.1 Two Modalities
