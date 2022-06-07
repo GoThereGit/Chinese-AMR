@@ -61,7 +61,7 @@ for example, it has no way processing the alignment of concept and relation in C
 Therefore, in order to fill the gap of alignment information in Chinese AMR and to provide a brand-new standard for Chinese AMR parsing, 
 Xiao et al. (2022) came up with a new evaluation metric named Align-smatch with concept alignment metric and relation alignment metric added based on Smatch.
 
-## 1.2 Alignment in Chinese AMR
+## 1.2 New Alignments in Chinese AMR
 English AMR normally annotates the index of concept nodes with the initial letter of the words or assigns the number index simply by the sequence of nodes. 
 It leads to the inability of computers to directly trace concepts back to their sources and to restore the order of sentences from AMR, 
 and brings great difficulties to AMR parsing. To solve this problem, 
@@ -197,18 +197,18 @@ The evaluation task includes **Open Modality** and **Closed Modality**:
 <tbody>
   <tr>
     <td align='center'>Algorithm</td>
-    <td align='center'>No Limits</td>
-    <td align='center'>No Limits</td>
+    <td align='center'>No Limit</td>
+    <td align='center'>No Limit</td>
   </tr>
   <tr>
     <td align='center'>Pre-trained Model</td>
     <td align='center'>HIT_Roberta, Dependency Tree</td>
-    <td align='center'>No Limits</td>
+    <td align='center'>No Limit</td>
   </tr>
   <tr>
     <td align='center'>Data Set</td>
     <td align='center'>Training Set, Validation Set</td>
-    <td align='center'>No Limits</td>
+    <td align='center'>No Limit</td>
   </tr>
   <tr>
     <td align='center'>Manual Correction</td>
