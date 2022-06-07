@@ -9,6 +9,8 @@
 **报名入口：**
 <a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">点我报名</a>
 
+**English Version**: <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/README_Eng.md">README_Eng.md</a>
+
 * 组织者：
   * 李斌（南京师范大学）（联系邮箱：<libin.njnu@gmail.com>）
   * 曲维光（南京师范大学）
@@ -66,7 +68,7 @@
 
 图3为评测语料的CAMR数据样例，具体包括句子ID、词序列、词编号（x）、概念对齐信息、关系对齐信息和CAMR文本表示；语料编码格式为UTF-8。
 ## 2.2 数据集
-中文抽象语义表示语料库（Chinese Abstract Meaning Representation Corpus）于2015年开始，由南京师范大学和美国布兰迪斯大学合作构建。语料库为在LDC发布的CAMR v2.0 ，约含2万中文句子，原始语料选自于宾州中文树库（Chinese Tree Bank 8.0，CTB 8.0），分为训练集、验证集和测试集，该语料已经在CoNLL2020进行评测。本次评测任务中，继续沿用该语料库，以比较两年来中文AMR语义解析的进展。为了防止参赛队将测试集用于训练，本次评测设置了盲测集，约含2000句语料。该部分语料没有公开，亦可观察各个系统在盲测数据集上，可用来评测解析模型处理不同语体风格的文本数据时的泛化能力。提供的各项数据分布如表1所示：
+中文抽象语义表示语料库（Chinese Abstract Meaning Representation Corpus）于2015年开始，由南京师范大学和美国布兰迪斯大学合作构建。语料库为在LDC发布的<a href="https://catalog.ldc.upenn.edu/LDC2021T13">CAMR v2.0</a>，约含2万中文句子，原始语料选自于宾州中文树库（Chinese Tree Bank 8.0，CTB 8.0），分为训练集、验证集和测试集，该语料已经在CoNLL2020进行评测。本次评测任务中，继续沿用该语料库，以比较两年来中文AMR语义解析的进展。为了防止参赛队将测试集用于训练，本次评测设置了盲测集，约含2000句语料。该部分语料没有公开，亦可观察各个系统在盲测数据集上，可用来评测解析模型处理不同语体风格的文本数据时的泛化能力。提供的各项数据分布如表1所示：
 
 
 <table align="center">
@@ -391,7 +393,7 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 
 ## 4.3 报告格式
 1.  报告可由中文或英文撰写。
-2.  报告统一使用CCL 2022 的论文模版。
+2.  报告统一使用<a href="http://cips-cl.org/static/CCL2022/downloads/ccl2022_template.zip">CCL 2022</a>的论文模版。
 3.  报告正文不得超过4页，参考文献页数不限。
 4.  报告应至少包含以下四个部分：模型介绍、评测结果、结果分析与讨论和参考文献。
 
