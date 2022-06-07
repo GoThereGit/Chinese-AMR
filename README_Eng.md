@@ -7,7 +7,7 @@
 **Entry Form:**
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
 
-**Chinese Version**: <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/README.md">README.md</a>
+**Chinese Version**: [README.md](./README.md)
 
 * Orgnizers:
   * **Bin Li** (Nanjing Normal University, Nanjing, China) (E-mail: <libin.njnu@gmail.com>)
@@ -179,14 +179,125 @@ The data in blind test is not released yet. Table 1 shows the distribution of ea
 </table>
 
 
-# 4 Task Requirements
-# 4.1 Two Modalities
+# 4 Evaluation Metrics
+## 4.1 Smatch 
+
+<table width='500' align="center">
+<p align="center">Table 2: Smatch triples representation of the sample sentence</p>
+<thead>
+  <tr>
+    <th style="text-align:center">Category</th>
+    <th style="text-align:center">Triples</th>
+    <th style="text-align:center">Quantity</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td align='center'>Nodes</td>
+    <td align='center'>instance(a0, 希望-01)<br>
+    instance(a1, 给-01)<br>
+    instance(a2, expressive)<br>
+    instance(a3, 经历)<br>
+    instance(a4, 大家)<br>
+    instance(a5, 教训)<br>
+    instance(a6, 我)<br>
+    instance(a7, 惨痛-01)<br>
+    instance(a8, 1)<br>
+    instance(a9, 个)
+    </td>
+    <td align='center'>10</td>
+  </tr>
+  <tr>
+    <td align='center'>Arcs</td>
+    <td align='center'>mode(a0, a2)<br>
+    arg1(a0, a1)<br>
+    arg0(a1, a3)<br>
+    arg2(a1, a4)<br>
+    arg1(a1, a5)<br>
+    arg0-of(a3, a7)<br>
+    poss(a3, a6)
+    </td>
+    <td align='center'>7</td>
+  </tr>
+  <tr>
+    <td style="text-align:center">Property</td>
+    <td align='center'>root(a0, top)</td>
+    <td align='center'>1</td>
+  </tr>
+</tbody>
+</table>
+
+
+## 4.2 Main metric: Align-smatch
+
+<table width='500' align="center">
+ <p align="center">Table 3: Align-smatch tuples representation of the sample sentence</p>
+<thead>
+  <tr>
+    <th style="text-align:center">Category</th>
+    <th style="text-align:center">Tuples</th>
+    <th style="text-align:center">Quantity</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td align='center'>Nodes</td>
+    <td align='center'>instance(a0, 希望-01)<br>
+    instance(a1, 给-01)<br>
+    instance(a2, expressive)<br>
+    instance(a3, 经历)<br>
+    instance(a4, 大家)<br>
+    instance(a5, 教训)<br>
+    instance(a6, 我)<br>
+    instance(a7, 惨痛-01)<br>
+    instance(a8, 1)<br>
+    instance(a9, 个)
+    </td>
+    <td align='center'>10</td>
+  </tr>
+  <tr>
+    <td align="center">Arcs</td>
+    <td align='center'>
+    root(a0, a0)<br>
+    mode(a0, a2)<br>
+    arg1(a0, a1)<br>
+    arg0(a1, a3)<br>
+    arg2(a1, a4)<br>
+    arg1(a1, a5)<br>
+    arg0-of(a3, a7)<br>
+    (的, x4, a3, a7)<br>
+    poss(a3, a6)
+    </td>
+    <td align='center'>9</td>
+  </tr>
+  <tr>
+    <td style="text-align:center">Property</td>
+    <td align='center'>
+    anchor(a0, x1)<br>
+    anchor(a1, x6)<br>
+    anchor(a2, x11)<br>
+    anchor(a3, x5)<br>
+    anchor(a4, x7)<br>
+    anchor(a5, x10)<br>
+    anchor(a6, x2)<br>
+    anchor(a7, x3)<br>
+    anchor(a8, x8)<br>
+    anchor(a9, x9)<br>
+    </td>
+    <td align='center'>10</td>
+  </tr>
+</tbody>
+</table>
+
+
+# 5 Task Requirements
+# 5.1 Two Modalities
 The evaluation task includes **Open Modality** and **Closed Modality**:
 1.	Once chosen Closed Modality, the participants must use the training data, test data and pre-trained model which are all designated in advance. No alternative is allowed. We also offer dependency analysis results of training set for each team under Closed Modality. HIT_Roberta from Harbin Institue of Technology (Cui et al., 2021) as pre-trained model is highly recommended. 
 2.	Once chosen Open Modality, the participants are allowed to use pre-trained model and external resources such as named entities and dependency analysis results with no limits. Note that all kinds of resources that participants employ should be mentioned and written in detail in the final technical report. Manual correction is forbidden in both modalities.
 
 <table align="center">
-<p align="center">Table 2: Limitations on two modalities</p>
+<p align="center">Table 4: Limitations on two modalities</p>
 <thead>
   <tr>
     <th align='center'>Resources</th>
@@ -218,13 +329,99 @@ The evaluation task includes **Open Modality** and **Closed Modality**:
 </tbody>
 </table>
 
-## 4.2 Writing the Technical Report
+
+To better parse and evaluate Chinese AMR, our evaluation task use Align-smatch as the main metric. The CAMR parsing results each team generates should contain the alignment information of concept and relation. Table 5 is a full example of evaluation scores output includes two metrics, two modalities and two different test sets, which are, therefore, eight tests in total. Note that Smatch scores are optional for we rank participants referring to the F-scores under **Align-smatch metric only**.
+
+
+<table align="center">
+<p align="center">Table 5: Example of evaluation scores</p>
+<thead>
+  <tr>
+    <th>Metrics</th>
+    <th colspan="2">Modalities</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1-score</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="4" align="center">Smatch (FYI)</td>
+    <td rowspan="2">Closed Modality</td>
+    <td>Test A</td>
+    <td align='center'>0.68</td>
+    <td align='center'>0.71</td>
+    <td align='center'>0.70</td>
+  </tr>
+  <tr>
+    <td>Test B</td>
+    <td align='center'>0.74</td>
+    <td align='center'>0.66</td>
+    <td align='center'>0.70</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Open Modality</td>
+    <td>Test A</td>
+    <td align='center'>0.74</td>
+    <td align='center'>0.74</td>
+    <td align='center'>0.74</td>
+  </tr>
+  <tr>
+    <td>Test B</td>
+    <td align='center'>0.82</td>
+    <td align='center'>0.79</td>
+    <td align='center'>0.80</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Align-smatch (Main)</td>
+    <td rowspan="2">Closed Modality</td>
+    <td>Test A</td>
+    <td align='center'>0.75</td>
+    <td align='center'>0.81</td>
+    <td align='center'>0.78</td>
+  </tr>
+  <tr>
+    <td>Test B</td>
+    <td align='center'>0.68</td>
+    <td align='center'>0.69</td>
+    <td align='center'>0.68</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Open Modality</td>
+    <td>Test A</td>
+    <td align='center'>0.78</td>
+    <td align='center'>0.78</td>
+    <td align='center'>0.78</td>
+  </tr>
+  <tr>
+    <td>Test B</td>
+    <td align='center'>0.82</td>
+    <td align='center'>0.50</td>
+    <td align='center'>0.62</td>
+  </tr>
+</tbody>
+</table>
+
+## 5.2 Writing the Technical Report
 1.	Technical report can be written in both **Chinese** or **English**.
 2.	Technical report should be formatted according to <a href="http://cips-cl.org/static/CCL2022/downloads/ccl2022_template.zip">CCL 2022 template</a>.
 3.	The maximum length should be 4 pages (excluding references).
 4.	Technical report should include at least the following sections: **introduction**, **evaluation results**, **result analysis** and **references**.
 
-## 4.3 Awards
+## 5.3 Awards
 Awards include **First Prize**, **Second Prize** and **Third Prize**, 
 and each team will be awarded with a unique certificate presented by **Chinese Information Processing Society of China** (CIPS).
 
+# 6 References
+1. Banarescu, Laura, et al. "Abstract meaning representation for sembanking." Proceedings of the 7th linguistic annotation workshop and interoperability with discourse. 2013.
+2. Li, Bin, et al. "Building a Chinese AMR bank with concept and relation alignments." Linguistic Issues in Language Technology 18 (2019).
+3. Cai, Shu, and Kevin Knight. "Smatch: an evaluation metric for semantic feature structures." Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers). 2013.
+4. Cui, Yiming, et al. "Pre-training with whole word masking for chinese bert." IEEE/ACM Transactions on Audio, Speech, and Language Processing 29 (2021): 3504-3514.
+5. Ozaki, Hiroaki, et al. "Hitachi at MRP 2020: Text-to-graph-notation transducer." Proceedings of the CoNLL 2020 Shared Task: Cross-Framework Meaning Representation Parsing. 2020.
+6. Li, Bin, et al. "Annotating the little prince with chinese amrs." Proceedings of the 10th linguistic annotation workshop held in conjunction with ACL 2016 (LAW-X 2016). 2016.
+7. Abzianidze, L., et al. "MRP 2020: The second shared task on cross-framework and cross-lingual meaning representation parsing." Proceedings of the CoNLL 2020 Shared Task: Cross-Framework Meaning Representation Parsing (2020): 1-22.
+8. Samuel, David, and Milan Straka. "UFAL at MRP 2020: Permutation-invariant Semantic Parsing in PERIN." arXiv preprint arXiv:2011.00758 (2020).
+9. 戴玉玲, et al. "基于关系对齐的汉语虚词抽象语义表示与分析." 中文信息学报 34.4 (2020): 21-29.
+10. 李斌, et al. "融合概念对齐信息的中文 AMR 语料库的构建." 中文信息学报 31.6 (2017): 93-102.
+11. 孙茂松, et al. "语言计算的重要国际前沿." 中文信息学报 28.1 (2014): 1-8.
+12. 肖力铭, et al. "基于概念关系对齐的中文抽象语义表示解析评测方法." 中文信息学报 36.1 (2022): 21-30.
