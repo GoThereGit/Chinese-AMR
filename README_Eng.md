@@ -25,7 +25,7 @@
 
 # 1 Introduction
 With the growing maturity of morphological analysis and syntactic analysis techniques, 
-natural language processing in general has advanced to the level of semantic analysis. More specifically, 
+natural language processing in general has advanced to the level of semantic analysis (Sun et al., 2014). More specifically, 
 sentence-level meaning parsing has already occupied the core position of semantic analysis research. 
 To address the lack of whole-sentence semantic representation and the domain-dependent problem of sentence semantic annotation, 
 Banarescu et al. (2013) proposed a domain-independent whole-sentence semantic representation method called Abstract Meaning Representation (AMR) that can abstract the meaning of a sentence with a single-rooted, acyclic and directed graph and predicts the semantic structure of the targeted sentence. 
@@ -42,10 +42,10 @@ which contains the alignment of concept and relation.
 ## 1.1 AMR
 AMR is to abstract the meaning of a sentence into a single-rooted, directed and acyclic graph. 
 Specifically, words are abstracted as concept nodes and relations between words as directed arcs with semantic role labels. 
-This abstract semantic representation way enables AMR not only to describe the situation like argument sharing when there is one single noun allocated by several predicates, 
-but also to add, delete and modify concepts nodes in order to complement the implicit concept annotation.
+This abstract representation way enables AMR not only to describe the situation like argument sharing when there is one single noun allocated by several predicates, 
+but also to add, delete and modify concept nodes in order to complement the implicit concept annotation.
 
-AMR aroused the attentions of professions and researchers as soon as it come out, 
+AMR aroused the attentions of professions and researchers as soon as it came out, 
 and has prevailed the world with its great power of sentence-level semantic representation. 
 Related work of automatic parsing with AMR has been widely applied into downstream tasks in NLP such as question answering systems and text summarization, 
 and yielded good returns. In the cross-framework task of Meaning Representation Parsing (MRP) held by <a href="http://mrp.nlpl.eu/2020/index.php">CoNLL 2020</a>, Hitachi (Hiroaki O. et al., 2020) 
@@ -53,13 +53,13 @@ and ÚFAL (Samuel D. et al., 2020) among five teams achieved 0.80 and 0.78 F-sco
 and were awarded first prize and second prize accordingly. 
 In fact, their performances in Chinese AMR parsing were fairly close to that of in English AMR (which is 0.82).
 
-English AMR has no alignment of concept and relation, which presents problems for data training and automatic parsing. 
+English AMR, however, has no alignment of concept and relation, which presents problems for data training and automatic parsing. 
 Although the alignment of concept and relation are added into Chinese AMR, it was a no-show in CoNLL 2020 in order to be consistent in formatting with English AMR. 
 Additionally, most of experiments and evaluations including CoNLL use Smatch metric, which was originally designed based on English AMR. 
 Inevitably, Smatch is not quite compatible with Chinese AMR considering the different characteristics between the two languages, 
 for example, it has no way processing the alignment of concept and relation in Chinese AMR. 
 Therefore, in order to fill the gap of alignment information in Chinese AMR and to provide a brand-new standard for Chinese AMR parsing, 
-Xiao et al. (2022) come up with a new evaluation metric named Align-smatch with concept alignment metric and relation alignment metric added based on Smatch.
+Xiao et al. (2022) came up with a new evaluation metric named Align-smatch with concept alignment metric and relation alignment metric added based on Smatch.
 
 ## 1.2 Alignment in Chinese AMR
 English AMR normally annotates the index of concept nodes with the initial letter of the words or assigns the number index simply by the sequence of nodes. 
@@ -84,7 +84,7 @@ indicating the relations between content word are regarded as mappings of semant
 Function words on arcs are numbered as well, which would achieve relation alignment by completing the alignment of semantic relations with the words in sentences. 
 As shown in Figure 2, 
 the function word “的” has been annotated on the directed arc with semantic role label “arg0-of” together and numbered “x4” 
-for it is the forth word in original sentence. Finally, we could say the function word “x4/的” is aligned with the semantic relation “arg0-of”, 
+for it is the fourth word in original sentence. Finally, we could say the function word “x4/的” is aligned with the semantic relation “arg0-of”, 
 namely the **relation alignment**.
 
 <div align=center>
@@ -98,8 +98,34 @@ we Nanjing Normal University hereby present this evaluation task of CAMRP 2022.
 Unlike the cross-framework/cross-lingual task of MRP held by CoNLL 2020, 
 we aim to evaluate Chinese AMR parsing **only**, and of course with Align-smatch metric. 
 
-# 2 Data
-## 2.1 Data Sample
+# 2 Important Dates
+* **June 10, 2022**
+  * Initial Public Call for Participation
+  * Release of Training Set and Validation Set
+  * Availability of Evaluation Software (Align-smatch)
+* **August 8, 2022**
+  * Enrolment Deadline
+* **August 10, 2022**
+  * Release of Test Set (Test A) and Blind Set (Test B)
+* **August 20, 2022**
+  * Submission of Annotated Data
+* **August 26, 2022**
+  * Release of Gold Data of Test Set (Test A) and Blind Set (Test B)
+* **September 5, 2022**
+  * Submission of Technical Report
+  * Reviewer Feedback Available
+* **September 30, 2022**
+  * Final Submission of Camera-Ready Technical Report
+  * Evaluation Period
+* **October 14-16, 2022** 
+  * Release of Final Rankings Online
+  * Workshop for Technical Evaluation Tasks of <a href="http://www.cips-cl.org/static/CCL2022/en/cclEval/taskCollection/index.html">CCL 2022</a>
+
+**Entry Form:**
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
+
+# 3 Data
+## 3.1 Data Sample
 Figure 3 is a copy of CAMR data sample from training set, detailed with sentence ID, word tokens, 
 word ID, alignment of concept and relation, and the text representation of CAMR. 
 All files are encoded in UTF-8. 
@@ -109,7 +135,8 @@ All files are encoded in UTF-8.
  <p>Figure 3: Data sample of CAMR</p>
 </div>
 
-## 2.2 Data Set
+
+## 3.2 Data Set
 Chinese Abstract Meaning Representation Corpus was constructed and cooperated by Nanjing Normal University and Bradeis University from 2015. 
 Specifically, the data offered in this CAMRP 2022 is the <a href="https://catalog.ldc.upenn.edu/LDC2021T13">CAMR v2.0</a> released via Linguisitc Data Consortium (LDC),
 of which the original data was from Chinese Tree Bank 8.0 including 20,000 Chinese sentences in total. 
@@ -145,37 +172,12 @@ The data in blind test is not released yet. Table 1 shows the distribution of ea
   </tr>
   <tr>
     <td align='center'>Test B</td>
-    <td align='center'>about 2000</td>
-    <td align='center'>about 40,000</td>
+    <td align='center'>around 2000</td>
+    <td align='center'>around 40,000</td>
   </tr>
 </tbody>
 </table>
 
-# 3 Tentative Schedule
-* **June 10, 2022**
-  * Initial Public Call for Participation
-  * Release of Training Set and Validation Set
-  * Availability of Evaluation Software (Align-smatch)
-* **August 8, 2022**
-  * Enrolment Deadline
-* **August 10, 2022**
-  * Release of Test Set (Test A) and Blind Set (Test B)
-* **August 20, 2022**
-  * Submission of annotated data
-* **August 26, 2022**
-  * Release of Gold Data of Test Set (Test A) and Blind Set (Test B)
-* **September 5, 2022**
-  * Submission of Technical Report
-  * Reviewer Feedback Available
-* **September 30, 2022**
-  * Final Submission of Camera-Ready Technical Report
-* **October 14-16, 2022**
-  * Evaluation Period 
-  * Release of Final Rankings Online
-  * Workshop for Technical Evaluation Tasks of <a href="http://www.cips-cl.org/static/CCL2022/en/cclEval/taskCollection/index.html">CCL 2022</a>
-
-**Entry Form:**
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
 
 # 4 Task Requirements
 # 4.1 Two Modalities
@@ -217,7 +219,7 @@ The evaluation task includes **Open Modality** and **Closed Modality**:
 </table>
 
 ## 4.2 Writing the Technical Report
-1.	Technical report can be written in both **Chinese** and **English**.
+1.	Technical report can be written in both **Chinese** or **English**.
 2.	Technical report should be formatted according to <a href="http://cips-cl.org/static/CCL2022/downloads/ccl2022_template.zip">CCL 2022 template</a>.
 3.	The maximum length should be 4 pages (excluding references).
 4.	Technical report should include at least the following sections: **introduction**, **evaluation results**, **result analysis** and **references**.
