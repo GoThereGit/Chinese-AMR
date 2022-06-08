@@ -10,17 +10,17 @@
 
 **English Version:** <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/README_Eng.md">README_Eng.md</a>
 
-[![signup](https://img.shields.io/badge/CAMRP2022-报名-blue.svg "sign up")](https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM)
+[![signup](https://img.shields.io/badge/CAMRP_2022-报名-blue.svg "sign up")](https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM)
 
 2022年6月10日：<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">**评测报名**</a>开始，发布训练集以及验证集给参赛队，提供Align-smatch评测软件下载地址。
 
 2022年8月8日：报名截止。
 
-2022年8月10日：发布测试集（Test A）和盲测（Test B）数据集给参赛队。
+2022年8月10日：发布测试集（包含Test A和Test B）给参赛队。
 
 2022年8月20日：参赛队提交自动标注的数据。
 
-2022年8月26日：发布测试集（Test A）和盲测（Test B）的黄金标准答案给参赛队。
+2022年8月26日：发布测试集（包含Test A和Test B）黄金标准答案给参赛队。
 
 2022年9月5日：参赛队提交中文抽象语义表示评测任务技术报告，用于审稿。
 
@@ -28,7 +28,7 @@
 
 2022年10月14日-16日：<a href="http://www.cips-cl.org/static/CCL2022/index.html">CCL 2022</a>评测研讨会，线上公布最终排名，评测结束。
 
-[![agreement](https://img.shields.io/badge/CAMRP评测语料许可协议-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
+[![agreement](https://img.shields.io/badge/CAMRP_评测语料许可协议-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
 
 **参赛队伍需自行向LDC申请CAMRP 2022评测语料使用权，并签署保密协议：**
 1.	每支参赛队伍需指派一名联系负责人。
@@ -36,7 +36,7 @@
 3.	申请通过后，LDC将返回CAMRP v2.0E版本语料库给参赛队伍联系负责人，以供参赛队伍使用。该语料数据只可用于本次CAMRP 2022评测任务，不可有其他任何用途。
 4.	本次评测语料数据集的版权归<a href="https://www.ldc.upenn.edu/">LDC</a>所有。
 
-[![body](https://img.shields.io/badge/CAMRP2022-NanjingNormalUniversity-green.svg "CAMRP 2022")](https://github.com/GoThereGit/Chinese-AMR/blob/main/README.md)
+[![body](https://img.shields.io/badge/CAMRP_2022-Nanjing_Normal_University-green.svg "CAMRP 2022")](https://github.com/GoThereGit/Chinese-AMR/blob/main/README.md)
 
 * 组织者：
   * 李斌（南京师范大学）（联系邮箱：<libin.njnu@gmail.com>）
@@ -96,9 +96,12 @@
 图3为评测语料的CAMR数据样例，具体包括句子ID、词序列、词编号（x）、概念对齐信息、关系对齐信息和CAMR文本表示；语料编码格式为UTF-8。
 
 ## 2.2 任务说明
-**输入：**
-**输出：**
-**sample**
+
+[![sample](https://img.shields.io/badge/sample-CAMR_text-red.svg "CAMR_text")](./docs/samples/CAMR_text.png)
+
+[![sample](https://img.shields.io/badge/sample-CAMR_dep-green.svg "CAMR_dep")](./docs/samples/CAMR_dep.png)
+
+[![sample](https://img.shields.io/badge/sample-CAMR_tuple-red.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.png)
 
 ## 2.3 数据集
 中文抽象语义表示语料库（Chinese Abstract Meaning Representation Corpus）于2015年开始，由南京师范大学和美国布兰迪斯大学合作构建。语料库为在LDC发布的<a href="https://catalog.ldc.upenn.edu/LDC2021T13">CAMR v2.0</a>，约含2万中文句子，原始语料选自于宾州中文树库（Chinese Tree Bank 8.0，CTB 8.0），分为训练集、验证集和测试集，该语料已经在CoNLL2020进行评测。本次评测任务中，继续沿用该语料库，以比较两年来中文AMR语义解析的进展。为了防止参赛队将测试集用于训练，本次评测设置了盲测集，约含2000句语料。该部分语料没有公开，亦可观察各个系统在盲测数据集上，可用来评测解析模型处理不同语体风格的文本数据时的泛化能力。提供的各项数据分布如表1所示：
