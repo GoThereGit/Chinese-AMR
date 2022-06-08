@@ -34,7 +34,7 @@
 1.	每支参赛队伍需指派一名联系负责人。
 2.	参赛队伍联系负责人需填写[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)，扫描后通过E-mail发送给LDC（<ldc@ldc.upenn.edu>）。
 3.	申请通过后，LDC将返回CAMRP v2.0E版本语料库给参赛队伍联系负责人，以供参赛队伍使用。该语料数据只可用于本次CAMRP 2022评测任务，不可有其他任何用途。
-4.	本次评测语料数据集的版权归<a href="https://www.ldc.upenn.edu/">LDC</a>所有。详见[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)。
+4.	本次评测语料数据集的版权归<a href="https://www.ldc.upenn.edu/">LDC</a>所有。
 
 [![body](https://img.shields.io/badge/CAMRP2022-NanjingNormalUniversity-green.svg "CAMRP 2022")](https://github.com/GoThereGit/Chinese-AMR/blob/main/README.md)
 
@@ -44,7 +44,7 @@
   * 周俊生（南京师范大学）
   * 薛念文（布兰迪斯大学）
  
-* 工作人员：
+* 工作人员（研究生）：
   * 许智星（南京师范大学）
   * 肖力铭（南京师范大学）
   * 芦靖雅（南京师范大学）
@@ -417,7 +417,7 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 1.	每支参赛队伍需指派一名联系负责人。
 2.	参赛队伍联系负责人需填写[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)，扫描后通过E-mail发送给LDC（<ldc@ldc.upenn.edu>）。
 3.	申请通过后，LDC将返回CAMRP v2.0E版本语料库给参赛队伍联系负责人，以供参赛队伍使用。该语料数据只可用于本次CAMRP 2022评测任务，不可有其他任何用途。
-4.	本次评测语料数据集的版权归<a href="https://www.ldc.upenn.edu/">LDC</a>所有。详见[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)。
+4.	本次评测语料数据集的版权归<a href="https://www.ldc.upenn.edu/">LDC</a>所有。
 
 # 5 奖项设置
 本次评测将设置一、二、三等奖，由中国中文信息学会为本次评测获奖队伍提供荣誉证书。
