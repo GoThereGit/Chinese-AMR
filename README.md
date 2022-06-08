@@ -6,12 +6,15 @@
 
 # <p align="center"><font size=50><strong>中文抽象语义表示解析评测任务</strong></font></p>
 
-**English Version**: <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/README_Eng.md">README_Eng.md</a>
+[![Eng](https://img.shields.io/badge/README-English-yellow.svg "English Version")](./README_Eng.md)
 
-**报名入口：**
-<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">点我报名</a>
+**English Version:** <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/README_Eng.md">README_Eng.md</a>
 
-[![注意事项](https://img.shields.io/badge/CAMRP评测语料许可协议-LDC-red.svg "highlight")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
+[![signup](https://img.shields.io/badge/CAMRP2022-报名-blue.svg "sign up")](https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM)
+
+**报名入口：**<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">点我报名</a>
+
+[![agreement](https://img.shields.io/badge/CAMRP评测语料许可协议-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
 
 **参赛队伍需自行向LDC申请CAMRP 2022评测语料使用权，并签署保密协议：**
 1.	每支参赛队伍需指派一名联系负责人。
@@ -19,7 +22,7 @@
 3.	申请通过后，LDC将返回CAMRP v2.0E版本语料库给参赛队伍联系负责人，以供参赛队伍使用。该语料数据只可用于本次CAMRP 2022评测任务，不可有其他任何用途。
 4.	本次评测语料数据集的版权归<a href="https://www.ldc.upenn.edu/">LDC</a>所有。详见[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)。
 
-
+[![body](https://img.shields.io/badge/CAMRP2022-NanjingNormalUniversity-green.svg "CAMRP 2022")](https://github.com/GoThereGit/Chinese-AMR/blob/main/README.md)
 
 * 组织者：
   * 李斌（南京师范大学）（联系邮箱：<libin.njnu@gmail.com>）
