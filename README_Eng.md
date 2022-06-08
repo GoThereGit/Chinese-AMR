@@ -15,6 +15,7 @@
 
 [![agreement](https://img.shields.io/badge/CAMRP_2022-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
 
+
 **Participants must sign the LDC Evaluation License Agreement for the data/corpora used in the CAMRP 2022 Evaluation Task will be authorized via <a href="https://www.ldc.upenn.edu/">LDC</a> only:**
 1.	Each team should designate a member as the data contact person.
 2.	Each data contact person must fill in the [LDC Evaluation License Agreement](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf) and send a signed copy of the agreement to LDC (<ldc@ldc.upenn.edu>).
@@ -156,7 +157,7 @@ For details, please refer to:
 
 [![sample](https://img.shields.io/badge/sample-CAMR_dep-green.svg "CAMR_dep")](./docs/samples/CAMR_dep.png)
 
-[![sample](https://img.shields.io/badge/sample-CAMR_tuple-red.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.png)
+[![sample](https://img.shields.io/badge/sample-CAMR_tuple-blue.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.png)
 
 ## 3.2 Data Set
 Chinese Abstract Meaning Representation Corpus was constructed and cooperated by Nanjing Normal University and Bradeis University from 2015. 
