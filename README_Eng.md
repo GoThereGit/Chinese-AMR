@@ -197,6 +197,34 @@ The data in blind test is not released yet. Table 1 shows the distribution of ea
 # 4 Evaluation Metrics
 ## 4.1 Smatch 
 
+As the most widely-used evaluation metric, smatch focuses on the overlapping of two AMR graphs. For two AMR graphs to be matched, smatch first renames the nodes of AMR graphs and transforms each AMR graph into a set of triples (S. Cai et al., 2013). There are three categories of triples as following:
+
+1.	**Node triple: instance(node_index, concept).**
+
+“instance” represents the concept nodes. “node_index” is the index of nodes in AMR graph and denoted as “$a_i$”. Without loss of generality, we have $i∈${$0, 1, …, n$}. “concept” is abstracted from the word accordingly. As shown in Table 2, for example, the triple “instance($a_0$, 希望-01)” indicates the instantiation of the word “希望” including its index “$a_0$” and the abstracted concept “希望-01”.
+
+2.	**Arc triple: relation(node_index1, node_index2).**
+
+“node_index1” and “node_index2” are indexs of two different concept nodes, and their mappings are “$a_i$” and “$a_j$”, respectively. As always, $j∈${$0,1,…,n$}. Note that the assignments of indexs can be without order and totally random. For the sake of simplicity, we follow the easiest way to assign each node with sequential index in Figure 5. “relation” is the semantic relation between the index “$a_i$” and “$a_j$”. As shown in Figure 2, the arc triple “arg1($a_1$, $a_4$)” means that the semantic relation between the mapping words of the index “$a_1$” and “$a_4$” is “arg1 (Object)”.
+
+3.	**Node property triple: property(node_index, value).**
+
+As shown in Table 2, the property triple “root($a_0$, top)” indicates that the property of the index “$a_0$” is “root”, in which “value” equals “top”, meaning that it is the root node in the graph.
+
+
+<div align=center>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_4.png" >
+ <p>Figure 4: CAMR graph of the sample sentence "希望我惨痛的经历给大家一个教训呀"(with indices)</p>
+</div>
+
+
+After the transformation from AMR graphs to triples, smatch performs the Hill-climbing search to obtain the maximum number of the matching triples between Gold AMR and Generated AMR, and returns **Precision**, **Recall** and **F-score**:
+$$ P = {{count(Matching\enspace Triples)} \over {count(Generated\enspace Triples)}} $$
+$$ R = {{count(Matching\enspace Triples)} \over {count(Gold\enspace Triples)}} $$
+$$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
+
+Specifically, **Precision** is the ratio of the maximum number of the matching triples between Gold AMR and Generated AMR, and the total number of Generated AMR triples. **Recall** is the ratio of the maximum number of the matching triples between Gold AMR and Generated AMR, and the total number of Gold AMR triples. **F-score** is the harmonic mean of **Precision** and **Recall**.
+
 <table width='500' align="center">
 <p align="center">Table 2: Smatch triples representation of the sample sentence</p>
 <thead>
@@ -242,8 +270,23 @@ The data in blind test is not released yet. Table 1 shows the distribution of ea
 </tbody>
 </table>
 
+Although smatch has been prevailing since it came up, it has some flaws. When searching arc triples to be matched, smatch only considers whether the relations are the same but does not examine the concept nodes. It sometimes leads to such situation that two sentence with completely different semantics yet get oddly high matching scores (Song et al., 2019).
 
 ## 4.2 Main metric: Align-smatch
+With two types of information added, including concept alignment and relation alignment, Align-smatch now transforms Chinese AMR graph into tuples. 
+
+1.	**The new triple for concept alignment: anchor(node_index, token_num).**
+
+We name it concept alignment triple and add it into the same category with node property triple. “anchor” stands for it node property. “node_index” remains the same as in smatch. “token_num” means the number of the word in original sentence (as we mentioned earlier). As shown in Table 3, for example, the property triple “anchor($a_7$, x3)” indicates that the mapping concept node “惨痛-01” of the index “$a_7$” is aligned with the mapping word “惨痛” of the token number “x3”.
+
+2.	**The new tuple for relation alignment: (Word_on_Arc, token_num, node_index1, node_index2).**
+
+Likewise, we name it relation alignment tuple and add it into the same category with arc triple (tuple). “Word_on_Arc” represents the function word on arc for it actually matters a lot and conveys relations between content words in Chinese. As shown in Table 3, the arc tuple “(的, x4, $a_3$, $a_7$)” indicates that the function word “的” is on the arc from the index “$a_3$” to “$a_7$”, and assigned with the token number “x4” for it is the fourth word in the original sentence (after word segmentation).
+
+3.	**The new arc triple: relation(node_index1, node_index2).**
+	
+When processing the word on the root node, we now replace the original property triple with the new arc triple. As shown in Table 2, the root node triple under smatch metric was “root($a_0$, top)”, and has been changed into “root($a_0$, $a_0$)” as we can see in Table 3.  
+
 
 <table width='500' align="center">
  <p align="center">Table 3: Align-smatch tuples representation of the sample sentence</p>
@@ -304,6 +347,11 @@ The data in blind test is not released yet. Table 1 shows the distribution of ea
 </tbody>
 </table>
 
+
+Similar to smatch, **Precision** in align-smatch is the ratio of the maximum number of the matching tuples between Gold AMR and Generated AMR, and the total number of Generated AMR tuples. **Recall** in align-smatch is the ratio of the maximum number of the matching tuples between Gold AMR and Generated AMR, and the total number of Gold AMR tuples.
+$$ P = {{count(Matching\enspace Tuples)} \over {count(Generated\enspace Tuples)}} $$
+$$ R = {{count(Matching\enspace Tuples)} \over {count(Gold\enspace Tuples)}} $$
+$$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 
 # 5 Task Requirements
 # 5.1 Two Modalities
@@ -436,7 +484,4 @@ and each team will be awarded with a unique certificate presented by **Chinese I
 6. Li, Bin, et al. "Annotating the little prince with chinese amrs." Proceedings of the 10th linguistic annotation workshop held in conjunction with ACL 2016 (LAW-X 2016). 2016.
 7. Abzianidze, L., et al. "MRP 2020: The second shared task on cross-framework and cross-lingual meaning representation parsing." Proceedings of the CoNLL 2020 Shared Task: Cross-Framework Meaning Representation Parsing (2020): 1-22.
 8. Samuel, David, and Milan Straka. "UFAL at MRP 2020: Permutation-invariant Semantic Parsing in PERIN." arXiv preprint arXiv:2011.00758 (2020).
-9. 戴玉玲, et al. "基于关系对齐的汉语虚词抽象语义表示与分析." 中文信息学报 34.4 (2020): 21-29.
-10. 李斌, et al. "融合概念对齐信息的中文 AMR 语料库的构建." 中文信息学报 31.6 (2017): 93-102.
-11. 孙茂松, et al. "语言计算的重要国际前沿." 中文信息学报 28.1 (2014): 1-8.
-12. 肖力铭, et al. "基于概念关系对齐的中文抽象语义表示解析评测方法." 中文信息学报 36.1 (2022): 21-30.
+
