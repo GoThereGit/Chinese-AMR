@@ -4,10 +4,25 @@
 
 # <p align="center">Chinese Abstract Meaning Representation Parsing 2022</p>
 
+[![Zh](https://img.shields.io/badge/README-Chinese-yellow.svg "Zh")](./README.md)
+
+**Chinese Version**: [README.md](./README.md)
+
+[![signup](https://img.shields.io/badge/CAMRP2022-GoogleForm-blue.svg "sign up")](https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url)
+
 **Entry Form:**
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
 
-**Chinese Version**: [README.md](./README.md)
+[![agreement](https://img.shields.io/badge/CAMRP2022-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
+
+**Participants must sign the LDC Evaluation License Agreement for the data/corpora used in the CAMRP 2022 Evaluation Task will be authorized via <a href="https://www.ldc.upenn.edu/">LDC</a> only:**
+1.	Each team should designate a member as the data contact person.
+2.	Each data contact person must fill in the [LDC Evaluation License Agreement](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf) and send a signed copy of the agreement to LDC (<ldc@ldc.upenn.edu>).
+3.	Participants must use the received data/corpora from LDC in the CAMRP 2022 Evaluation Task only.
+4.	For details, please refer to the [LDC Evaluation License Agreement](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf).
+
+
+[![body](https://img.shields.io/badge/CAMRP2022-NanjingNormalUniversity-green.svg "CAMRP 2022")](https://github.com/GoThereGit/Chinese-AMR/blob/main/README.md)
 
 * Orgnizers:
   * **Bin Li** (Nanjing Normal University, Nanjing, China) (E-mail: <libin.njnu@gmail.com>)
