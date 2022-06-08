@@ -12,13 +12,27 @@
 
 [![signup](https://img.shields.io/badge/CAMRP2022-报名-blue.svg "sign up")](https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM)
 
-**报名入口：**<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">点我报名</a>
+2022年6月10日：<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">**评测报名**</a>开始，发布训练集以及验证集给参赛队，提供Align-smatch评测软件下载地址。
+
+2022年8月8日：报名截止。
+
+2022年8月10日：发布测试集（Test A）和盲测（Test B）数据集给参赛队。
+
+2022年8月20日：参赛队提交自动标注的数据。
+
+2022年8月26日：发布测试集（Test A）和盲测（Test B）的黄金标准答案给参赛队。
+
+2022年9月5日：参赛队提交中文抽象语义表示评测任务技术报告，用于审稿。
+
+2022年9月30日：参赛队提交技术报告最终版。
+
+2022年10月14日-16日：<a href="http://www.cips-cl.org/static/CCL2022/index.html">CCL 2022</a>评测研讨会，线上公布最终排名，评测结束。
 
 [![agreement](https://img.shields.io/badge/CAMRP评测语料许可协议-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
 
 **参赛队伍需自行向LDC申请CAMRP 2022评测语料使用权，并签署保密协议：**
 1.	每支参赛队伍需指派一名联系负责人。
-2.	参赛队伍联系负责人需填写[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)，并自行提交给LDC（<ldc@ldc.upenn.edu>）。
+2.	参赛队伍联系负责人需填写[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)，扫描后通过E-mail发送给LDC（<ldc@ldc.upenn.edu>）。
 3.	申请通过后，LDC将返回CAMRP v2.0E版本语料库给参赛队伍联系负责人，以供参赛队伍使用。该语料数据只可用于本次CAMRP 2022评测任务，不可有其他任何用途。
 4.	本次评测语料数据集的版权归<a href="https://www.ldc.upenn.edu/">LDC</a>所有。详见[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)。
 
@@ -274,11 +288,49 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 </table>
 
 
-## 3.3 总结
-为了更加完整、精确地解析CAMR，本次评测任务采用Align-smatch评测标准。各参赛队最终生成的CAMR中需包含概念对齐信息和关系对齐信息，最终成绩评分按照Align-smatch评测标准，取F值进行排名。表4为完整的评分样例，一共八个实验测试，分别包含两种评测指标和两种模态（详见下文4.1）。其中，Smatch评分仅用于和其他语言的AMR解析进行对比，不计入最终排名。
+# 4 评测赛程
+## 4.1 模态选择
+本次评测任务包含开放测试（Open Modality）和封闭测试（Closed Modality）：
+1. 若参赛队选择封闭测试，则必须使用指定的训练集、测试集和预训练语言模型，不可自行替换为别的资源。在封闭测试中，主办方提供训练集的依存分析结果，并推荐使用哈工大的HIT_Roberta预训练模型（Cui et al.，2021）。
+2. 若参赛队也选择开放测试，预训练语言模型可自由选择，允许使用外部资源，如专名识别、依存句法分析结果等。开放测试中，参赛队使用的所有资源需要在最终提交的技术报告中给予详细说明。但无论哪种模态，均不可使用人工修正自动解析结果的方式。
 
 <table align="center">
-<p align="center">表4 评分样例</p>
+<p align="center">表4 两种模态的评测要求</p>
+<thead>
+  <tr>
+    <th align='center'>可用资源</th>
+    <th style="text-align:center">封闭测试</th>
+    <th align='center'>开放测试</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td align='center'>算法</td>
+    <td align='center'>无限制</td>
+    <td align='center'>无限制</td>
+  </tr>
+  <tr>
+    <td align='center'>预训练模型</td>
+    <td align='center'>HIT_Roberta、依存句法分析结果</td>
+    <td align='center'>无限制</td>
+  </tr>
+  <tr>
+    <td align='center'>语料</td>
+    <td align='center'>仅训练、测试集</td>
+    <td align='center'>无限制</td>
+  </tr>
+  <tr>
+    <td align='center'>人工修正</td>
+    <td align='center'>禁止</td>
+    <td align='center'>禁止</td>
+  </tr>
+</tbody>
+</table>
+
+为了更加完整、精确地解析CAMR，本次评测任务采用Align-smatch评测标准。各参赛队最终生成的CAMR中需包含概念对齐信息和关系对齐信息，最终成绩评分按照Align-smatch评测标准，取F值进行排名。表5为完整的评分样例，一共八个实验测试，分别包含两种评测指标和两种模态。其中，Smatch评分仅用于和其他语言的AMR解析进行对比，不计入最终排名。
+
+<table align="center">
+<p align="center">表5 评分样例</p>
 <thead>
   <tr>
     <th>Metrics</th>
@@ -347,77 +399,17 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 </table>
 
 
-# 4 评测赛程
-## 4.1 模态选择
-本次评测任务包含开放测试（Open Modality）和封闭测试（Closed Modality）：
-1. 若参赛队选择封闭测试，则必须使用指定的训练集、测试集和预训练语言模型，不可自行替换为别的资源。在封闭测试中，主办方提供训练集的依存分析结果，并推荐使用哈工大的HIT_Roberta预训练模型（Cui et al.，2021）。
-2. 若参赛队也选择开放测试，预训练语言模型可自由选择，允许使用外部资源，如专名识别、依存句法分析结果等。开放测试中，参赛队使用的所有资源需要在最终提交的技术报告中给予详细说明。但无论哪种模态，均不可使用人工修正自动解析结果的方式。
-
-<table align="center">
-<p align="center">表5 两种模态的评测要求</p>
-<thead>
-  <tr>
-    <th align='center'>可用资源</th>
-    <th style="text-align:center">封闭测试</th>
-    <th align='center'>开放测试</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td align='center'>算法</td>
-    <td align='center'>无限制</td>
-    <td align='center'>无限制</td>
-  </tr>
-  <tr>
-    <td align='center'>预训练模型</td>
-    <td align='center'>HIT_Roberta、依存句法分析结果</td>
-    <td align='center'>无限制</td>
-  </tr>
-  <tr>
-    <td align='center'>语料</td>
-    <td align='center'>仅训练、测试集</td>
-    <td align='center'>无限制</td>
-  </tr>
-  <tr>
-    <td align='center'>人工修正</td>
-    <td align='center'>禁止</td>
-    <td align='center'>禁止</td>
-  </tr>
-</tbody>
-</table>
-
-
-## 4.2 赛程
-2022年6月10日：评测报名开始，发布训练集以及验证集给参赛队，提供Align-smatch评测软件下载地址。
-
-2022年8月8日：报名截止。
-
-2022年8月10日：发布测试集（Test A）和盲测（Test B）数据集给参赛队。
-
-2022年8月20日：参赛队提交自动标注的数据。
-
-2022年8月26日：发布测试集（Test A）和盲测（Test B）的黄金标准答案给参赛队。
-
-2022年9月5日：参赛队提交中文抽象语义表示评测任务技术报告，用于审稿。
-
-2022年9月30日：参赛队提交技术报告最终版。
-
-2022年10月14日-16日：CCL 2022评测研讨会，线上公布最终排名，评测结束。
-
-**报名入口：**
-<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">点我报名</a>
-
-## 4.3 报告格式
+## 4.2 报告格式
 1.  报告可由中文或英文撰写。
 2.  报告统一使用<a href="http://cips-cl.org/static/CCL2022/downloads/ccl2022_template.zip">CCL 2022</a>的论文模版。
 3.  报告正文不得超过4页，参考文献页数不限。
 4.  报告应至少包含以下四个部分：模型介绍、评测结果、结果分析与讨论和参考文献。
 
 
-## 4.4 语料来源
+## 4.3 语料来源
 参赛队伍需自行向LDC申请CAMRP 2022评测语料使用权，并签署保密协议：
 1.	每支参赛队伍需指派一名联系负责人。
-2.	参赛队伍联系负责人需填写[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)，并自行提交给LDC（<ldc@ldc.upenn.edu>）。
+2.	参赛队伍联系负责人需填写[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)，扫描后通过E-mail发送给LDC（<ldc@ldc.upenn.edu>）。
 3.	申请通过后，LDC将返回CAMRP v2.0E版本语料库给参赛队伍联系负责人，以供参赛队伍使用。该语料数据只可用于本次CAMRP 2022评测任务，不可有其他任何用途。
 4.	本次评测语料数据集的版权归<a href="https://www.ldc.upenn.edu/">LDC</a>所有。详见[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)。
 
