@@ -8,12 +8,12 @@
 
 **Chinese Version**: [README.md](./README.md)
 
-[![signup](https://img.shields.io/badge/CAMRP2022-GoogleForm-blue.svg "sign up")](https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url)
+[![signup](https://img.shields.io/badge/CAMRP_2022-Google_Form-blue.svg "sign up")](https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url)
 
 **Entry Form:**
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
 
-[![agreement](https://img.shields.io/badge/CAMRP2022-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
+[![agreement](https://img.shields.io/badge/CAMRP_2022-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
 
 **Participants must sign the LDC Evaluation License Agreement for the data/corpora used in the CAMRP 2022 Evaluation Task will be authorized via <a href="https://www.ldc.upenn.edu/">LDC</a> only:**
 1.	Each team should designate a member as the data contact person.
@@ -22,7 +22,7 @@
 4.	For details, please refer to the [LDC Evaluation License Agreement](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf).
 
 
-[![body](https://img.shields.io/badge/CAMRP2022-NanjingNormalUniversity-green.svg "CAMRP 2022")](https://github.com/GoThereGit/Chinese-AMR/blob/main/README.md)
+[![body](https://img.shields.io/badge/CAMRP_2022-Nanjing_Normal_University-green.svg "CAMRP 2022")](https://github.com/GoThereGit/Chinese-AMR/blob/main/README.md)
 
 * Orgnizers:
   * **Bin Li** (Nanjing Normal University, Nanjing, China) (E-mail: <libin.njnu@gmail.com>)
@@ -150,6 +150,13 @@ All files are encoded in UTF-8.
  <p>Figure 3: Data sample of CAMR</p>
 </div>
 
+For details, please refer to:
+
+[![sample](https://img.shields.io/badge/sample-CAMR_text-red.svg "CAMR_text")](./docs/samples/CAMR_text.png)
+
+[![sample](https://img.shields.io/badge/sample-CAMR_dep-green.svg "CAMR_dep")](./docs/samples/CAMR_dep.png)
+
+[![sample](https://img.shields.io/badge/sample-CAMR_tuple-red.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.png)
 
 ## 3.2 Data Set
 Chinese Abstract Meaning Representation Corpus was constructed and cooperated by Nanjing Normal University and Bradeis University from 2015. 
