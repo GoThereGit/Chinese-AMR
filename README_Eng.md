@@ -40,7 +40,7 @@
 
 # 1 Introduction
 With the growing maturity of morphological analysis and syntactic analysis techniques, 
-natural language processing in general has advanced to the level of semantic analysis (Sun et al., 2014). More specifically, 
+natural language processing in general has advanced to the level of semantic analysis. More specifically, 
 sentence-level meaning parsing has already occupied the core position of semantic analysis research. 
 To address the lack of whole-sentence semantic representation and the domain-dependent problem of sentence semantic annotation, 
 Banarescu et al. (2013) proposed a domain-independent whole-sentence semantic representation method called Abstract Meaning Representation (AMR) that can abstract the meaning of a sentence with a single-rooted, acyclic and directed graph and predicts the semantic structure of the targeted sentence. 
