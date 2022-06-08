@@ -121,11 +121,11 @@ we aim to evaluate Chinese AMR parsing **only**, and of course with Align-smatch
 * **August 8, 2022**
   * Enrolment Deadline
 * **August 10, 2022**
-  * Release of Test Set (Test A) and Blind Set (Test B)
+  * Release of Test Set (Test A and Test B)
 * **August 20, 2022**
   * Submission of Annotated Data
 * **August 26, 2022**
-  * Release of Gold Data of Test Set (Test A) and Blind Set (Test B)
+  * Release of Gold Data of Test Set (Test A and Test B)
 * **September 5, 2022**
   * Submission of Technical Report
   * Reviewer Feedback Available
@@ -176,7 +176,7 @@ The data in blind test is not released yet. Table 1 shows the distribution of ea
     <td align='center'>386234</td>
   </tr>
   <tr>
-    <td align='center'>Validation Set</td>
+    <td align='center'>Dev Set</td>
     <td align='center'>1789</td>
     <td align='center'>41822</td>
   </tr>
@@ -194,7 +194,7 @@ The data in blind test is not released yet. Table 1 shows the distribution of ea
 </table>
 
 
-# 4 Evaluation Metrics
+# 4 Evaluation Metrics and Modalities
 ## 4.1 Smatch 
 
 As the most widely-used evaluation metric, smatch focuses on the overlapping of two AMR graphs. For two AMR graphs to be matched, smatch first renames the nodes of AMR graphs and transforms each AMR graph into a set of triples (S. Cai et al., 2013). There are three categories of triples as following:
@@ -353,8 +353,7 @@ $$ P = {{count(Matching\enspace Tuples)} \over {count(Generated\enspace Tuples)}
 $$ R = {{count(Matching\enspace Tuples)} \over {count(Gold\enspace Tuples)}} $$
 $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 
-# 5 Task Requirements
-# 5.1 Two Modalities
+## 4.3 Two Modalities
 The evaluation task includes **Open Modality** and **Closed Modality**:
 1.	Once chosen Closed Modality, the participants must use the training data, test data and pre-trained model which are all designated in advance. No alternative is allowed. We also offer dependency analysis results of training set for each team under Closed Modality. HIT_Roberta from Harbin Institue of Technology (Cui et al., 2021) as pre-trained model is highly recommended. 
 2.	Once chosen Open Modality, the participants are allowed to use pre-trained model and external resources such as named entities and dependency analysis results with no limits. Note that all kinds of resources that participants employ should be mentioned and written in detail in the final technical report. Manual correction is forbidden in both modalities.
@@ -376,12 +375,17 @@ The evaluation task includes **Open Modality** and **Closed Modality**:
   </tr>
   <tr>
     <td align='center'>Pre-trained Model</td>
-    <td align='center'>HIT_Roberta, Dependency Tree</td>
+    <td align='center'>HIT_Roberta</td>
     <td align='center'>No Limit</td>
-  </tr>
+  </tr>	
+   <tr>
+    <td align='center'>External Resource</td>
+    <td align='center'>Dependency Tree</td>
+    <td align='center'>No Limit</td>
+  </tr>	
   <tr>
     <td align='center'>Data Set</td>
-    <td align='center'>Training Set, Validation Set</td>
+    <td align='center'>Training Set, Dev Set</td>
     <td align='center'>No Limit</td>
   </tr>
   <tr>
@@ -465,17 +469,17 @@ To better parse and evaluate Chinese AMR, our evaluation task use Align-smatch a
 </tbody>
 </table>
 
-## 5.2 Writing the Technical Report
+# 5 Writing the Technical Report
 1.	Technical report can be written in both **Chinese** or **English**.
 2.	Technical report should be formatted according to <a href="http://cips-cl.org/static/CCL2022/downloads/ccl2022_template.zip">CCL 2022 template</a>.
 3.	The maximum length should be 4 pages (excluding references).
 4.	Technical report should include at least the following sections: **introduction**, **evaluation results**, **result analysis** and **references**.
 
-## 5.3 Awards
+# 6 Awards
 Awards include **First Prize**, **Second Prize** and **Third Prize**, 
 and each team will be awarded with a unique certificate presented by **Chinese Information Processing Society of China** (CIPS).
 
-# 6 References
+# 7 References
 1. Banarescu, Laura, et al. "Abstract meaning representation for sembanking." Proceedings of the 7th linguistic annotation workshop and interoperability with discourse. 2013.
 2. Li, Bin, et al. "Building a Chinese AMR bank with concept and relation alignments." Linguistic Issues in Language Technology 18 (2019).
 3. Cai, Shu, and Kevin Knight. "Smatch: an evaluation metric for semantic feature structures." Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers). 2013.
