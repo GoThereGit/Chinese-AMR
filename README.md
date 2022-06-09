@@ -107,7 +107,7 @@
   
   然而，英文AMR的缺点在于不包含概念和关系对齐信息，这给语料的训练与自动解析都带来了困扰。CAMR增加了概念关系对齐的机制，但为了和英文AMR保持格式相融，没有能在CoNLL 2020的评测中使用对齐信息。目前包括CoNLL在内的所有实验和评测所使用的指标都是基于英文AMR设计的，并不能很好地针对CAMR的特点进行兼容。评测所使用的Smatch评测指标无法对CAMR的概念和关系对齐信息进行解析和评测。因此，为了弥补CAMR解析评测在对齐信息上的空缺，为CAMR自动解析工作的提供新的标准，肖力铭等
   <sup>
- <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/references/%E5%9F%BA%E4%BA%8E%E6%A6%82%E5%BF%B5%E5%85%B3%E7%B3%BB%E5%AF%B9%E9%BD%90%E7%9A%84%E4%B8%AD%E6%96%87%E6%8A%BD%E8%B1%A1%E8%AF%AD%E4%B9%89%E8%A1%A8%E7%A4%BA%E8%A7%A3%E6%9E%90%E8%AF%84%E6%B5%8B%E6%96%B9%E6%B3%95.pdf">
+ <a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2022&filename=MESS202201003&uniplatform=NZKPT&v=adniY_3P-0OTOYRAeX1Vw4Lg3POhq_Z3RIyf5-C0dU37LDFuc1MRtK17sV_Wjtkk">
   [7]
  </a>
 </sup>
