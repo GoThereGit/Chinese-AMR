@@ -195,8 +195,8 @@ The data in blind test is not released yet. Table 1 shows the distribution of ea
   </tr>
   <tr>
     <td align='center'>Test B</td>
-    <td align='center'>around 2000</td>
-    <td align='center'>around 40,000</td>
+    <td align='center'>2000 (approx.)</td>
+    <td align='center'>40,000 (approx.)</td>
   </tr>
 </tbody>
 </table>
