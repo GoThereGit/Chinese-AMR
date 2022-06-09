@@ -66,7 +66,7 @@
   [2]
  </a>
 </sup>
-提出了一种与领域无关的、通用的整句语义表示方法——抽象语义表示（Abstract Meaning Representation，AMR）。该方法使用单根有向无环图，来表示一个句子的语义结构，并且建设了规模较大的语料库，进行了两次国际AMR语义解析评测。中文抽象语义表示（Chinese AMR，简称CAMR）语料库的构建已初具规模
+提出了一种与领域无关的、通用的整句语义表示方法——抽象语义表示（Abstract Meaning Representation，AMR）。该方法使用单根有向无环图，来表示一个句子的语义结构，并且建设了规模较大的语料库，进行了两次国际AMR语义解析评测。中文抽象语义表示（Chinese AMR，CAMR）语料库的构建已初具规模
 <sup>
  <a href="https://aclanthology.org/W16-1702.pdf">
   [3]
@@ -79,7 +79,7 @@
   [4]
  </a>
 </sup>
-，并针对中文特点增加了一些语义标签。概念关系对齐信息并没有用于CoNLL2020的评测。因此，本次评测重新设计了包含了概念关系对齐的信息的新评测指标Align-smatch，能够更好地评估自动解析的性能。
+，并针对中文特点增加了一些语义标签。概念关系对齐信息并没有用于CoNLL 2020的评测。因此，本次评测重新设计了包含了概念关系对齐的信息的新评测指标Align-smatch，能够更好地评估自动解析的性能。
 ## 1.1 AMR介绍
   AMR可以将一个句子的语义抽象为一个单根有向无环图，其中词抽象为概念节点（Node），词之间的语义关系抽象为带有语义角色标签的有向弧（Arc）。这种表示方法不仅可以描写一个名词由多个谓词支配所形成的论元共享（Argument Sharing）现象，还允许增加、删除、修改概念节点以补充隐含语义，进而更加完整地表达句子语义。
   
@@ -154,18 +154,75 @@
 
 <div align=center>
 <img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_3.png">
- <p>图3 CAMR数据样例</p>
+ <p>图3 CAMR文本表示数据样例</p>
 </div>
 
 图3为评测语料的CAMR数据样例，具体包括句子ID、词序列、词编号（x）、概念对齐信息、关系对齐信息和CAMR文本表示；语料编码格式为UTF-8。
 
-## 2.2 任务说明
+本次评测任务提供三种数据，包括**CAMR文本表示**、**依存句法分析结果**及**CAMR多元组表示**：
 
 [![sample](https://img.shields.io/badge/sample-CAMR_text-red.svg "CAMR_text")](./docs/samples/CAMR_text.png)
 
 [![sample](https://img.shields.io/badge/sample-CAMR_dep-green.svg "CAMR_dep")](./docs/samples/CAMR_dep.png)
 
-[![sample](https://img.shields.io/badge/sample-CAMR_tuple-red.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.png)
+[![sample](https://img.shields.io/badge/sample-CAMR_tuple-blue.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.png)
+
+## 2.2 任务说明
+
+**输入句子：**
+
+``
+希望我惨痛的经历给大家一个教训呀！
+``
+
+**输出CAMR多元组：**
+
+``
+x0	root	-	:top	-	-	x1	希望-01	-
+``
+
+``
+x1	希望-01	-	:arg1	-	-	x6	给-01	-
+``
+
+``
+x1	希望-01	-	:mode	-	-	x11	expressive	-
+``
+
+``
+x6	给-01	-	:arg0	-	-	x5	经历	-
+``
+
+``
+x6	给-01	-	:arg2	-	-	x7	大家	-
+``
+
+``
+x6	给-01	-	:arg1	-	-	x10	教训	-
+``
+
+``
+x5	经历	-	:poss	-	-	x2	我	-
+``
+
+``
+x5	经历	-	:arg0-of	x4	的	x3	惨痛-01	-
+``
+
+``
+x10	教训	-	:quant	-	-	x8	1	-
+``
+
+``
+x10	教训	-	:cunit	-	-	x9	个	-
+``
+
+**评测标准：**
+
+``
+Align-smatch
+``
+
 
 ## 2.3 数据集
 中文抽象语义表示语料库（Chinese Abstract Meaning Representation Corpus）于2015年开始，由南京师范大学和美国布兰迪斯大学合作构建
@@ -406,12 +463,17 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
   </tr>
   <tr>
     <td align='center'>预训练模型</td>
-    <td align='center'>HIT_Roberta、依存句法分析结果</td>
+    <td align='center'>HIT_Roberta</td>
+    <td align='center'>无限制</td>
+  </tr>
+   <tr>
+    <td align='center'>外部资源</td>
+    <td align='center'>依存句法分析结果</td>
     <td align='center'>无限制</td>
   </tr>
   <tr>
     <td align='center'>语料</td>
-    <td align='center'>仅训练、测试集</td>
+    <td align='center'>指定训练集和测试集</td>
     <td align='center'>无限制</td>
   </tr>
   <tr>
