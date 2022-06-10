@@ -6,6 +6,31 @@
 
 # <p align="center"><font size=50><strong>中文抽象语义表示解析评测任务</strong></font></p>
 
+# 最新消息：
+
+<table>
+<p align="center"></p>
+<thead>
+  <tr>
+    <th style="text-align:center">时间</th>
+    <th style="text-align:center">消息</th>
+    
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td align='center'>6月10日</td>
+    <td align='center'>评测任务<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">报名</a>开始</td>
+    
+  </tr>
+  <tr>
+    <td align='center'>6月15日</td>
+    <td align='center'>提供评测软件Align-smatch（原6月10日）</td>   
+  </tr>
+</tbody>
+</table>
+
+
 [![Eng](https://img.shields.io/badge/README-English-yellow.svg "English Version")](./README_Eng.md)
 
 **English Version:** <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/README_Eng.md">README_Eng.md</a>
