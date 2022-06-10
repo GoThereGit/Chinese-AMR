@@ -20,7 +20,7 @@
 <tbody>
   <tr>
     <td align='center'>6月10日</td>
-    <td align='center'>评测任务<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">报名</a>开始</td>
+    <td align='center'>评测任务<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">报名</a>开始，发布训练集和验证集<a href="#anchor1">数据</a></td>
     
   </tr>
   <tr>
@@ -55,7 +55,7 @@
 
 [![agreement](https://img.shields.io/badge/CAMRP_评测语料许可协议-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
 
-**参赛队伍需自行向LDC申请CAMRP 2022评测语料使用权，并签署保密协议：**
+**参赛队伍需自行向LDC申请CAMRP 2022评测语料使用权，并签署保密协议：**<a name="anchor1"></a>
 1.	每支参赛队伍需指派一名联系负责人。
 2.	参赛队伍联系负责人需填写[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)，扫描后通过E-mail发送给LDC（<ldc@ldc.upenn.edu>）。
 3.	申请通过后，LDC将返回CAMRP v2.0E版本语料库给参赛队伍联系负责人，以供参赛队伍使用。该语料数据只可用于本次CAMRP 2022评测任务，不可有其他任何用途。
