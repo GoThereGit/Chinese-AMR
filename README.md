@@ -55,7 +55,10 @@
 
 [![agreement](https://img.shields.io/badge/CAMRP_评测语料许可协议-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
 
-**参赛队伍需自行向LDC申请CAMRP 2022评测语料使用权，并签署保密协议：**<a name="anchor1"></a>
+
+<a name="anchor1"></a>
+
+**参赛队伍需自行向LDC申请CAMRP 2022评测语料使用权，并签署保密协议：**
 1.	每支参赛队伍需指派一名联系负责人。
 2.	参赛队伍联系负责人需填写[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)，扫描后通过E-mail发送给LDC（<ldc@ldc.upenn.edu>）。
 3.	申请通过后，LDC将返回CAMRP v2.0E版本语料库给参赛队伍联系负责人，以供参赛队伍使用。该语料数据只可用于本次CAMRP 2022评测任务，不可有其他任何用途。
@@ -161,7 +164,7 @@
 。最后，沿用概念对齐中编号的方案，有向弧上的虚词同样被赋予了顺序的编号，以实现关系对齐。如图2所示，虚词“的”和语义角色标签“arg0-of”一起被标注在了有向弧上，又由于它是第4个词，因而被编号为“x4”，以上两个步骤完成了语义关系“arg0-of”和虚词“x4/的”的对齐。
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_2.png" >
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_2.png" width=800>
  <p>图2 例句“希望我惨痛的经历给大家一个教训呀”的CAMR图示</p>
 </div>
 
@@ -171,7 +174,7 @@
  <a href="https://dspace.library.uu.nl/bitstream/handle/1874/414809/2020.conll_shared.1.pdf?sequence=1&isAllowed=y">
   [9]
  </a>
-</sup>，本次评测任务是对中文AMR解析评测，评测标准选用更加细致的Align-smatch评测标准，包括了概念对齐信息和关系对齐信息（详见下文3.2）。
+</sup>，本次评测任务是对中文AMR解析评测，评测标准选用更加细致的Align-smatch评测标准，包括了概念对齐信息和关系对齐信息（<a href="#anchor3.2">详见下文3.2</a>）。
 
 # 2 评测数据
 
@@ -197,7 +200,7 @@
 **输入句子：**
 
 ``
-希望我惨痛的经历给大家一个教训呀！
+希望我惨痛的经历给大家一个教训呀
 ``
 
 **输出CAMR多元组：**
@@ -274,7 +277,7 @@ Align-smatch
     <td align='center'>386234</td>
   </tr>
   <tr>
-    <td align='center'>验证集（Validation Set）</td>
+    <td align='center'>验证集（Dev Set）</td>
     <td align='center'>1789</td>
     <td align='center'>41822</td>
   </tr>
@@ -314,7 +317,7 @@ node_index1和node_index2表示为两个不同概念节点的索引，分别对�
 如表2所示，节点属性三元组root($a_0$, top)表示$a_0$节点的属性为根节点，其中，value=top。
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_4.png" >
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_4.png" width=800>
  <p>图4 例句“希望我惨痛的经历给大家一个教训呀”的CAMR图示（带有节点索引）</p>
 </div>
 
@@ -379,6 +382,7 @@ Smatch自提出以来被广泛使用于AMR解析评测，但其仍然存在一�
 </sup>
 。
 
+<a name="anchor3.2"></a>
 ## 3.2 作为主要标准的Align-smatch评测指标
 Align-smatch在Smatch的基础上增添了两种新的数据：概念对齐信息和关系对齐信息
 <sup>
