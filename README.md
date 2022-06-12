@@ -20,7 +20,7 @@
 <tbody>
   <tr>
     <td align='center'>6月10日</td>
-    <td align='center'>评测任务<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">报名</a>开始，发布训练集和验证集<a href="#anchor1">数据</a></td>
+    <td align='center'>评测任务<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">报名</a>开始，LDC发布训练集和验证集<a href="#anchor1">数据</a></td>
     
   </tr>
   <tr>
@@ -37,15 +37,15 @@
 
 [![signup](https://img.shields.io/badge/CAMRP_2022-报名-blue.svg "sign up")](https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM)
 
-2022年6月10日：<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">**评测报名**</a>开始，发布训练集以及验证集给参赛队，提供Align-smatch评测软件下载地址。
+2022年6月10日：<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">**评测报名**</a>开始，LDC发布训练集以及验证集给参赛队，提供Align-smatch评测软件下载地址。
 
 2022年8月8日：报名截止。
 
-2022年8月10日：发布测试集（包含Test A和Test B）给参赛队。
+2022年8月10日：本站发布测试集（包含Test A和Test B）给参赛队。
 
 2022年8月20日：参赛队提交自动标注的数据。
 
-2022年8月26日：发布测试集（包含Test A和Test B）黄金标准答案给参赛队。
+2022年8月26日：本站发布测试集（包含Test A和Test B）黄金标准答案给参赛队。
 
 2022年9月5日：参赛队提交中文抽象语义表示评测任务技术报告，用于审稿。
 
