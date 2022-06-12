@@ -112,7 +112,7 @@ for it is the fourth word in original sentence. Finally, we could say the functi
 namely the **relation alignment**.
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_2.png" >
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_2.png" width=800>
  <p>Figure 2: CAMR graph of the sample sentence "希望我惨痛的经历给大家一个教训呀"</p>
 </div>
 
@@ -150,7 +150,7 @@ we aim to evaluate Chinese AMR parsing **only**, and of course with Align-smatch
 
 # 3 Data
 ## 3.1 Data Sample
-Figure 3 is a copy of CAMR data sample from training set, detailed with sentence ID, word tokens, 
+We offer three kinds of data sets including: CAMRP text, CAMRP dependency anaylsis and CAMRP tuple. Figure 3 is a copy of CAMR text data sample from training set, detailed with sentence ID, word tokens, 
 word ID, alignment of concept and relation, and the text representation of CAMR. 
 All files are encoded in UTF-8. 
 
@@ -229,8 +229,8 @@ As shown in Table 2, the property triple “root($a_0$, top)” indicates that t
 
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_4.png" >
- <p>Figure 4: CAMR graph of the sample sentence "希望我惨痛的经历给大家一个教训呀"(with indices)</p>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_4.png" width=800>
+ <p>Figure 4: CAMR graph of the sample sentence "希望我惨痛的经历给大家一个教训呀" (with indices)</p>
 </div>
 
 
