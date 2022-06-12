@@ -137,7 +137,6 @@ we aim to evaluate Chinese AMR parsing **only**, and of course with Align-smatch
   * Release of Gold Data of Test Set (Test A and Test B)
 * **September 5, 2022**
   * Submission of Technical Report
-  * Reviewer Feedback Available
 * **September 30, 2022**
   * Final Submission of Camera-Ready Technical Report
   * Evaluation Period
