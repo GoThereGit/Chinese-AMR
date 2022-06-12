@@ -4,18 +4,26 @@
 
 # <p align="center">Chinese Abstract Meaning Representation Parsing 2022</p>
 
+# News and Updates
+* June 10, 2022
+  * Initial Public Call for <a href="#anchor1">Participation</a>
+  * <a href="#anchor2">Release</a> of Training Set and Dev Set
+* June 15, 2022
+  * Release of the evaluation tool Align-smatch (original date: June 10)
+
 [![Zh](https://img.shields.io/badge/README-Chinese-yellow.svg "Zh")](./README.md)
 
 **Chinese Version**: [README.md](./README.md)
 
+<a name="anchor1"></a>
 [![signup](https://img.shields.io/badge/CAMRP_2022-Google_Form-blue.svg "sign up")](https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url)
 
-**Entry Form:**
+**Entry Form:** 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
 
 [![agreement](https://img.shields.io/badge/CAMRP_2022-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
 
-
+<a name="anchor2"></a>
 **Participants must sign the LDC Evaluation License Agreement for the data/corpora used in the CAMRP 2022 Evaluation Task will be authorized via <a href="https://www.ldc.upenn.edu/">LDC</a> only:**
 1.	Each team should designate a member as the data contact person.
 2.	Each data contact person must fill in the [LDC Evaluation License Agreement](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf) and send a signed copy of the agreement to LDC (<ldc@ldc.upenn.edu>).
@@ -88,7 +96,7 @@ the Chinese word “惨痛” is the third word in original sentence and therefo
 indicating the alignment with the concept node “x3/惨痛-01”, namely the **concept alignment**.
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_1.png">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/Figure_1_En.jpg">
  <p>Figure 1: CAMR text representation of the sample sentence "希望我惨痛的经历给大家一个教训呀"</p>
 </div>
 
@@ -496,4 +504,5 @@ and each team will be awarded with a unique certificate presented by **Chinese I
 6. Li, Bin, et al. "Annotating the little prince with chinese amrs." Proceedings of the 10th linguistic annotation workshop held in conjunction with ACL 2016 (LAW-X 2016). 2016.
 7. Abzianidze, L., et al. "MRP 2020: The second shared task on cross-framework and cross-lingual meaning representation parsing." Proceedings of the CoNLL 2020 Shared Task: Cross-Framework Meaning Representation Parsing (2020): 1-22.
 8. Samuel, David, and Milan Straka. "UFAL at MRP 2020: Permutation-invariant Semantic Parsing in PERIN." arXiv preprint arXiv:2011.00758 (2020).
+9. Song, Linfeng, and Daniel Gildea. "SemBleu: A robust metric for AMR parsing evaluation." arXiv preprint arXiv:1905.10726 (2019).
 
