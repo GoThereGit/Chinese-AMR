@@ -180,7 +180,7 @@
 ## 2.1 数据样例
 本次评测任务提供三种数据，包括**CAMR文本表示**、**依存句法分析结果**及**CAMR多元组表示**。例句“这几天关于中俄战略合作伙伴关系成了大热点。”选自本次评测任务的训练集，以下为对应的三种表示样例：
 
-[![sample](https://img.shields.io/badge/sample-CAMR_text-red.svg "CAMR_text")](./docs/samples/CAMR_text.png)
+[![sample](https://img.shields.io/badge/sample-CAMR_text-red.svg "CAMR_text")](./docs/samples/CAMR_text.txt)
 
 <div align=center>
 <img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/Figure_3.png">
@@ -190,7 +190,7 @@
 图3为例句的CAMR文本表示样例，具体包括句子ID、词序列、词编号（x）、概念对齐信息、关系对齐信息和CAMR文本表示；语料编码格式为UTF-8。
 
 
-[![sample](https://img.shields.io/badge/sample-CAMR_dep-green.svg "CAMR_dep")](./docs/samples/CAMR_dep.png)
+[![sample](https://img.shields.io/badge/sample-CAMR_dep-green.svg "CAMR_dep")](./docs/samples/CAMR_dep.txt)
 
 <div align=center>
 <img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/Figure_4.png" width=800>
@@ -199,7 +199,7 @@
 
 图4为例句的依存句法分析结果样例。在封闭测试中，该依存句法分析结果可作外部资源供参赛队使用（详见<a href="#anchor3.3">3.3 模态选择</a>）。
 
-[![sample](https://img.shields.io/badge/sample-CAMR_tuple-blue.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.png)
+[![sample](https://img.shields.io/badge/sample-CAMR_tuple-blue.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.txt)
 
 <div align=center>
 <img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_5.png" width=800>
