@@ -149,22 +149,36 @@ we aim to evaluate Chinese AMR parsing **only**, and of course with Align-smatch
 
 # 3 Data
 ## 3.1 Data Sample
-We offer three kinds of data sets including: CAMRP text, CAMRP dependency anaylsis and CAMRP tuple. Figure 3 is a copy of CAMR text data sample from training set, detailed with sentence ID, word tokens, 
+We offer three kinds of data sets including: CAMR text, dependency analysis results and CAMR tuples. 
+
+[![sample](https://img.shields.io/badge/sample-CAMR_text-red.svg "CAMR_text")](./docs/samples/CAMR_text.txt)
+
+<div align=center>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/Figure_3.png">
+ <p>Figure 3: Data sample of CAMR text representation</p>
+</div>
+
+Figure 3 is a copy of CAMR text data sample from training set, detailed with sentence ID, word tokens, 
 word ID, alignment of concept and relation, and the text representation of CAMR. 
 All files are encoded in UTF-8. 
 
+[![sample](https://img.shields.io/badge/sample-CAMR_dep-green.svg "CAMR_dep")](./docs/samples/CAMR_dep.txt)
+
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_3.png">
- <p>Figure 3: Data sample of CAMR</p>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/Figure_4.png">
+ <p>Figure 4: Data sample of dependency analysis result</p>
 </div>
 
-For details, please refer to:
+Figure 4 is a copy of dependency analysis result. Note that in the closed modality, participants are allowed to use dependency analysis results as the external resource for training (more info please refer to <a href="#anchor4.3">4.3 Two Modalities</a>).
 
-[![sample](https://img.shields.io/badge/sample-CAMR_text-red.svg "CAMR_text")](./docs/samples/CAMR_text.png)
+[![sample](https://img.shields.io/badge/sample-CAMR_tuple-blue.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.txt)
 
-[![sample](https://img.shields.io/badge/sample-CAMR_dep-green.svg "CAMR_dep")](./docs/samples/CAMR_dep.png)
+<div align=center>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_5.png">
+ <p>Figure 5: Data sample of CAMR tuple representation</p>
+</div>
 
-[![sample](https://img.shields.io/badge/sample-CAMR_tuple-blue.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.png)
+Figure 5 is a copy of CAMR tuple representation including sentence ID (sid), node_1 ID (nid1), concept_1 (concept1), co-reference node_1 (coref1), relation (rel), relation ID (rid), relation alignment word (ralign), node_2 ID (nid2), concept_2 (concept2) and co-reference node_2 (coref2).
 
 ## 3.2 Data Set
 Chinese Abstract Meaning Representation Corpus was constructed and cooperated by Nanjing Normal University and Bradeis University from 2015. 
@@ -220,7 +234,7 @@ As the most widely-used evaluation metric, smatch focuses on the overlapping of 
 
 2.	**Arc triple: relation(node_index1, node_index2).**
 
-“node_index1” and “node_index2” are indexs of two different concept nodes, and their mappings are “$a_i$” and “$a_j$”, respectively. As always, $j∈${$0,1,…,n$}. Note that the assignments of indexs can be without order and totally random. For the sake of simplicity, we follow the easiest way to assign each node with sequential index in Figure 5. “relation” is the semantic relation between the index “$a_i$” and “$a_j$”. As shown in Figure 2, the arc triple “arg1($a_1$, $a_4$)” means that the semantic relation between the mapping words of the index “$a_1$” and “$a_4$” is “arg1 (Object)”.
+“node_index1” and “node_index2” are indexs of two different concept nodes, and their mappings are “$a_i$” and “$a_j$”, respectively. As always, $j∈${$0,1,…,n$}. Note that the assignments of indexs can be without order and totally random. For the sake of simplicity, we follow the easiest way to assign each node with sequential index in Figure 6. “relation” is the semantic relation between the index “$a_i$” and “$a_j$”. As shown in Figure 2, the arc triple “arg1($a_1$, $a_4$)” means that the semantic relation between the mapping words of the index “$a_1$” and “$a_4$” is “arg1 (Object)”.
 
 3.	**Node property triple: property(node_index, value).**
 
@@ -228,8 +242,8 @@ As shown in Table 2, the property triple “root($a_0$, top)” indicates that t
 
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_4.png" width=800>
- <p>Figure 4: CAMR graph of the sample sentence "希望我惨痛的经历给大家一个教训呀" (with indices)</p>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_6.png" width=800>
+ <p>Figure 6: CAMR graph of the sample sentence "希望我惨痛的经历给大家一个教训呀" (with indices)</p>
 </div>
 
 
@@ -367,6 +381,8 @@ Similar to smatch, **Precision** in align-smatch is the ratio of the maximum num
 $$ P = {{count(Matching\enspace Tuples)} \over {count(Generated\enspace Tuples)}} $$
 $$ R = {{count(Matching\enspace Tuples)} \over {count(Gold\enspace Tuples)}} $$
 $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
+
+<a name="anchor4.3"></a>
 
 ## 4.3 Two Modalities
 The evaluation task includes **Open Modality** and **Closed Modality**:
