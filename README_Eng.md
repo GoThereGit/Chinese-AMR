@@ -96,7 +96,7 @@ the Chinese word “惨痛” is the third word in original sentence and therefo
 indicating the alignment with the concept node “x3/惨痛-01”, namely the **concept alignment**.
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/Figure_1_En.jpg">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/Figure_1_En.png">
  <p>Figure 1: CAMR text representation of the sample sentence "希望我惨痛的经历给大家一个教训呀"</p>
 </div>
 
