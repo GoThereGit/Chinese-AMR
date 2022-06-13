@@ -41,11 +41,11 @@
 
 2022年8月8日：报名截止。
 
-2022年8月10日：本站发布测试集（包含Test A和Test B）给参赛队。
+2022年8月10日：**本站**发布测试集（包含Test A和Test B）给参赛队。
 
 2022年8月20日：参赛队提交自动标注的数据。
 
-2022年8月26日：本站发布测试集（包含Test A和Test B）黄金标准答案给参赛队。
+2022年8月26日：**本站**发布测试集（包含Test A和Test B）黄金标准答案给参赛队。
 
 2022年9月5日：参赛队提交中文抽象语义表示评测任务技术报告，用于审稿。
 
@@ -179,71 +179,60 @@
 # 2 评测数据
 
 ## 2.1 数据样例
-
-<div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_3.png">
- <p>图3 CAMR文本表示数据样例</p>
-</div>
-
-图3为评测语料的CAMR数据样例，具体包括句子ID、词序列、词编号（x）、概念对齐信息、关系对齐信息和CAMR文本表示；语料编码格式为UTF-8。
-
-本次评测任务提供三种数据，包括**CAMR文本表示**、**依存句法分析结果**及**CAMR多元组表示**：
+本次评测任务提供三种数据，包括**CAMR文本表示**、**依存句法分析结果**及**CAMR多元组表示**。
 
 [![sample](https://img.shields.io/badge/sample-CAMR_text-red.svg "CAMR_text")](./docs/samples/CAMR_text.png)
 
+<div align=center>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_3.png">
+ <p>图3 CAMR文本表示样例</p>
+</div>
+
+图3为评测语料的CAMR文本表示样例，具体包括句子ID、词序列、词编号（x）、概念对齐信息、关系对齐信息和CAMR文本表示；语料编码格式为UTF-8。
+
+
 [![sample](https://img.shields.io/badge/sample-CAMR_dep-green.svg "CAMR_dep")](./docs/samples/CAMR_dep.png)
+
+<div align=center>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_4.png" width=800>
+ <p>图4 依存句法分析结果样例</p>
+</div>
+
+图4为评测语料的依存句法分析结果样例。
 
 [![sample](https://img.shields.io/badge/sample-CAMR_tuple-blue.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.png)
 
+<div align=center>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_5.png" width=800>
+ <p>图5 CAMR多元组表示样例</p>
+</div>
+
+图5为评测语料的CAMR多元组表示样例。
+
 ## 2.2 任务说明
 
-**输入句子：**
+**输入：**
+（分词后的句子）
 
 ``
-希望我惨痛的经历给大家一个教训呀
+希望 我 惨痛 的 经历 给 大家 一 个 教训 呀
 ``
 
-**输出CAMR多元组：**
+**输出：**
+（CAMR多元组）
 
-``
-x0	root	-	:top	-	-	x1	希望-01	-
-``
-
-``
-x1	希望-01	-	:arg1	-	-	x6	给-01	-
-``
-
-``
-x1	希望-01	-	:mode	-	-	x11	expressive	-
-``
-
-``
-x6	给-01	-	:arg0	-	-	x5	经历	-
-``
-
-``
-x6	给-01	-	:arg2	-	-	x7	大家	-
-``
-
-``
-x6	给-01	-	:arg1	-	-	x10	教训	-
-``
-
-``
-x5	经历	-	:poss	-	-	x2	我	-
-``
-
-``
-x5	经历	-	:arg0-of	x4	的	x3	惨痛-01	-
-``
-
-``
-x10	教训	-	:quant	-	-	x8	1	-
-``
-
-``
-x10	教训	-	:cunit	-	-	x9	个	-
-``
+|句子编号|节点编号1|概念1|回指节点1|关系|关系编号|关系对齐词|节点编号2|概念2|同指节点2|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|1617|x0|root|-|:top|-|-|x1|希望-01|-|
+|1617|x1|希望-01|-|:arg1|-|-|x6|给-01|-|
+|1617|x1|希望-01|-|:mode|-|-|x11|expressive|-|
+|1617|x6|给-01|-|:arg0|-|-|x5|经历|-|
+|1617|x6|给-01|-|:arg2|-|-|x7|大家|-|
+|1617|x6|给-01|-|:arg1|-|-|x10|教训|-|
+|1617|x5|经历|-|:poss|-|-|x2|我|-|
+|1617|x5|经历|-|:arg0-of|x4|的|x3|惨痛-01|-|
+|1617|x10|教训|-|:quant|-|-|x8|1|-|
+|1617|x10|教训|-|:cunit|-|-|x9|个|-|
 
 **评测标准：**
 
@@ -310,15 +299,15 @@ Align-smatch
 
 2.  **表示有向弧的三元组：relation(node_index1, node_index2)。**
 
-node_index1和node_index2表示为两个不同概念节点的索引，分别对应$a_i$和$a_j$，同理，$j∈${$0,1,…,n$}，节点索引的分配可以是完全随机的，如图5所示（本文选用完全二叉树的顺序存储方式对节点索引进行编号，仅供参考）；relation为$a_i$、$a_j$节点对应的两个词之间的语义关系。如表2所示，有向弧三元组“arg1($a_1$,$a_4$)”表示$a_1$索引和$a_4$索引所对应的词“给”和“大家”之间的语义关系为“arg1（受事）”。
+node_index1和node_index2表示为两个不同概念节点的索引，分别对应$a_i$和$a_j$，同理，$j∈${$0,1,…,n$}，节点索引的分配可以是完全随机的，如图6所示（本文选用完全二叉树的顺序存储方式对节点索引进行编号，仅供参考）；relation为$a_i$、$a_j$节点对应的两个词之间的语义关系。如表2所示，有向弧三元组“arg1($a_1$,$a_4$)”表示$a_1$索引和$a_4$索引所对应的词“给”和“大家”之间的语义关系为“arg1（受事）”。
 
 3.  **表示节点属性的三元组：property(node_index, value)。**
 
 如表2所示，节点属性三元组root($a_0$, top)表示$a_0$节点的属性为根节点，其中，value=top。
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_4.png" width=800>
- <p>图4 例句“希望我惨痛的经历给大家一个教训呀”的CAMR图示（带有节点索引）</p>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_6.png" width=800>
+ <p>图6 例句“希望我惨痛的经历给大家一个教训呀”的CAMR图示（带有节点索引）</p>
 </div>
 
 完成了AMR三元组的转化之后，Smatch使用爬山算法（Hill-climbing Method）进行贪婪搜索以获取黄金AMR（Gold AMR）三元组集合和解析生成的AMR（Generated AMR）三元组集合之间的最大匹配个数，最终返回准确率（P）、召回率（R）和F值（F-score）：
