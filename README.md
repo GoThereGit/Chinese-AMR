@@ -20,7 +20,7 @@
 <tbody>
   <tr>
     <td align='center'>6月10日</td>
-    <td align='center'>评测任务<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">报名</a>开始，LDC发布训练集和验证集<a href="#anchor1">数据</a></td>
+    <td align='center'>评测任务<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">报名</a>开始，LDC发布训练集和验证集（详见<a href="#anchor1">语料许可协议</a>）</td>
     
   </tr>
   <tr>
@@ -53,10 +53,9 @@
 
 2022年10月14日-16日：<a href="http://www.cips-cl.org/static/CCL2022/index.html">CCL 2022</a>评测研讨会，线上公布最终排名，评测结束。
 
-[![agreement](https://img.shields.io/badge/CAMRP_评测语料许可协议-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
-
-
 <a name="anchor1"></a>
+
+[![agreement](https://img.shields.io/badge/CAMRP_评测语料许可协议-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
 
 **参赛队伍需自行向LDC申请CAMRP 2022评测语料使用权，并签署保密协议：**
 1.	每支参赛队伍需指派一名联系负责人。
@@ -174,21 +173,21 @@
  <a href="https://dspace.library.uu.nl/bitstream/handle/1874/414809/2020.conll_shared.1.pdf?sequence=1&isAllowed=y">
   [9]
  </a>
-</sup>，本次评测任务是对中文AMR解析评测，评测标准选用更加细致的Align-smatch评测标准，包括了概念对齐信息和关系对齐信息（<a href="#anchor3.2">详见下文3.2</a>）。
+</sup>，本次评测任务是对中文AMR解析评测，评测标准选用更加细致的Align-smatch评测标准，包括了概念对齐信息和关系对齐信息（详见<a href="#anchor3.2">3.2 作为主要标准的Align-smatch评测指标</a>）。
 
 # 2 评测数据
 
 ## 2.1 数据样例
-本次评测任务提供三种数据，包括**CAMR文本表示**、**依存句法分析结果**及**CAMR多元组表示**。
+本次评测任务提供三种数据，包括**CAMR文本表示**、**依存句法分析结果**及**CAMR多元组表示**。例句“这几天关于中俄战略合作伙伴关系成了大热点。”选自本次评测任务的训练集，以下为对应的三种表示样例：
 
 [![sample](https://img.shields.io/badge/sample-CAMR_text-red.svg "CAMR_text")](./docs/samples/CAMR_text.png)
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_3.png">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/Figure_3.png">
  <p>图3 CAMR文本表示样例</p>
 </div>
 
-图3为评测语料的CAMR文本表示样例，具体包括句子ID、词序列、词编号（x）、概念对齐信息、关系对齐信息和CAMR文本表示；语料编码格式为UTF-8。
+图3为例句的CAMR文本表示样例，具体包括句子ID、词序列、词编号（x）、概念对齐信息、关系对齐信息和CAMR文本表示；语料编码格式为UTF-8。
 
 
 [![sample](https://img.shields.io/badge/sample-CAMR_dep-green.svg "CAMR_dep")](./docs/samples/CAMR_dep.png)
@@ -198,7 +197,7 @@
  <p>图4 依存句法分析结果样例</p>
 </div>
 
-图4为评测语料的依存句法分析结果样例。
+图4为例句的依存句法分析结果样例。在封闭测试中，该依存句法分析结果可作外部资源供参赛队使用（详见<a href="#anchor3.3">3.3 模态选择</a>）。
 
 [![sample](https://img.shields.io/badge/sample-CAMR_tuple-blue.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.png)
 
@@ -207,8 +206,9 @@
  <p>图5 CAMR多元组表示样例</p>
 </div>
 
-图5为评测语料的CAMR多元组表示样例。
+图5为例句的CAMR多元组表示样例，具体包括句子编号1、节点编号1、概念1、回指节点1、关系、关系编号、关系对齐词、节点编号2、概念2和同指节点2。参赛队最终返回的自动标注数据也应为CAMR多元组表示格式（详见<a href="#anchor2.2">2.2 任务说明</a>）。
 
+<a name="anchor2.2"></a>
 ## 2.2 任务说明
 
 **输入：**
@@ -458,7 +458,7 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 </tbody>
 </table>
 
-
+<a name="anchor3.3"></a>
 ## 3.3 模态选择
 本次评测任务包含开放测试（Open Modality）和封闭测试（Closed Modality）：
 1. 若参赛队选择封闭测试，则必须使用指定的训练集、测试集和预训练语言模型，不可自行替换为别的资源。在封闭测试中，主办方提供训练集的依存分析结果，并推荐使用哈工大的HIT_Roberta<sup><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9599397">[12]</a></sup>预训练模型。
