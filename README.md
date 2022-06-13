@@ -202,7 +202,7 @@
 [![sample](https://img.shields.io/badge/sample-CAMR_tuple-blue.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.txt)
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_5.png" width=800>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_5.PNG" >
  <p>图5 CAMR多元组表示样例</p>
 </div>
 
