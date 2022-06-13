@@ -125,7 +125,7 @@ we aim to evaluate Chinese AMR parsing **only**, and of course with Align-smatch
 # 2 Important Dates
 * **June 10, 2022**
   * Initial Public Call for Participation
-  * Release of Training Set and Validation Set
+  * Release of Training Set and Dev Set
   * Availability of Evaluation Software (Align-smatch)
 * **August 8, 2022**
   * Enrolment Deadline
@@ -149,7 +149,7 @@ we aim to evaluate Chinese AMR parsing **only**, and of course with Align-smatch
 
 # 3 Data
 ## 3.1 Data Sample
-We offer three kinds of data sets including: CAMR text, dependency analysis results and CAMR tuples. 
+We offer three kinds of data sets including: **CAMR text**, **dependency analysis result** and **CAMR tuple**. 
 
 [![sample](https://img.shields.io/badge/sample-CAMR_text-red.svg "CAMR_text")](./docs/samples/CAMR_text.txt)
 
@@ -165,7 +165,7 @@ All files are encoded in UTF-8.
 [![sample](https://img.shields.io/badge/sample-CAMR_dep-green.svg "CAMR_dep")](./docs/samples/CAMR_dep.txt)
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/Figure_4.png">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/Figure_4.png" width=700>
  <p>Figure 4: Data sample of dependency analysis result</p>
 </div>
 
@@ -174,7 +174,7 @@ Figure 4 is a copy of dependency analysis result. Note that in the closed modali
 [![sample](https://img.shields.io/badge/sample-CAMR_tuple-blue.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.txt)
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_5.png">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_5.PNG">
  <p>Figure 5: Data sample of CAMR tuple representation</p>
 </div>
 
