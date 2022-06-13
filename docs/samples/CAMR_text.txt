@@ -1,0 +1,20 @@
+# ::id export_amr.2580 ::cid export_amr.2580 ::2017-02-02 17:03:12
+# ::snt 这 几 天 关于 中 俄 战略 合作 伙伴 关系 成 了 大 热点 。
+# ::wid x1_这 x2_几 x3_天 x4_关于 x5_中 x6_俄 x7_战略 x8_合作 x9_伙伴 x10_关系 x11_成 x12_了 x13_大 x14_热点 x15_。
+(x11 / 成-01
+      :aspect() (x12 / 了)
+      :arg1() (x14 / 热点
+            :arg0-of() (x13 / 大-01))
+      :arg0(x4/关于) (x10 / 关系
+            :mod() (x9 / 伙伴
+                  :mod() (x8 / 合作-01
+                        :arg0() (x26 / and
+                              :op1() (x33 / country
+                                    :name() (x5 / name :op1 x5/中 ))
+                              :op2() (x35 / country
+                                    :name() (x6 / name :op1 x6/俄 ))))
+                  :mod() (x7 / 战略)))
+      :duration() (x37 / temporal-quantity
+            :quant() (x2 / 几)
+            :unit() (x3 / 天)
+            :mod() (x1 / 这)))

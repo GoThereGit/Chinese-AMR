@@ -1,0 +1,20 @@
+句子编号	节点编号1	概念1	同指节点1	关系	关系编号	关系对齐词	节点编号2	概念2	同指节点2
+sid	nid1	concept1	coref1	rel	rid	ralign	nid2	concept2	coref2
+
+2580	x0	root	-	:top	-	-	x11	成-01	-
+2580	x11	成-01	-	:aspect	-	-	x12	了	-
+2580	x11	成-01	-	:arg1	-	-	x14	热点	-
+2580	x11	成-01	-	:arg0	x4	关于	x10	关系	-
+2580	x11	成-01	-	:duration	-	-	x37	temporal-quantity	-
+2580	x14	热点	-	:arg0-of	-	-	x13	大-01	-
+2580	x10	关系	-	:mod	-	-	x9	伙伴	-
+2580	x9	伙伴	-	:mod	-	-	x8	合作-01	-
+2580	x9	伙伴	-	:mod	-	-	x7	战略	-
+2580	x8	合作-01	-	:arg0	-	-	x26	and	-
+2580	x26	and	-	:op1	-	-	x33	country	-
+2580	x26	and	-	:op2	-	-	x35	country	-
+2580	x33	country	-	:name	-	-	x5	中	-
+2580	x35	country	-	:name	-	-	x6	俄	-
+2580	x37	temporal-quantity	-	:quant	-	-	x2	几	-
+2580	x37	temporal-quantity	-	:unit	-	-	x3	天	-
+2580	x37	temporal-quantity	-	:mod	-	-	x1	这	-
