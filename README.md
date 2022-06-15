@@ -25,7 +25,11 @@
   </tr>
   <tr>
     <td align='center'>6月15日</td>
-    <td align='center'>提供评测软件Align-smatch（原6月10日）</td>   
+    <td align='center'>提供评测软件<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">Align-smatch</a>（原6月10日）</td>   
+  </tr>
+  <tr>
+    <td align="center">8月8日</td>
+    <td align="center">评测报名截止</td>
   </tr>
 </tbody>
 </table>
