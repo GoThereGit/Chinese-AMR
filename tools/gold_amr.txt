@@ -1,0 +1,40 @@
+句子编号	节点编号1	概念1	同指节点1	关系	关系编号	关系对齐词	节点编号2	概念2	同指节点2
+sid	nid1	concept1	coref1	rel	rid	ralign	nid2	concept2	coref2
+
+1849	x0	root	-	:top	-	-	x17	multi-sentence	-
+1849	x17	multi-sentence	-	:snt1	-	-	x25	and	-
+1849	x17	multi-sentence	-	:snt2	-	-	x12	愁坏	-
+1849	x25	and	-	:op1	-	-	x4	放-01	-
+1849	x25	and	-	:op2	-	-	x10	花-01	-
+1849	x25	and	-	:mode	-	-	x11	interrogative	-
+1849	x4	放-01	-	:arg1	-	-	x3	钱	-
+1849	x4	放-01	-	:arg2	x5_x7	在里	x6	手	-
+1849	x3	钱	-	:quant	-	-	x2	多	-
+1849	x2	多	-	:degree	-	-	x1	这么	-
+1849	x10	花-01	-	:manner	-	-	x9	amr-unknown	-
+1849	x10	花-01	-	:mod	-	-	x8	到底	-
+1849	x10	花-01	-	:arg1	-	-	x3	钱	-
+1849	x12	愁坏	-	:aspect	-	-	x13	了	-
+1849	x12	愁坏	-	:arg1	-	-	x14	中国人	-
+1849	x12	愁坏	-	:arg0	-	-	x25	and	-
+
+1850	x0	root	-	:top	-	-	x5	equal	-
+1850	x5	equal	-	:arg0	-	-	x3	储备-01	-
+1850	x5	equal	-	:arg1	-	-	x16	倍	-
+1850	x3	储备-01	-	:arg1	-	-	x2	外汇	-
+1850	x3	储备-01	-	:arg0	-	-	x40	country	-
+1850	x40	country	-	:name	-	-	x1	中国	-
+1850	x16	倍	-	:op2	x5	是	x9	开支	-
+1850	x16	倍	-	:mod	-	-	x4	足足	-
+1850	x16	倍	-	:op1	-	-	x15_2	more-than	-
+1850	x9	开支	-	:mod	-	-	x8	社保	-
+1850	x9	开支	-	:arg0-of	-	-	x30	mean	-
+1850	x9	开支	-	:duration	-	-	x43	temporal-quantity	-
+1850	x30	mean	-	:arg1	-	-	x32	monetary-quantity	-
+1850	x32	monetary-quantity	-	:quant	-	-	x11	1000000000000	-
+1850	x32	monetary-quantity	-	:unit	-	-	x12	人民币	-
+1850	x43	temporal-quantity	-	:quant	-	-	x44	1	-
+1850	x43	temporal-quantity	-	:mod	-	-	x6	全	-
+1850	x43	temporal-quantity	-	:unit	-	-	x7	年	-
+1850	x15_2	more-than	-	:op1	-	-	x15_1	10	-
+
