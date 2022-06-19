@@ -151,7 +151,7 @@ class CAMR(object):
                             break
             if nid not in node_list:
                 node_list.append(nid)
-            if coref != '-':
+            if coref != '-' and ('coref', coref) not in relation_dict[nid]:
                 relation_dict[nid].append(('coref', coref))
             return nid
 
