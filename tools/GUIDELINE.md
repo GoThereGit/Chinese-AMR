@@ -14,18 +14,19 @@ You need to clone this repository to run Align-smatch.py (or Smatch.py).
 
 # III. Usage
 
+To run Smatch.py, you need following command with at least the [-f] option, which requires two filename arguments:
+
+    python smatch.py -f parsed_amr.txt gold_amr.txt
+
 To run Align-smatch.py, you need following command with at least the [-f] option and [-lf] option:
 
     python Align-smatch.py -f parsed_amr.txt gold_amr.txt -lf max_len.txt
 
-To run Smatch.py, you need following command with at least the [-f] option, which takes two filename arguments:
-
-    python smatch.py -f parsed_amr.txt gold_amr.txt
 
 ## Input: 
 
 * Two files which contain CAMR data. Each file may contain several CAMRs, and every two CAMRs are separated by a blank line.
-* A file which contains the max length of each sentences in data sets. (**Align-smatch ONLY**)
+* A file which contains the max length of each sentence in data sets. (**Align-smatch ONLY**)
 
 ## Input File Format: 
 
@@ -41,11 +42,11 @@ F-scores under Align-smatch (or Smatch) metric.
 
 * ***-f***: Two files of CAMR data. **Arguments required**.
 
-* ***-lf***: A file including the max length of each sentences in data sets. **Arguments required**. (**Align-smatch ONLY**)
+* ***-lf***: A file including the max length of each sentence after tokenization. **Arguments required**. (**Align-smatch ONLY**)
 
-* ***-r***: Restart number of the heuristic search during computation. This argument must be a positive integer. Note that Large restart number will reduce the chance of search error, but also increase the running time. Small restart number will reduce the running time as well as increase the chance of search error. The default value is by far the best trade-off. Participants can set a large number if the AMR length is too long (with large search space) or not in need of a high speed of calculation. **Set to 4 by default**.
+* ***-r***: Restart number of the heuristic search during computation. This argument must be a positive integer. Note that Large restart number will reduce the chance of search error, but also increase the running time. Small restart number will reduce the running time as well as increase the chance of search error. The default value is by far the best trade-off. Participants can set a large number if the CAMR length is too long (with large search space) or not in need of a high speed of calculation. **Set to 4 by default**.
 
-* ***-v***: Verbose output. The verbose information includes the tuples of each CAMR, the matching tuple number found for each iterations, and the best matching tuple number. It is useful when you try to understand how the program works. **Set to FALSE by default**.
+* ***-v***: Verbose output. The verbose information includes the tuples of each CAMR, the matching tuple number found for each iterations, and the optimal matching tuple number. It may help you better understand how the program works. **Set to FALSE by default**.
 
 * ***--ms***: Output Align-smatch scores for every CAMR pair (for manual check). Align-smatch normally returns one single overall score based on all pairs of CAMRs, which are weighted according to their number of tuples. **Set to FALSE by default**.
 
