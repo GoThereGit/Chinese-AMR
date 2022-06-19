@@ -8,31 +8,12 @@
 
 # 最新消息：
 
-<table>
-<p align="center"></p>
-<thead>
-  <tr>
-    <th style="text-align:center">时间</th>
-    <th style="text-align:center">消息</th>
-    
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td align='center'>6月10日</td>
-    <td align='center'>评测任务<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">报名</a>开始，LDC发布训练集和验证集（详见<a href="#anchor1">语料许可协议</a>）</td>
-    
-  </tr>
-  <tr>
-    <td align='center'>6月15日</td>
-    <td align='center'>提供评测软件<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">Align-smatch</a>（原6月10日）</td>   
-  </tr>
-  <tr>
-    <td align="center">8月8日</td>
-    <td align="center">评测报名截止</td>
-  </tr>
-</tbody>
-</table>
+|时间|消息|
+|:---:|:---:|
+|6月10日|评测任务<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">报名</a>开始，LDC发布训练集和验证集（详见<a href="#anchor1">语料许可协议</a>）|
+|~~6月15日~~|~~提供评测软件Align-smatch（原6月10日）~~|
+|6月19日|评测软件<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">Align-smatch</a>更新|
+|8月8日|评测报名截止|
 
 
 [![Eng](https://img.shields.io/badge/README-English-yellow.svg "English Version")](./README_Eng.md)
@@ -41,21 +22,21 @@
 
 [![signup](https://img.shields.io/badge/CAMRP_2022-报名-blue.svg "sign up")](https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM)
 
-2022年6月10日：<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">**评测报名**</a>开始，LDC发布训练集以及验证集给参赛队，提供Align-smatch评测软件下载地址。
+- [X] 2022年6月10日：<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">**评测报名**</a>开始，LDC发布训练集以及验证集给参赛队，提供Align-smatch评测软件下载地址。
 
-2022年8月8日：报名截止。
+- [ ] 2022年8月8日：报名截止。
 
-2022年8月10日：**本站**发布测试集（包含Test A和Test B）给参赛队。
+- [ ] 2022年8月10日：**本站**发布测试集（包含Test A和Test B）给参赛队。
 
-2022年8月20日：参赛队提交自动标注的数据。
+- [ ] 2022年8月20日：参赛队提交自动标注的数据。
 
-2022年8月26日：**本站**发布测试集（包含Test A和Test B）黄金标准答案给参赛队。
+- [ ] 2022年8月26日：**本站**发布测试集（包含Test A和Test B）黄金标准答案给参赛队。
 
-2022年9月5日：参赛队提交中文抽象语义表示评测任务技术报告，用于审稿。
+- [ ] 2022年9月5日：参赛队提交中文抽象语义表示评测任务技术报告，用于审稿。
 
-2022年9月30日：参赛队提交技术报告最终版。
+- [ ] 2022年9月30日：参赛队提交技术报告最终版。
 
-2022年10月14日-16日：<a href="http://www.cips-cl.org/static/CCL2022/index.html">CCL 2022</a>评测研讨会，线上公布最终排名，评测结束。
+- [ ] 2022年10月14日-16日：<a href="http://www.cips-cl.org/static/CCL2022/index.html">CCL 2022</a>评测研讨会，线上公布最终排名，评测结束。
 
 <a name="anchor1"></a>
 
