@@ -55,9 +55,9 @@ With the growing maturity of morphological analysis and syntactic analysis techn
 natural language processing in general has advanced to the level of semantic analysis. More specifically, 
 sentence-level meaning parsing has already occupied the core position of semantic analysis research. 
 To address the lack of whole-sentence semantic representation and the domain-dependent problem of sentence semantic annotation, 
-Banarescu et al. (2013) proposed a domain-independent whole-sentence semantic representation method called Abstract Meaning Representation (AMR) that can abstract the meaning of a sentence with a single-rooted, acyclic and directed graph and predicts the semantic structure of the targeted sentence. 
+<a href="https://aclanthology.org/W13-2322.pdf">Banarescu et al. (2013)</a> proposed a domain-independent whole-sentence semantic representation method called Abstract Meaning Representation (AMR) that can abstract the meaning of a sentence with a single-rooted, acyclic and directed graph and predicts the semantic structure of the targeted sentence. 
 There have been large-scaled corpora constructed for AMR and two international conferences held for AMR semantic parsing evaluation tasks. 
-And similar to AMR, the corpus of Chinese AMR (CAMR) has also begun to take shape and played an important role in the stage of CoNLL 2020. 
+And similar to AMR, the corpus of Chinese AMR (CAMR) <a href="https://aclanthology.org/W16-1702.pdf">(Li et al., 2016)</a> has also begun to take shape and played an important role in the stage of CoNLL 2020. 
 
 
 Our evaluation task is to parse input sentences and output AMR graphs of the targeted sentences with data from CAMR corpus. 
@@ -75,8 +75,8 @@ but also to add, delete and modify concept nodes in order to complement the impl
 AMR aroused the attentions of professions and researchers as soon as it came out, 
 and has prevailed the world with its great power of sentence-level semantic representation. 
 Related work of automatic parsing with AMR has been widely applied into downstream tasks in NLP such as question answering systems and text summarization, 
-and yielded good returns. In the cross-framework task of Meaning Representation Parsing (MRP) held by <a href="http://mrp.nlpl.eu/2020/index.php">CoNLL 2020</a>, Hitachi (Hiroaki O. et al., 2020) 
-and ÚFAL (Samuel D. et al., 2020) among five teams achieved 0.80 and 0.78 F-score in the track of Chinese AMR parsing evaluation, respectively, 
+and yielded good returns. In the cross-framework task of Meaning Representation Parsing (MRP) held by <a href="http://mrp.nlpl.eu/2020/index.php">CoNLL 2020</a>, Hitachi <a href="https://aclanthology.org/2020.conll-shared.4.pdf">(Hiroaki O. et al., 2020)</a> 
+and ÚFAL <a href="https://arxiv.org/pdf/2011.00758.pdf">(Samuel D. et al., 2020)</a> among five teams achieved 0.80 and 0.78 F-score in the track of Chinese AMR parsing evaluation, respectively, 
 and were awarded first prize and second prize accordingly. 
 In fact, their performances in Chinese AMR parsing were fairly close to that of in English AMR (which is 0.82).
 
@@ -86,13 +86,13 @@ Additionally, most of experiments and evaluations including CoNLL use Smatch met
 Inevitably, Smatch is not quite compatible with Chinese AMR considering the different characteristics between the two languages, 
 for example, it has no way processing the alignment of concept and relation in Chinese AMR. 
 Therefore, in order to fill the gap of alignment information in Chinese AMR and to provide a brand-new standard for Chinese AMR parsing, 
-Xiao et al. (2022) came up with a new evaluation metric named Align-smatch with concept alignment metric and relation alignment metric added based on Smatch.
+<a href="http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.638.pdf">Xiao et al. (2022)</a> came up with a new evaluation metric named Align-smatch with concept alignment metric and relation alignment metric added based on Smatch.
 
 ## 1.2 New Alignments in Chinese AMR
 English AMR normally annotates the index of concept nodes with the initial letter of the words or assigns the number index simply by the sequence of nodes. 
 It leads to the inability of computers to directly trace concepts back to their sources and to restore the order of sentences from AMR, 
 and brings great difficulties to AMR parsing. To solve this problem, 
-Li et al. (2016) proposed an efficient framework incorporating concept-to-word alignment to achieve concept alignment for Chinese AMR. 
+<a href="https://journals.colorado.edu/index.php/lilt/article/view/1429/1271">Li et al. (2019)</a> proposed an efficient framework incorporating concept-to-word alignment to achieve concept alignment for Chinese AMR. 
 By assigning a number to each word in the original sentence after word separation according to the principle of linear ordering, 
 each concept node is also assigned a corresponding number. The numbering takes the form of “x” plus a number. As shown in Figure 1, 
 the Chinese word “惨痛” is the third word in original sentence and therefore assigned with the number “x3”, 
@@ -107,7 +107,7 @@ In addition to concept alignment, AMR also omits function words such as preposit
 assuming they do not contribute much to the semantic. However, function words in Chinese, as a matter of fact, 
 are quite useful for connecting contexts and contain rich semantic information. Hence, Chinese AMR chooses to retain function words for annoation. 
 Specifically, function words indicating aspect meaning and mood meaning of the sentence are treated as concept nodes while function words 
-indicating the relations between content word are regarded as mappings of semantic relations and labeled on arcs together with semantic role labels (Dai et al., 2020). 
+indicating the relations between content word are regarded as mappings of semantic relations and labeled on arcs together with semantic role labels <a href="https://journals.colorado.edu/index.php/lilt/article/view/1429/1271">(Li et al., 2019)</a>. 
 Function words on arcs are numbered as well, which would achieve relation alignment by completing the alignment of semantic relations with the words in sentences. 
 As shown in Figure 2, 
 the function word “的” has been annotated on the directed arc with semantic role label “arg0-of” together and numbered “x4” 
@@ -229,7 +229,7 @@ The data in blind test is not released yet. Table 1 shows the distribution of ea
 # 4 Evaluation Metrics and Modalities
 ## 4.1 Smatch 
 
-As the most widely-used evaluation metric, smatch focuses on the overlapping of two AMR graphs. For two AMR graphs to be matched, smatch first renames the nodes of AMR graphs and transforms each AMR graph into a set of triples (S. Cai et al., 2013). There are three categories of triples as following:
+As the most widely-used evaluation metric, smatch focuses on the overlapping of two AMR graphs. For two AMR graphs to be matched, smatch first renames the nodes of AMR graphs and transforms each AMR graph into a set of triples <a href="https://aclanthology.org/P13-2131.pdf">(S. Cai et al., 2013)</a>. There are three categories of triples as following:
 
 1.	**Node triple: instance(node_index, concept).**
 
@@ -302,10 +302,10 @@ Specifically, **Precision** is the ratio of the maximum number of the matching t
 </tbody>
 </table>
 
-Although smatch has been prevailing since it came up, it has some flaws. When searching arc triples to be matched, smatch only considers whether the relations are the same but does not examine the concept nodes. It sometimes leads to such situation that two sentence with completely different semantics yet get oddly high matching scores (Song et al., 2019).
+Although smatch has been prevailing since it came up, it has some flaws. When searching arc triples to be matched, smatch only considers whether the relations are the same but does not examine the concept nodes. It sometimes leads to such situation that two sentence with completely different semantics yet get oddly high matching scores <a href="https://arxiv.org/pdf/1905.10726.pdf">(Song et al., 2019)</a>.
 
 ## 4.2 Main metric: Align-smatch
-With two types of information added, including concept alignment and relation alignment, Align-smatch now transforms Chinese AMR graph into tuples. 
+With two types of information added, including concept alignment and relation alignment, Align-smatch now transforms Chinese AMR graph into tuples <a href="http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.638.pdf">(Xiao et al., 2022)</a>. 
 
 1.	**The new triple for concept alignment: anchor(node_index, token_num).**
 
@@ -389,7 +389,7 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 
 ## 4.3 Two Modalities
 The evaluation task includes **Open Modality** and **Closed Modality**:
-1.	Once chosen Closed Modality, the participants must use the training data, test data and pre-trained model which are all designated in advance. No alternative is allowed. We also offer dependency analysis results of the train set for each team under Closed Modality. HIT_Roberta from Harbin Institue of Technology (Cui et al., 2021) as pre-trained model is highly recommended. 
+1.	Once chosen Closed Modality, the participants must use the training data, test data and pre-trained model which are all designated in advance. No alternative is allowed. We also offer dependency analysis results of the train set for each team under Closed Modality. HIT_Roberta from Harbin Institue of Technology <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9599397">(Cui et al., 2021)</a> as pre-trained model is highly recommended. 
 2.	Once chosen Open Modality, the participants are allowed to use pre-trained model and external resources such as named entities and dependency analysis results with no limits. Note that all kinds of resources that participants employ should be mentioned and written in detail in the final technical report. Manual correction is forbidden in both modalities.
 
 <table align="center">
@@ -523,4 +523,4 @@ and each team will be awarded with a unique certificate presented by **Chinese I
 7. Abzianidze, L., et al. "MRP 2020: The second shared task on cross-framework and cross-lingual meaning representation parsing." Proceedings of the CoNLL 2020 Shared Task: Cross-Framework Meaning Representation Parsing (2020): 1-22.
 8. Samuel, David, and Milan Straka. "UFAL at MRP 2020: Permutation-invariant Semantic Parsing in PERIN." arXiv preprint arXiv:2011.00758 (2020).
 9. Song, Linfeng, and Daniel Gildea. "SemBleu: A robust metric for AMR parsing evaluation." arXiv preprint arXiv:1905.10726 (2019).
-
+10. Xiao, Liming, et al. "Align-smatch: A Novel Evaluation Method for Chinese Abstract Meaning Representation Parsing based on Alignment of Concept and Relation." Proceedings of the Language Resources and Evaluation Conference. 2022.
