@@ -1,6 +1,6 @@
-# <p align="center">Guideline</p>
+# <p align="center">Guidelines</p>
 
-# I. Intro
+# I. Introduction
 
 CAMRP 2022 uses Align-smatch as the main evaluation metric while Smatch is for reference only. Align-smatch returns an overall score between parsed CAMR and gold CAMR.
 
