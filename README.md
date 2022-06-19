@@ -12,7 +12,7 @@
 |:---:|:---:|
 |6月10日|评测任务<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">报名</a>开始，LDC发布训练集和验证集（详见<a href="#anchor1">语料许可协议</a>）|
 |~~6月15日~~|~~提供评测软件Align-smatch（原6月10日）~~|
-|6月19日|评测软件<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">Align-smatch</a>更新|
+|6月20日|评测软件<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">Align-smatch</a>更新|
 |8月8日|评测报名截止|
 
 
@@ -22,7 +22,7 @@
 
 [![signup](https://img.shields.io/badge/CAMRP_2022-报名-blue.svg "sign up")](https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM)
 
-- [X] 2022年6月10日：<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">**评测报名**</a>开始，LDC发布训练集以及验证集给参赛队，提供Align-smatch评测软件下载地址。
+- [X] 2022年6月10日：<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">**评测报名**</a>开始，LDC发布训练集以及验证集给参赛队，提供<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">Align-smatch</a>评测软件下载地址。
 
 - [ ] 2022年8月8日：报名截止。
 
@@ -246,7 +246,7 @@ Align-smatch
 </thead>
 <tbody>
   <tr>
-    <td align='center'>训练集（Training Set）</td>
+    <td align='center'>训练集（Train Set）</td>
     <td align='center'>16576</td>
     <td align='center'>386234</td>
   </tr>
