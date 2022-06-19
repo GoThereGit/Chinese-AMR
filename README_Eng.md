@@ -5,12 +5,12 @@
 # <p align="center">Chinese Abstract Meaning Representation Parsing 2022</p>
 
 # News and Updates
-* June 10, 2022
+* **June 10, 2022**
   * Initial Public Call for <a href="#anchor1">Participation</a>
-  * <a href="#anchor2">Release</a> of the Train Set and Dev Set
-* ~~June 15, 2022~~
-  * ~~Release of the Evaluation Tool Align-smatch (original date: June 10)~~
-* June 19, 2022
+  * Release of the Train Set and Dev Set via <a href="#anchor2">LDC</a>
+* ~~**June 15, 2022**~~
+  * ~~Release of Evaluation Tool Align-smatch (original date: June 10)~~
+* **June 19, 2022**
   * Updated Align-smatch tool (<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">the LATEST version</a>)  
 
 [![Zh](https://img.shields.io/badge/README-Chinese-yellow.svg "Zh")](./README.md)
@@ -23,9 +23,10 @@
 **Entry Form:** 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
 
+<a name="anchor2"></a>
+
 [![agreement](https://img.shields.io/badge/CAMRP_2022-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
 
-<a name="anchor2"></a>
 **Participants must sign the LDC Evaluation License Agreement for the data/corpora used in the CAMRP 2022 Evaluation Task will be authorized via <a href="https://www.ldc.upenn.edu/">LDC</a> only:**
 1.	Each team should designate a member as the data contact person.
 2.	Each data contact person must fill in the [LDC Evaluation License Agreement](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf) and send a signed copy of the agreement to LDC (<ldc@ldc.upenn.edu>).
@@ -35,7 +36,7 @@
 
 [![body](https://img.shields.io/badge/CAMRP_2022-Nanjing_Normal_University-green.svg "CAMRP 2022")](https://github.com/GoThereGit/Chinese-AMR/blob/main/README.md)
 
-* Orgnizers:
+* Organizers:
   * **Bin Li** (Nanjing Normal University, Nanjing, China) (E-mail: <libin.njnu@gmail.com>)
   * **Weiguang Qu** (Nanjing Normal University, Nanjing, China)
   * **Junsheng Zhou** (Nanjing Normal University, Nanjing, China)
@@ -126,25 +127,25 @@ we aim to evaluate Chinese AMR parsing **only**, and of course with Align-smatch
 
 # 2 Important Dates
 * **June 10, 2022**
-  * Initial Public Call for Participation
-  * Release of the Train Set and Dev Set
-  * Availability of Evaluation Software (Align-smatch)
+  * - [x] Initial Public Call for Participation
+  * - [x] Release of the Train Set and Dev Set
+  * - [x] Availability of Evaluation Software (Align-smatch)
 * **August 8, 2022**
-  * Enrolment Deadline
+  * - [ ] Enrolment Deadline
 * **August 10, 2022**
-  * Release of the Test Set (Test A and Test B)
+  * - [ ] Release of the Test Set (Test A and Test B)
 * **August 20, 2022**
-  * Submission of Annotated Data
+  * - [ ] Submission of Annotated Data
 * **August 26, 2022**
-  * Release of Gold Data of the Test Set (Test A and Test B)
+  * - [ ] Release of Gold Data of the Test Set (Test A and Test B)
 * **September 5, 2022**
-  * Submission of Technical Report
+  * - [ ] Submission of Technical Report
 * **September 30, 2022**
-  * Final Submission of Camera-Ready Technical Report
-  * Evaluation Period
+  * - [ ] Final Submission of Camera-Ready Technical Report
+  * - [ ] Evaluation Period
 * **October 14-16, 2022** 
-  * Release of Final Rankings Online
-  * Workshop for Technical Evaluation Tasks of <a href="http://www.cips-cl.org/static/CCL2022/en/cclEval/taskCollection/index.html">CCL 2022</a>
+  * - [ ] Release of Final Rankings Online
+  * - [ ] Workshop for Technical Evaluation Tasks of <a href="http://www.cips-cl.org/static/CCL2022/en/cclEval/taskCollection/index.html">CCL 2022</a>
 
 **Entry Form:**
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
@@ -202,7 +203,7 @@ The data in blind test is not released yet. Table 1 shows the distribution of ea
 </thead>
 <tbody>
   <tr>
-    <td align='center'>Training Set</td>
+    <td align='center'>Train Set</td>
     <td align='center'>16576</td>
     <td align='center'>386234</td>
   </tr>
