@@ -7,9 +7,11 @@
 # News and Updates
 * June 10, 2022
   * Initial Public Call for <a href="#anchor1">Participation</a>
-  * <a href="#anchor2">Release</a> of Training Set and Dev Set
-* June 15, 2022
-  * Release of the evaluation tool Align-smatch (original date: June 10)
+  * <a href="#anchor2">Release</a> of the Train Set and Dev Set
+* ~~June 15, 2022~~
+  * ~~Release of the Evaluation Tool Align-smatch (original date: June 10)~~
+* June 19, 2022
+  * Updated Align-smatch tool (<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">the LATEST version</a>)  
 
 [![Zh](https://img.shields.io/badge/README-Chinese-yellow.svg "Zh")](./README.md)
 
@@ -125,16 +127,16 @@ we aim to evaluate Chinese AMR parsing **only**, and of course with Align-smatch
 # 2 Important Dates
 * **June 10, 2022**
   * Initial Public Call for Participation
-  * Release of Training Set and Dev Set
+  * Release of the Train Set and Dev Set
   * Availability of Evaluation Software (Align-smatch)
 * **August 8, 2022**
   * Enrolment Deadline
 * **August 10, 2022**
-  * Release of Test Set (Test A and Test B)
+  * Release of the Test Set (Test A and Test B)
 * **August 20, 2022**
   * Submission of Annotated Data
 * **August 26, 2022**
-  * Release of Gold Data of Test Set (Test A and Test B)
+  * Release of Gold Data of the Test Set (Test A and Test B)
 * **September 5, 2022**
   * Submission of Technical Report
 * **September 30, 2022**
@@ -386,7 +388,7 @@ $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 
 ## 4.3 Two Modalities
 The evaluation task includes **Open Modality** and **Closed Modality**:
-1.	Once chosen Closed Modality, the participants must use the training data, test data and pre-trained model which are all designated in advance. No alternative is allowed. We also offer dependency analysis results of training set for each team under Closed Modality. HIT_Roberta from Harbin Institue of Technology (Cui et al., 2021) as pre-trained model is highly recommended. 
+1.	Once chosen Closed Modality, the participants must use the training data, test data and pre-trained model which are all designated in advance. No alternative is allowed. We also offer dependency analysis results of the train set for each team under Closed Modality. HIT_Roberta from Harbin Institue of Technology (Cui et al., 2021) as pre-trained model is highly recommended. 
 2.	Once chosen Open Modality, the participants are allowed to use pre-trained model and external resources such as named entities and dependency analysis results with no limits. Note that all kinds of resources that participants employ should be mentioned and written in detail in the final technical report. Manual correction is forbidden in both modalities.
 
 <table align="center">
@@ -416,7 +418,7 @@ The evaluation task includes **Open Modality** and **Closed Modality**:
   </tr>	
   <tr>
     <td align='center'>Data Set</td>
-    <td align='center'>Training Set, Dev Set</td>
+    <td align='center'>Train Set, Dev Set</td>
     <td align='center'>No Limit</td>
   </tr>
   <tr>
