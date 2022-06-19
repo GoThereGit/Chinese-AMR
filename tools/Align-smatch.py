@@ -669,13 +669,15 @@ def generate_amr(f1, f2, sid_len):
             print("Error: File 1 has less AMRs than file 2.", file=ERROR_LOG)
         elif not cur_amr2:
             print("Error: File 2 has less AMRs than file 1.", file=ERROR_LOG)
+        elif cur_amr1.sid != cur_amr2.sid:
+            print("Error: Sentence "+cur_amr1.sid+" has different sid with "+cur_amr2.sid, file=ERROR_LOG)
         else:
             yield cur_amr1, cur_amr2
             continue
         break
 
 
-def get_amr_match(camr1, camr2, sent_num=1, justinstance=False, justattribute=False, justrelation=False):
+def get_amr_match(camr1, camr2, sent_num, justinstance=False, justattribute=False, justrelation=False):
     amr_pair = [camr1, camr2]
     if len(amr_pair) < 2:
         return 0, 0, 0
@@ -752,9 +754,9 @@ def score_amr_pairs(f1, f2, leng, justinstance=False, justattribute=False, justr
     # genetate a dict for distinguish added nodes, key:id of a sentence, value:max length of a sentence
     sid_len = max_len(leng)
     # Read amr pairs from two files
-    for sent_num, (cur_amr1, cur_amr2) in enumerate(generate_amr(f1, f2, sid_len), start=1):
+    for cur_amr1, cur_amr2 in generate_amr(f1, f2, sid_len):
         best_match_num, test_triple_num, gold_triple_num = get_amr_match(cur_amr1, cur_amr2,
-                                                                         sent_num=sent_num,  # sentence number
+                                                                         sent_num=cur_amr1.sid,
                                                                          justinstance=justinstance,
                                                                          justattribute=justattribute,
                                                                          justrelation=justrelation)
@@ -764,13 +766,13 @@ def score_amr_pairs(f1, f2, leng, justinstance=False, justattribute=False, justr
         # clear the matching triple dictionary for the next AMR pair
         match_triple_dict.clear()
         if not single_score:  # if each AMR pair should have a score, compute and output it here
-            yield compute_f(best_match_num, test_triple_num, gold_triple_num)
+            yield compute_f(best_match_num, test_triple_num, gold_triple_num), cur_amr1.sid
     if verbose:
         print("Total match number, total triple number in AMR 1, and total triple number in AMR 2:", file=DEBUG_LOG)
         print(total_match_num, total_test_num, total_gold_num, file=DEBUG_LOG)
         print("---------------------------------------------------------------------------------", file=DEBUG_LOG)
     if single_score:  # output document-level smatch score (a single f-score for all AMR pairs in two files)
-        yield compute_f(total_match_num, total_test_num, total_gold_num)
+        yield compute_f(total_match_num, total_test_num, total_gold_num), None
 
 
 def main(arguments):
@@ -797,15 +799,21 @@ def main(arguments):
         pr_flag = True
     # significant digits to print out
     floatdisplay = "%%.%df" % arguments.significant
-    for (precision, recall, best_f_score) in score_amr_pairs(arguments.f[0], arguments.f[1], arguments.lf,
+    for (precision, recall, best_f_score), sid in score_amr_pairs(arguments.f[0], arguments.f[1], arguments.lf,
                                                              justinstance=arguments.justinstance,
                                                              justattribute=arguments.justattribute,
                                                              justrelation=arguments.justrelation):
-        # print("Sentence", sent_num)
         if pr_flag:
-            print("Precision: " + floatdisplay % precision)
-            print("Recall: " + floatdisplay % recall)
-        print("F-score: " + floatdisplay % best_f_score)
+            if not single_score:
+                print(sid, "Precision: " + floatdisplay % precision, " Recall: " + floatdisplay % recall, " F-score: " + floatdisplay % best_f_score)
+            else:
+                print("Precision: " + floatdisplay % precision, " Recall: " + floatdisplay % recall, " F-score: " + floatdisplay % best_f_score)
+        else:
+            if not single_score:
+                print(sid, " F-score: " + floatdisplay % best_f_score)
+            else:
+                print("F-score: " + floatdisplay % best_f_score)
+
     args.f[0].close()
     args.f[1].close()
     args.lf.close()
