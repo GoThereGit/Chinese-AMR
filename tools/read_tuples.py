@@ -51,12 +51,13 @@ def add_anchor(nid, limit):
 
 
 class CAMR(object):
-    def __init__(self, node_list=None, node_value_list=None, relation_list=None, attribute_list=None):
+    def __init__(self, node_list=None, node_value_list=None, relation_list=None, attribute_list=None, sentence_id=None):
         """
         node_list: names of nodes in CAMR graph, e.g. CAMR of "我 爱 你" has three nodes "x1", "x2" and "x3"
         node_value_list: values(concepts) of nodes in CAMR graph, e.g. concept "我" of node "x1"
         relation_list: list of relations and alignment of relations between two nodes
         attribute_list: list of attributes between node and its alignment
+        sentence_id: str of sentence id
         """
         # initialize CAMR graph nodes using list of nodes name
         # root, by default, is the first in node_list
@@ -82,6 +83,10 @@ class CAMR(object):
             self.attributes = []
         else:
             self.attributes = attribute_list[:]
+        if sentence_id is None:
+            self.sid = None
+        else:
+            self.sid = str(sentence_id).strip()
 
     def rename_node(self, prefix):
         """
@@ -217,5 +222,5 @@ class CAMR(object):
                     anchor_list[0].append(["top", 'TOP'])
                 else:
                     relation_list[0].append(["top", node_list[0]])
-                result_camr = CAMR(node_list, node_value_list, relation_list, anchor_list)
+                result_camr = CAMR(node_list, node_value_list, relation_list, anchor_list, sid)
                 return result_camr
