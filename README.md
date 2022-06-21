@@ -68,7 +68,7 @@
 # 1 评测内容	
 随着词法、句法分析技术的日益成熟，自然语言处理（Natural Language Processing，NLP）已整体推进到了语义分析层面
 <sup>
- <a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFD2014&filename=MESS201401001&uniplatform=NZKPT&v=JhR5vtwH7zurhtWjWUkB1Sfn-uatTuz-JB9t8_lMa7UaTolLIj3u90cp3Rk5y8Nt">
+ <a href="http://jcip.cipsc.org.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=60">
   [1]
  </a>
 </sup>
@@ -360,7 +360,7 @@ Smatch自提出以来被广泛使用于AMR解析评测，但其仍然存在一�
 ## 3.2 作为主要标准的Align-smatch评测指标
 Align-smatch在Smatch的基础上增添了两种新的数据：概念对齐信息和关系对齐信息
 <sup>
- <a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2022&filename=MESS202201003&uniplatform=NZKPT&v=adniY_3P-0OTOYRAeX1Vw4Lg3POhq_Z3RIyf5-C0dU37LDFuc1MRtK17sV_Wjtkk">
+ <a href="http://124.16.136.79/CN/article/downloadArticleFile.do?attachType=PDF&id=3243">
   [7]
  </a>
 </sup>
