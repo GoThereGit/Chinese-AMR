@@ -7,11 +7,14 @@
 # News and Updates
 * **June 10, 2022**
   * Initial Public Call for <a href="#anchor1">Participation</a>
-  * Release of the Train Set and Dev Set via <a href="#anchor2">LDC</a>
+  * Release of Train Set and Dev Set via <a href="#anchor2">LDC</a>
 * ~~**June 15, 2022**~~
   * ~~Release of Evaluation Tool Align-smatch (original date: June 10)~~
 * **June 20, 2022**
-  * Updated Align-smatch tool (<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">the LATEST version</a>)  
+  * Update Align-smatch tool (<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">the LATEST version</a>)  
+* **June 23, 2022**
+  * Update <a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">data</a> folder
+
 
 [![Zh](https://img.shields.io/badge/README-Chinese-yellow.svg "Zh")](./README.md)
 
