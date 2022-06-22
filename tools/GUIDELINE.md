@@ -1,18 +1,18 @@
 # <p align="center">Guidelines</p>
 
-# I. Introduction
+# Introduction
 
 CAMRP 2022 uses Align-smatch as the main evaluation metric while Smatch is for reference only. Align-smatch returns an overall score between parsed CAMR and gold CAMR.
 
-This is a guideline for how to use Align-smatch evaluation tool.
+This is a guideline for how to use evaluation tool Align-smatch.
 
-# II. Requirements and Installation
+# Requirements and Installation
 
 Python 3.5 or higher version is required.
 
 You need to clone this repository to run Align-smatch.py (or Smatch.py).
 
-# III. Usage
+# Usage
 
 To run Smatch.py, you need following command with at least the [-f] option, which requires two filename arguments:
 
@@ -23,20 +23,20 @@ To run Align-smatch.py, you need following command with at least the [-f] option
     python Align-smatch.py -f parsed_amr.txt gold_amr.txt -lf max_len.txt
 
 
-## Input: 
+### Input: 
 
 * Two files which contain CAMR data. Each file may contain several CAMRs, and every two CAMRs are separated by a blank line.
 * A file which contains the max length of each sentence in data sets. (**Align-smatch ONLY**)
 
-## Input File Format: 
+### Input File Format: 
 
 Please refer to "./docs/samples/<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/docs/samples/CAMR_tuple.txt">CAMR_tuple.txt</a>" and "./tools/<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools/max_len.txt">max_len.txt</a>" (**Align-smatch ONLY**).
 
-## Output: 
+### Output: 
 
 F-scores under Align-smatch (or Smatch) metric.
 
-## Arguments:
+### Arguments:
 
 * ***-h***: Help for more information.
 
@@ -51,3 +51,17 @@ F-scores under Align-smatch (or Smatch) metric.
 * ***--ms***: Output Align-smatch scores for every CAMR pair (for manual check). Align-smatch normally returns one single overall score based on all pairs of CAMRs, which are weighted according to their number of tuples. **Set to FALSE by default**.
 
 * ***--pr***: Output Precision and Recall as well as the F-score. **Set to FALSE by default**.
+
+# Citation
+```
+@InProceedings{xiao-EtAl:2022:LREC,
+  author    = {Xiao, Liming  and  Li, Bin  and  Xu, Zhixing  and  Huo, Kairui  and  Feng, Minxuan  and  Zhou, Junsheng  and  Qu, Weiguang},
+  title     = {Align-smatch: A Novel Evaluation Method for Chinese Abstract Meaning Representation Parsing based on Alignment of Concept and Relation},
+  booktitle      = {Proceedings of the Language Resources and Evaluation Conference},
+  month          = {June},
+  year           = {2022},
+  address        = {Marseille, France},
+  publisher      = {European Language Resources Association},
+  pages     = {5938--5945},
+}
+```
