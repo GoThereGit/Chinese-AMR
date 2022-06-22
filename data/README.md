@@ -1,8 +1,6 @@
 All the data participants need in CAMRP 2022 evaluation task should include three sets:
 - train set
-
 - dev set 
-
 - test set
 
 
