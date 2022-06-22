@@ -13,7 +13,8 @@
 |6月10日|评测任务<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">报名</a>开始，LDC发布训练集和验证集（详见<a href="#anchor1">语料许可协议</a>）|
 |~~6月15日~~|~~提供评测软件Align-smatch（原6月10日）~~|
 |6月20日|评测软件<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">Align-smatch</a>更新|
-|8月8日|评测报名截止|
+|6月23日|<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">data</a>文件更新|
+
 
 
 [![Eng](https://img.shields.io/badge/README-English-yellow.svg "English Version")](./README_Eng.md)
