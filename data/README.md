@@ -4,10 +4,10 @@ All the data participants need in CAMRP 2022 evaluation task should include thre
 - **test set**
 
 
-and  with four forms: 
+with four forms: 
 
-- **CAMR**
-- **CAMR tuples**
+- **CAMR** (original CAMR representation)
+- **CAMR tuples** (CAMR in tuples, input format)
 - **dependency tree** (external resource)
 - **max length** (additional information)
 
