@@ -14,7 +14,7 @@
 |~~6月15日~~|~~提供评测软件Align-smatch（原6月10日）~~|
 |6月20日|评测软件<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">Align-smatch</a>更新|
 |6月23日|<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">data</a>文件更新|
-
+|8月8日|评测任务停止报名|
 
 
 [![Eng](https://img.shields.io/badge/README-English-yellow.svg "English Version")](./README_Eng.md)
@@ -25,7 +25,7 @@
 
 - [X] 2022年6月10日：<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">**评测报名**</a>开始，LDC发布训练集以及验证集给参赛队，提供<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">Align-smatch</a>评测软件下载地址。
 
-- [ ] 2022年8月8日：报名截止。
+- [X] 2022年8月8日：报名截止。
 
 - [ ] 2022年8月10日：**本站**发布测试集（包含Test A和Test B）给参赛队。
 
@@ -192,7 +192,7 @@
  <p>图5 CAMR多元组表示样例</p>
 </div>
 
-图5为例句的CAMR多元组表示样例，具体包括句子编号1、节点编号1、概念1、回指节点1、关系、关系编号、关系对齐词、节点编号2、概念2和同指节点2。参赛队最终返回的自动标注数据也应为CAMR多元组表示格式（详见<a href="#anchor2.2">2.2 任务说明</a>）。
+图5为例句的CAMR多元组表示样例，具体包括句子编号1、节点编号1、概念1、同指节点1、关系、关系编号、关系对齐词、节点编号2、概念2和同指节点2。参赛队最终返回的自动标注数据也应为CAMR多元组表示格式（详见<a href="#anchor2.2">2.2 任务说明</a>）。
 
 <a name="anchor2.2"></a>
 ## 2.2 任务说明
