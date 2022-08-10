@@ -15,6 +15,7 @@
 |6月20日|评测软件<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">Align-smatch</a>更新|
 |6月23日|<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">data</a>文件更新|
 |8月8日|评测任务停止报名|
+|8月10日|<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data/test">测试集</a>发布|
 
 
 [![Eng](https://img.shields.io/badge/README-English-yellow.svg "English Version")](./README_Eng.md)
@@ -27,7 +28,7 @@
 
 - [X] 2022年8月8日：报名截止。
 
-- [ ] 2022年8月10日：**本站**发布测试集（包含Test A和Test B）给参赛队。
+- [X] 2022年8月10日：**本站**发布测试集（包含Test A和Test B）给参赛队。
 
 - [ ] 2022年8月20日：参赛队提交自动标注的数据。
 
