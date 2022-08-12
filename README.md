@@ -16,7 +16,7 @@
 |6月23日|<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">data</a>文件更新|
 |8月8日|评测任务停止报名|
 |8月10日|<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data/test">测试集</a>发布|
-
+|8月12日|<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">tools</a>文件更新|
 
 [![Eng](https://img.shields.io/badge/README-English-yellow.svg "English Version")](./README_Eng.md)
 
