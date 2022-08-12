@@ -194,10 +194,13 @@ class CAMR(object):
                     continue
                 nid1 = match_node_concept(nid1, concept1, coref1, limit)
                 nid2 = match_node_concept(nid2, concept2, coref2, limit)
-                update_relation(nid1, rel[1:], nid2)
+                if rel.startswith(':') and len(rel) > 1:
+                    update_relation(nid1, rel[1:], nid2)
                 if not smatch:
                     if rid != '-' and ralign != '-':
-                        add_ralign(nid1, rel[1:], rid, ralign, nid2)
+                        if rel.startswith(':') and len(rel) > 1:
+                            rel = rel[1:]
+                        add_ralign(nid1, rel, rid, ralign, nid2)
             else:
                 if node_list == []:
                     continue
