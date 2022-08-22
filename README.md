@@ -17,6 +17,8 @@
 |8月8日|评测任务停止报名|
 |8月10日|<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data/test">测试集</a>发布|
 |8月12日|<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">tools</a>文件更新|
+|8月20日|自动标注结果提交截止日期推迟至8月22日|
+|8月22日|参赛队提交自动标注结果|
 
 [![Eng](https://img.shields.io/badge/README-English-yellow.svg "English Version")](./README_Eng.md)
 
@@ -30,7 +32,7 @@
 
 - [X] 2022年8月10日：**本站**发布测试集（包含Test A和Test B）给参赛队。
 
-- [ ] 2022年8月20日：参赛队提交自动标注的数据。
+- [X] 2022年8月22日：参赛队提交自动标注的数据。
 
 - [ ] 2022年8月26日：**本站**发布测试集（包含Test A和Test B）黄金标准答案给参赛队。
 
