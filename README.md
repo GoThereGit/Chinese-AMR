@@ -19,6 +19,7 @@
 |8月12日|<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">tools</a>文件更新|
 |8月20日|自动标注结果提交截止日期推迟至8月22日|
 |8月22日|参赛队提交自动标注结果|
+|8月28日|测试集标准答案邮件发送至各参赛队；tools/read_tuples.py更新|
 
 [![Eng](https://img.shields.io/badge/README-English-yellow.svg "English Version")](./README_Eng.md)
 
