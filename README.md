@@ -20,7 +20,7 @@
 |8月20日|自动标注结果提交截止日期推迟至8月22日|
 |8月22日|参赛队提交自动标注结果|
 |8月28日|测试集标准答案邮件发送至各参赛队；<a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/tools/read_tuples.py">tools/read_tuples.py</a>更新|
-
+|8月31日|评测排名发布|
 # 评测排名：
 <table align="center">
   <p align="center">Table 1: Closed Test A</p>
