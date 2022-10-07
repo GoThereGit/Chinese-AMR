@@ -22,6 +22,7 @@
 |8月28日|测试集标准答案邮件发送至各参赛队；<a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/tools/read_tuples.py">tools/read_tuples.py</a>更新|
 |8月31日|评测排名发布|
 |9月7日|参赛队提交技术报告|
+|9月30日|评测任务截止；评测研讨会延期|
 
 # 评测排名：
 <table align="center">
@@ -98,31 +99,6 @@
     <td>79.88</td>
   </tr>
   <tr align="center">
-    <td rowspan="2" align="center">NJU</td>
-      <td>1</td>
-    <td>65.25</td>
-    <td>62.20</td>
-    <td>63.69</td>
-    <td>66.00</td>
-    <td>63.98</td>
-    <td>64.97</td>
-    <td>69.85</td>
-    <td>66.66</td>
-    <td>68.22</td>
-  </tr>
-  <tr align="center">
-      <td>2</td>
-    <td>63.19</td>
-    <td>59.72</td>
-    <td>61.41</td>
-    <td>64.19</td>
-    <td>61.89</td>
-    <td>63.02</td>
-    <td>68.24</td>
-    <td>64.43</td>
-    <td>66.28</td>
-  </tr>
-  <tr align="center">
     <td rowspan="2" align="center">ECNU</td>
       <td>1</td>
     <td>67.86</td>
@@ -146,6 +122,31 @@
     <td>-</td>
     <td>-</td>
     <td>-</td>
+  </tr>
+<tr align="center">
+    <td rowspan="2" align="center">NJU</td>
+      <td>1</td>
+    <td>65.25</td>
+    <td>62.20</td>
+    <td>63.69</td>
+    <td>66.00</td>
+    <td>63.98</td>
+    <td>64.97</td>
+    <td>69.85</td>
+    <td>66.66</td>
+    <td>68.22</td>
+  </tr>
+  <tr align="center">
+      <td>2</td>
+    <td>63.19</td>
+    <td>59.72</td>
+    <td>61.41</td>
+    <td>64.19</td>
+    <td>61.89</td>
+    <td>63.02</td>
+    <td>68.24</td>
+    <td>64.43</td>
+    <td>66.28</td>
   </tr>
   <tr align="center">
     <td rowspan="2" align="center">ECUST</td>
@@ -528,7 +529,7 @@
 </tbody>
 </table>
 
-所有结果均取历史最高成绩。标记*代表该参赛队伍逾期提交的结果。评测排名<a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/scores.pdf">PDF</a>下载。
+所有结果均取历史最高成绩，排名参考Align-smatch指标下的F值。标记*代表该参赛队伍逾期提交的结果。评测排名<a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/scores.pdf">PDF</a>下载。
 
 [![Eng](https://img.shields.io/badge/README-English-yellow.svg "English Version")](./README_Eng.md)
 
@@ -548,9 +549,9 @@
 
 - [X] 2022年9月7日：参赛队提交中文抽象语义表示评测任务技术报告，用于审稿。
 
-- [ ] 2022年9月30日：参赛队提交技术报告最终版。
+- [X] 2022年9月30日：参赛队提交技术报告最终版。
 
-- [ ] 2022年10月14日-16日：<a href="http://www.cips-cl.org/static/CCL2022/index.html">CCL 2022</a>评测研讨会，线上公布最终排名，评测结束。
+- [ ] 2022年10月28日-30日：<a href="http://www.cips-cl.org/static/CCL2022/index.html">CCL 2022</a>评测研讨会，线上公布最终排名，评测结束。
 
 <a name="anchor1"></a>
 
@@ -794,15 +795,15 @@ Align-smatch
 ，每个集合一般包含三种数据类型的三元组：
 1.  **表示节点的三元组：instance(node_index, concept)。**
 
-其中，instance表示对概念节点的实例化；node_index为节点索引，记作$a_i$，$i∈${$0,1,…,n$}；concept为由词抽象出的概念。如表2所示，在例句“希望我惨痛的经历给大家一个教训呀”对应的AMR三元组中，节点三元组包含了所有节点的实例、节点索引和对应的概念。如三元组“instance($a_0$, 希望-01)”表示“希望”一词的实例化，该词的节点索引为$a_0$，AMR抽象出的概念为“希望-01”。
+其中，instance表示对概念节点的实例化；node_index为节点索引，记作a**i**，**i**$\in$\{0,1,…,n\}；concept为由词抽象出的概念。如表2所示，在例句“希望我惨痛的经历给大家一个教训呀”对应的AMR三元组中，节点三元组包含了所有节点的实例、节点索引和对应的概念。如三元组“instance(a0, 希望-01)”表示“希望”一词的实例化，该词的节点索引为a0，AMR抽象出的概念为“希望-01”。
 
 2.  **表示有向弧的三元组：relation(node_index1, node_index2)。**
 
-node_index1和node_index2表示为两个不同概念节点的索引，分别对应$a_i$和$a_j$，同理，$j∈${$0,1,…,n$}，节点索引的分配可以是完全随机的，如图6所示（本文选用完全二叉树的顺序存储方式对节点索引进行编号，仅供参考）；relation为$a_i$、$a_j$节点对应的两个词之间的语义关系。如表2所示，有向弧三元组“arg1($a_1$,$a_4$)”表示$a_1$索引和$a_4$索引所对应的词“给”和“大家”之间的语义关系为“arg1（受事）”。
+node_index1和node_index2表示为两个不同概念节点的索引，分别对应a**i**和a**j**，同理，**j**$\in$\{0,1,…,n\}，节点索引的分配可以是完全随机的，如图6所示（本文选用完全二叉树的顺序存储方式对节点索引进行编号，仅供参考）；relation为a**i**、a**j**节点对应的两个词之间的语义关系。如表2所示，有向弧三元组“arg1(a1,a4)”表示a1索引和a4索引所对应的词“给”和“大家”之间的语义关系为“arg1（受事）”。
 
 3.  **表示节点属性的三元组：property(node_index, value)。**
 
-如表2所示，节点属性三元组root($a_0$, top)表示$a_0$节点的属性为根节点，其中，value=top。
+如表2所示，节点属性三元组root(a0, top)表示a0节点的属性为根节点，其中，value=top。
 
 <div align=center>
 <img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_6.png" width=800>
@@ -810,11 +811,11 @@ node_index1和node_index2表示为两个不同概念节点的索引，分别对�
 </div>
 
 完成了AMR三元组的转化之后，Smatch使用爬山算法（Hill-climbing Method）进行贪婪搜索以获取黄金AMR（Gold AMR）三元组集合和解析生成的AMR（Generated AMR）三元组集合之间的最大匹配个数，最终返回准确率（P）、召回率（R）和F值（F-score）：
-$$ P = {{count(Matching\enspace Triples)} \over {count(Generated\enspace Triples)}} $$
-$$ R = {{count(Matching\enspace Triples)} \over {count(Gold\enspace Triples)}} $$
-$$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
+$$P = {{count(Matching\enspace Triples)} \over {count(Generated\enspace Triples)}}$$
+$$R = {{count(Matching\enspace Triples)} \over {count(Gold\enspace Triples)}}$$
+$$F_β=(1+β^2)\*\frac{P\*R}{(β^2\*P)+R}$$
 
-其中，Smatch里的准确率P为黄金AMR的三元组集合和解析生成的AMR三元组集合间的最大匹配个数与解析生成的AMR的三元组总个数之比；召回率R为黄金AMR三元组集合和解析生成的AMR三元组集合间的最大匹配个数与黄金AMR的三元组总个数之比；F值为准确率和召回率的调和平均值（Harmonic Mean），$β∈R^+$，表示为影响权重：当$β>1$时，召回率比准确率更重要；反之，当$β<1$时，准确率比召回率更重要；当$β=1$时，召回率和确准率同样重要（即$F_β=F_1$）。
+其中，Smatch里的准确率P为黄金AMR的三元组集合和解析生成的AMR三元组集合间的最大匹配个数与解析生成的AMR的三元组总个数之比；召回率R为黄金AMR三元组集合和解析生成的AMR三元组集合间的最大匹配个数与黄金AMR的三元组总个数之比；F值为准确率和召回率的调和平均值（Harmonic Mean），β$\in{R^+}$，表示为影响权重：当β>1时，召回率比准确率更重要；反之，当β<1时，准确率比召回率更重要；当β=1时，召回率和确准率同样重要（即$F_β=F_1$）。
 
 <table width='500' align="center">
 <p align="center">表2 Smatch三元组表示</p>
@@ -882,19 +883,19 @@ Align-smatch在Smatch的基础上增添了两种新的数据：概念对齐信�
 
 1. **在原节点属性三元组中新增了表示概念对齐的三元组：anchor(node_index, token_num)。**
 
-其中，anchor表示该节点的属性为“对齐”，node_index为节点索引，token_num为词编号。如表3所示，节点属性三元组anchor($a_7$, x3 )表示$a_7$索引对应的概念节点“惨痛-01”与词编号x3对应的词“惨痛”完成了概念对齐。
+其中，anchor表示该节点的属性为“对齐”，node_index为节点索引，token_num为词编号。如表3所示，节点属性三元组anchor(a7, x3 )表示a7索引对应的概念节点“惨痛-01”与词编号x3对应的词“惨痛”完成了概念对齐。
 
 2. **在原有向弧三元组中新增了表示关系对齐的四元组：(Word_on_Arc, token_num, node_index1, node_index2)。**
 
-其中，Word_on_Arc为有向弧上的虚词，传递实词之间的关系意义。如表3所示，有向弧四元组(的, x4, $a_3$, $a_7$)表示虚词“的”位于$a_3$索引和$a_7$索引分别对应的两个节点所连成的有向弧上，同时“的”被赋予词编号$x_4$，完成了关系对齐。
+其中，Word_on_Arc为有向弧上的虚词，传递实词之间的关系意义。如表3所示，有向弧四元组(的, x4, a3, a7)表示虚词“的”位于a3索引和a7索引分别对应的两个节点所连成的有向弧上，同时“的”被赋予词编号x4，完成了关系对齐。
 
 3. **使用有向弧多元组来表示位于根节点的词，而不再使用节点属性三元组表示：property(node_index, value) → relation(node_index1, node_index2)。**
 
-如表2所示，在Smatch指标下，例句中的根节点的三元组表示为：root($a_0$, top)。如表3所示，Align-smatch中该节点的表示则修改为：root($a_0$, $a_0$)。
+如表2所示，在Smatch指标下，例句中的根节点的三元组表示为：root(a0, top)。如表3所示，Align-smatch中该节点的表示则修改为：root(a0, a0)。
 Align-smatch评测公式如下：
-$$ P = {{count(Matching\enspace Tuples)} \over {count(Generated\enspace Tuples)}} $$
-$$ R = {{count(Matching\enspace Tuples)} \over {count(Gold\enspace Tuples)}} $$
-$$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
+$$P = {{count(Matching\enspace Tuples)} \over {count(Generated\enspace Tuples)}}$$
+$$R = {{count(Matching\enspace Tuples)} \over {count(Gold\enspace Tuples)}}$$
+$$F_β=(1+β^2)\*\frac{P\*R}{(β^2\*P)+R}$$
 
 同样的，Align-smatch中的准确率P为黄金AMR的多元组集合和解析生成的AMR多元组集合间的最大匹配个数与解析生成的AMR多元组总个数之比；召回率R为黄金AMR的多元组集合和解析生成的AMR多元组集合之间的最大匹配个数与黄金AMR的多元组总个数之比；F值同上。
 
