@@ -4,17 +4,27 @@
 
 # <p align="center">Chinese Abstract Meaning Representation Parsing 2022</p>
 
-# News and Updates
+# Important Dates
 * **June 10, 2022**
-  * Initial Public Call for <a href="#anchor1">Participation</a>
-  * Release of Train Set and Dev Set via <a href="#anchor2">LDC</a>
-* ~~**June 15, 2022**~~
-  * ~~Release of Evaluation Tool Align-smatch (original date: June 10)~~
-* **June 20, 2022**
-  * Update Align-smatch tool (<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">the LATEST version</a>)  
-* **June 23, 2022**
-  * Update <a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">data</a> folder
-
+  * - [X] Initial Public Call for Participation
+  * - [x] Release of the Train Set and Dev Set
+  * - [x] Availability of Evaluation Software (Align-smatch)
+* **August 8, 2022**
+  * - [x] Enrolment Deadline
+* **August 10, 2022**
+  * - [x] Release of the Test Set (Test A and Test B)
+* **August 22, 2022**
+  * - [x] Submission of Annotated Data
+* **August 28, 2022**
+  * - [x] Release of Gold Data of the Test Set (Test A and Test B)
+* **September 7, 2022**
+  * - [x] Submission of Technical Report
+* **September 30, 2022**
+  * - [x] Final Submission of Camera-Ready Technical Report
+  * - [x] Evaluation Period
+* **October 28-30, 2022** 
+  * - [x] Release of Final Rankings Online
+  * - [x] Workshop for Technical Evaluation Tasks of <a href="http://www.cips-cl.org/static/CCL2022/en/cclEval/taskCollection/index.html">CCL 2022</a>
 
 [![Zh](https://img.shields.io/badge/README-Chinese-yellow.svg "Zh")](./README.md)
 
@@ -129,26 +139,6 @@ Unlike the cross-framework/cross-lingual task of MRP held by CoNLL 2020,
 we aim to evaluate Chinese AMR parsing **only**, and of course with Align-smatch metric. 
 
 # 2 Important Dates
-* **June 10, 2022**
-  * - [x] Initial Public Call for Participation
-  * - [x] Release of the Train Set and Dev Set
-  * - [x] Availability of Evaluation Software (Align-smatch)
-* **August 8, 2022**
-  * - [ ] Enrolment Deadline
-* **August 10, 2022**
-  * - [ ] Release of the Test Set (Test A and Test B)
-* **August 20, 2022**
-  * - [ ] Submission of Annotated Data
-* **August 26, 2022**
-  * - [ ] Release of Gold Data of the Test Set (Test A and Test B)
-* **September 5, 2022**
-  * - [ ] Submission of Technical Report
-* **September 30, 2022**
-  * - [ ] Final Submission of Camera-Ready Technical Report
-  * - [ ] Evaluation Period
-* **October 14-16, 2022** 
-  * - [ ] Release of Final Rankings Online
-  * - [ ] Workshop for Technical Evaluation Tasks of <a href="http://www.cips-cl.org/static/CCL2022/en/cclEval/taskCollection/index.html">CCL 2022</a>
 
 **Entry Form:**
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
