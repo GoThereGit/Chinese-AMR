@@ -30,7 +30,7 @@ To run Align-smatch.py, you need following command with at least the [-f] option
 
 ### Input File Format: 
 
-Please refer to "./docs/samples/<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/docs/samples/CAMR_tuple.txt">CAMR_tuple.txt</a>" and "./tools/<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools/max_len.txt">max_len.txt</a>" (**Align-smatch ONLY**).
+Please refer to "../docs/samples/<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/docs/samples/CAMR_tuple.txt">CAMR_tuple.txt</a>" and "./<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools/max_len.txt">max_len.txt</a>" (**Align-smatch ONLY**).
 
 ### Output: 
 
