@@ -532,6 +532,12 @@
 
 所有结果均取历史最高成绩，排名参考Align-smatch指标下的F值。标记*代表该参赛队伍逾期提交的结果。评测排名<a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/scores.pdf">PDF</a>下载。
 
+🥇<a href="https://github.com/zsLin177/camr">SUDA-HUAWEI</a>
+
+🥈<a href="https://github.com/PKUnlp-icler/Two-Stage-CAMRP">PKU</a>
+
+🥉ECNU & NJU
+
 [![Eng](https://img.shields.io/badge/README-English-yellow.svg "English Version")](./README_Eng.md)
 
 **English Version:** <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/README_Eng.md">README_Eng.md</a>
