@@ -2,52 +2,32 @@
 <img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/logo.png" width="200">
 </div>
 
-# <p align="center">Chinese Abstract Meaning Representation Parsing 2022</p>
+# <p align="center">Chinese Abstract Meaning Representation Parsing 2023</p>
 
 # Important Dates
-* **June 10, 2022**
-  * - [X] Initial Public Call for Participation
-  * - [x] Release of the Train Set and Dev Set
-  * - [x] Availability of Evaluation Software (Align-smatch)
-* **August 8, 2022**
-  * - [x] Enrolment Deadline
-* **August 10, 2022**
-  * - [x] Release of the Test Set (Test A and Test B)
-* **August 22, 2022**
-  * - [x] Submission of Annotated Data
-* **August 28, 2022**
-  * - [x] Release of Gold Data of the Test Set (Test A and Test B)
-* **September 7, 2022**
-  * - [x] Submission of Technical Report
-* **September 30, 2022**
-  * - [x] Final Submission of Camera-Ready Technical Report
-  * - [x] Evaluation Period
-* **October 28-30, 2022** 
-  * - [x] Release of Final Rankings Online
-  * - [x] Workshop for Technical Evaluation Tasks of <a href="http://www.cips-cl.org/static/CCL2022/en/cclEval/taskCollection/index.html">CCL 2022</a>
+* **June 10, 2023**
+  * - [ ] Initial Public Call for Participation
+  * - [ ] Release of the Train Set and Dev Set
+  * - [ ] Availability of Evaluation Software (Align-smatch)
 
 [![Zh](https://img.shields.io/badge/README-Chinese-yellow.svg "Zh")](./README.md)
 
 **Chinese Version**: [README.md](./README.md)
 
 <a name="anchor1"></a>
-[![signup](https://img.shields.io/badge/CAMRP_2022-Google_Form-blue.svg "sign up")](https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url)
+[![signup](https://img.shields.io/badge/CAMRP_2023-Google_Form-blue.svg "sign up")](https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url)
 
 **Entry Form:** 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
 
 <a name="anchor2"></a>
 
-[![agreement](https://img.shields.io/badge/CAMRP_2022-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
-
-**Participants must sign the LDC Evaluation License Agreement for the data/corpora used in the CAMRP 2022 Evaluation Task will be authorized via <a href="https://www.ldc.upenn.edu/">LDC</a> only:**
-1.	Each team should designate a member as the data contact person.
-2.	Each data contact person must fill in the [LDC Evaluation License Agreement](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf) and send a signed copy of the agreement to LDC (<ldc@ldc.upenn.edu>).
-3.	Participants must use the received data/corpora from LDC in the CAMRP 2022 Evaluation Task only.
-4.	For details, please refer to the [LDC Evaluation License Agreement](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf).
+[![agreement](https://img.shields.io/badge/CAMRP_2023-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
 
 
-[![body](https://img.shields.io/badge/CAMRP_2022-Nanjing_Normal_University-green.svg "CAMRP 2022")](https://github.com/GoThereGit/Chinese-AMR/blob/main/README.md)
+
+
+[![body](https://img.shields.io/badge/CAMRP_2023-Nanjing_Normal_University-green.svg "CAMRP 2023")](https://github.com/GoThereGit/Chinese-AMR/blob/main/README.md)
 
 * Organizers:
   * **Bin Li** (Nanjing Normal University, Nanjing, China) (E-mail: <libin.njnu@gmail.com>)
