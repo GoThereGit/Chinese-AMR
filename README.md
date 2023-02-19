@@ -20,19 +20,19 @@
 
 [![signup](https://img.shields.io/badge/CAMRP_2023-报名-blue.svg "sign up")](https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM)
 
-- [ ] 2023年x月x日：<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">**评测报名**</a>开始，提供<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">Align-smatch</a>评测软件下载地址。
+- [ ] 2023年3月1日：<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">**评测报名**</a>开始，提供<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">Align-smatch</a>评测软件下载地址。
 
-- [ ] 2023年x月x日：报名截止。
+- [ ] 2023年4月1日：报名截止。
 
-- [ ] 2023年x月x日：**本站**发布测试集（包含Test A和Test B）给参赛队。
+- [ ] 2023年6月1日：**本站**发布测试集（包含Test A和Test B）给参赛队。
 
-- [ ] 2023年x月x日：参赛队提交自动标注的数据。
+- [ ] 2023年6月10日：参赛队提交自动标注的数据。
 
-- [ ] 2023年x月x日：**本站**发布测试集（包含Test A和Test B）黄金标准答案给参赛队。
+- [ ] 2023年6月15日：**本站**发布测试集（包含Test A和Test B）黄金标准答案给参赛队。
 
-- [ ] 2023年x月x日：参赛队提交中文抽象语义表示评测任务技术报告，用于审稿。
+- [ ] 2023年6月25日：参赛队提交中文抽象语义表示评测任务技术报告，用于审稿。
 
-- [ ] 2023年x月x日：参赛队提交技术报告最终版。
+- [ ] 2023年7月10日：参赛队提交技术报告最终版。
 
 - [ ] 2023年x月x日-x日：<a href="http://www.cips-cl.org/static/CCL2022/index.html">CCL 2023</a>评测研讨会，线上公布最终排名，评测结束。
 
