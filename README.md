@@ -1,6 +1,8 @@
 <div align="center">
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/logo.png" width="200">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/img/2023logo.png" width="200">
 </div>
+
+
 
 # <p align="center">Chinese Abstract Meaning Representation Parsing 2023</p>
 
@@ -10,7 +12,7 @@
 
 |时间|消息|
 |:---:|:---:|
-|x月x日|评测任务<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">报名</a>|
+|3月1日|评测任务报名|
 
 
 
@@ -34,7 +36,7 @@
 
 - [ ] 2023年7月10日：参赛队提交技术报告最终版。
 
-- [ ] 2023年x月x日-x日：<a href="http://www.cips-cl.org/static/CCL2022/index.html">CCL 2023</a>评测研讨会，线上公布最终排名，评测结束。
+- [ ] 2023年x月x日-x日：<a href="http://cips-cl.org/static/CCL2023/index.html">CCL 2023</a>评测研讨会，线上公布最终排名，评测结束。
 
 
 
@@ -549,7 +551,7 @@ $$F_β=(1+β^2)\*\frac{P\*R}{(β^2\*P)+R}$$
 
 # 4 撰写技术报告
 1.  报告可由中文或英文撰写。
-2.  报告统一使用<a href="http://cips-cl.org/static/CCL2022/downloads/ccl2022_template.zip">CCL 2022</a>的论文模版。
+2.  报告统一使用CCL 2023的<a href="http://cips-cl.org/static/CCL2023/downloads/ccl2023_template.zip">论文模板</a>。
 3.  报告正文不得超过4页，参考文献页数不限。
 4.  报告应至少包含以下四个部分：模型介绍、评测结果、结果分析与讨论和参考文献。
 
