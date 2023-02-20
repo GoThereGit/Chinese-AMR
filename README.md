@@ -36,9 +36,9 @@
 
 - [ ] 2023年7月10日：参赛队提交技术报告最终版。
 
-- [ ] 2023年x月x日-x日：<a href="http://cips-cl.org/static/CCL2023/index.html">CCL 2023</a>评测研讨会，线上公布最终排名，评测结束。
+- [ ] 2023年8月3日-5日：<a href="http://cips-cl.org/static/CCL2023/cclEval/taskCollection/index.html">CCL 2023</a>评测研讨会，线上公布最终排名，评测结束。
 
-
+![nnu](https://img.shields.io/badge/CAMRP_2023-NNU-green.svg "sign up")
 
 * 组织者：
   * 李斌（南京师范大学）（联系邮箱：<libin.njnu@gmail.com>）
