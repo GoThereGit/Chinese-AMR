@@ -1,11 +1,11 @@
 <div align="center">
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/logo.png" width="200">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/img/2023logo.png" width="200">
 </div>
 
 # <p align="center">Chinese Abstract Meaning Representation Parsing 2023</p>
 
 # Important Dates
-* **June 10, 2023**
+* **Mar 1, 2023**
   * - [ ] Initial Public Call for Participation
   * - [ ] Release of the Train Set and Dev Set
   * - [ ] Availability of Evaluation Software (Align-smatch)
