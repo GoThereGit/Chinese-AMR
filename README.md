@@ -222,7 +222,7 @@ Align-smatch
  <a href="https://aclanthology.org/W16-1702.pdf">
   [3]
  </a>
-</sup>。语料库为在LDC（Linguistic Data Consortium）发布的<a href="https://catalog.ldc.upenn.edu/LDC2021T13">CAMR v2.0</a>，约含2万中文句子，原始语料选自于宾州中文树库（Chinese Tree Bank 8.0，CTB 8.0），分为训练集、验证集和测试集。该语料已在CoNLL 2020进行过评测。本次评测任务将继续沿用该语料库，以比较两年来中文AMR语义解析的进展。为了防止参赛队将测试集用于训练，本次评测设置了盲测集，约含2000句语料。该部分语料没有公开，亦可观察各个系统在盲测数据集上的表现，可用来评测解析模型处理不同语体风格的文本数据时的泛化能力。提供的各项数据分布如表1所示：
+</sup>。语料库为在LDC（Linguistic Data Consortium）发布的<a href="https://catalog.ldc.upenn.edu/LDC2021T13">CAMR v2.0</a>，约含2万中文句子，原始语料选自于宾州中文树库（Chinese Tree Bank 8.0，CTB 8.0），分为训练集、验证集和测试集。该语料已在CoNLL 2020进行过评测。本次评测任务将继续沿用该语料库，以比较两年来中文AMR语义解析的进展。为了防止参赛队将测试集用于训练，本次评测设置了盲测集，约含3000句语料。该部分语料没有公开，亦可观察各个系统在盲测数据集上的表现，可用来评测解析模型处理不同语体风格的文本数据时的泛化能力。提供的各项数据分布如表1所示：
 
 
 <table align="center">
@@ -251,8 +251,13 @@ Align-smatch
     <td align='center'>39228</td>
   </tr>
   <tr>
-    <td align='center'>盲测集（Test B）</td>
+    <td align='center'>测试集（Test B）</td>
     <td align='center'>约2000句</td>
+    <td align='center'>约4万词</td>
+  </tr>
+    <tr>
+    <td align='center'>盲测集（Test C）</td>
+    <td align='center'>约3000句</td>
     <td align='center'>约4万词</td>
   </tr>
 </tbody>
