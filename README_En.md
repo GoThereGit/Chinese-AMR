@@ -7,18 +7,17 @@
 # Important Dates
 * **Mar 1, 2023**
   * - [ ] Initial Public Call for Participation
-  * - [ ] Release of the Train Set and Dev Set
-  * - [ ] Availability of Evaluation Software (Align-smatch)
+
 
 [![Zh](https://img.shields.io/badge/README-Chinese-yellow.svg "Zh")](./README.md)
 
 **Chinese Version**: [README.md](./README.md)
 
 <a name="anchor1"></a>
-[![signup](https://img.shields.io/badge/CAMRP_2023-Google_Form-blue.svg "sign up")](https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url)
+[![signup](https://img.shields.io/badge/CAMRP_2023-Google_Form-blue.svg "sign up")](https://forms.office.com/r/67EyjvBFm2)
 
 **Entry Form:** 
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
+<a href="https://forms.office.com/r/67EyjvBFm2">CLICK ME</a>
 
 <a name="anchor2"></a>
 
@@ -92,7 +91,7 @@ the Chinese word “惨痛” is the third word in original sentence and therefo
 indicating the alignment with the concept node “x3/惨痛-01”, namely the **concept alignment**.
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/Figure_1_En.png">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/Figure_1_En.png">
  <p>Figure 1: CAMR text representation of the sample sentence "希望我惨痛的经历给大家一个教训呀"</p>
 </div>
 
@@ -108,7 +107,7 @@ for it is the fourth word in original sentence. Finally, we could say the functi
 namely the **relation alignment**.
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_2.png" width=800>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/figure_2.png" width=800>
  <p>Figure 2: CAMR graph of the sample sentence "希望我惨痛的经历给大家一个教训呀"</p>
 </div>
 
@@ -130,7 +129,7 @@ We offer three kinds of data sets including: **CAMR text**, **dependency analysi
 [![sample](https://img.shields.io/badge/sample-CAMR_text-red.svg "CAMR_text")](./docs/samples/CAMR_text.txt)
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/Figure_3.png">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/Figure_3.png">
  <p>Figure 3: Data sample of CAMR text representation</p>
 </div>
 
@@ -141,7 +140,7 @@ All files are encoded in UTF-8.
 [![sample](https://img.shields.io/badge/sample-CAMR_dep-green.svg "CAMR_dep")](./docs/samples/CAMR_dep.txt)
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/Figure_4.png" width=700>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/Figure_4.png" width=700>
  <p>Figure 4: Data sample of dependency analysis result</p>
 </div>
 
@@ -150,7 +149,7 @@ Figure 4 is a copy of dependency analysis result. Note that in the closed modali
 [![sample](https://img.shields.io/badge/sample-CAMR_tuple-blue.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.txt)
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_5.PNG">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/figure_5.PNG">
  <p>Figure 5: Data sample of CAMR tuple representation</p>
 </div>
 
@@ -218,7 +217,7 @@ As shown in Table 2, the property triple “root($a_0$, top)” indicates that t
 
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_6.png" width=800>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/figure_6.png" width=800>
  <p>Figure 6: CAMR graph of the sample sentence "希望我惨痛的经历给大家一个教训呀" (with indices)</p>
 </div>
 
