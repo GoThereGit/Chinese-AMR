@@ -158,7 +158,7 @@
 [![sample](https://img.shields.io/badge/sample-CAMR_text-red.svg "CAMR_text")](https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/samples/CAMR_text.txt)
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/Figure_3.png">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/figure_3.png">
  <p>图3 CAMR文本表示样例</p>
 </div>
 
