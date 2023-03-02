@@ -20,9 +20,9 @@
 
 **English Version:** <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/README_En.md">README_En.md</a>
 
-[![signup](https://img.shields.io/badge/CAMRP_2023-报名-blue.svg "sign up")](https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM)
+[![signup](https://img.shields.io/badge/CAMRP_2023-报名-blue.svg "sign up")](https://forms.office.com/r/67EyjvBFm2)
 
-- [ ] 2023年3月1日：<a href="https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM">**评测报名**</a>开始，提供<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/tools">Align-smatch</a>评测软件下载地址。
+- [ ] 2023年3月1日：<a href="https://forms.office.com/r/67EyjvBFm2">**评测报名**</a>开始，提供<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP%202022/tools">Align-smatch</a>评测软件下载地址。
 
 - [ ] 2023年4月1日：报名截止。
 
@@ -125,7 +125,7 @@
 根据汉语的特点对AMR进行了改进，在保留了AMR较强语义表示能力的同时，在CAMR中增加了“词与概念”的对齐信息和“词与关系”的对齐信息。通过对分词后对原始句子按照线性排序的原则，采用“x+数字”的形式，依次给每个词赋予不同的编号，而对应的概念节点也获得相同的编号。如图1中，“惨痛”为句子中的第3个词，因而被赋予了“x3”的编号，同时与概念节点“x3/惨痛-01”完成了对齐。
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_1.png">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/figure_1.png">
  <p>图1 例句“希望我惨痛的经历给大家一个教训呀”CAMR文本表示</p>
 </div>
 
@@ -138,7 +138,7 @@
 。最后，沿用概念对齐中编号的方案，有向弧上的虚词同样被赋予了顺序的编号，以实现关系对齐。如图2所示，虚词“的”和语义角色标签“arg0-of”一起被标注在了有向弧上，又由于它是第4个词，因而被编号为“x4”，以上两个步骤完成了语义关系“arg0-of”和虚词“x4/的”的对齐。
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_2.png" width=800>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/figure_2.png" width=800>
  <p>图2 例句“希望我惨痛的经历给大家一个教训呀”的CAMR图示</p>
 </div>
 
@@ -158,7 +158,7 @@
 [![sample](https://img.shields.io/badge/sample-CAMR_text-red.svg "CAMR_text")](./docs/samples/CAMR_text.txt)
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/Figure_3.png">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/Figure_3.png">
  <p>图3 CAMR文本表示样例</p>
 </div>
 
@@ -168,7 +168,7 @@
 [![sample](https://img.shields.io/badge/sample-CAMR_dep-green.svg "CAMR_dep")](./docs/samples/CAMR_dep.txt)
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/Figure_4.png" width=800>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/Figure_4.png" width=800>
  <p>图4 依存句法分析结果样例</p>
 </div>
 
@@ -177,7 +177,7 @@
 [![sample](https://img.shields.io/badge/sample-CAMR_tuple-blue.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.txt)
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_5.PNG" >
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/figure_5.PNG" >
  <p>图5 CAMR多元组表示样例</p>
 </div>
 
@@ -286,7 +286,7 @@ node_index1和node_index2表示为两个不同概念节点的索引，分别对�
 如表2所示，节点属性三元组root(a0, top)表示a0节点的属性为根节点，其中，value=top。
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/figures/figure_6.png" width=800>
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/figure_6.png" width=800>
  <p>图6 例句“希望我惨痛的经历给大家一个教训呀”的CAMR图示（带有节点索引）</p>
 </div>
 
