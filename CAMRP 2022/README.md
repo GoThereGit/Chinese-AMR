@@ -25,6 +25,12 @@
 |9月30日|评测任务截止；评测研讨会延期|
 |10月29日|评测研讨会召开，线上公布最终排名，颁发获奖证书。评测结束。|
 
+🥇<a href="https://github.com/zsLin177/camr">SUDA-HUAWEI</a>
+
+🥈<a href="https://github.com/PKUnlp-icler/Two-Stage-CAMRP">PKU</a>
+
+🥉ECNU & NJU
+
 # 评测排名：
 <table align="center">
   <p align="center">Table 1: Closed Test A</p>
@@ -532,15 +538,10 @@
 
 所有结果均取历史最高成绩，排名参考Align-smatch指标下的F值。标记*代表该参赛队伍逾期提交的结果。评测排名<a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/scores.pdf">PDF</a>下载。
 
-🥇<a href="https://github.com/zsLin177/camr">SUDA-HUAWEI</a>
-
-🥈<a href="https://github.com/PKUnlp-icler/Two-Stage-CAMRP">PKU</a>
-
-🥉ECNU & NJU
 
 [![Eng](https://img.shields.io/badge/README-English-yellow.svg "English Version")](./README_Eng.md)
 
-**English Version:** <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/README_Eng.md">README_Eng.md</a>
+**English Version:** <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/README_En.md">README_En.md</a>
 
 [![signup](https://img.shields.io/badge/CAMRP_2022-报名-blue.svg "sign up")](https://docs.qq.com/form/page/DR3ZaSVBJRHR4R3ZM)
 
