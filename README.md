@@ -113,7 +113,7 @@
   [7]
  </a>
 </sup>
-  在Smatch评测指标的基础上，加入了概念对齐指标和关系对齐指标——Align-smatch。CAMRP2022的评测引入了这种新的评测指标，在CoNLL2020的语料（Test A）上取得了0.8的F值，在新的语料Test B上也取得了较好的成绩。今年CAMRP2023将使用和CAMRP2022相同的训练和测试语料，另外新增。以下将详细介绍CAMR的特点和Align-smatch评测指标。
+  在Smatch评测指标的基础上，加入了概念对齐指标和关系对齐指标——Align-smatch。CAMRP2022的评测引入了这种新的评测指标，在CoNLL2020的语料（Test A）上取得了0.8的F值，在新的语料Test B上也取得了较好的成绩。今年CAMRP2023将使用和CAMRP2022相同的训练和测试语料，另外新增2000句问句语料，以便增强汉语的问句焦点和一句多问的自动分析能力。以下将详细介绍CAMR的特点和Align-smatch评测指标。
   
 ## 1.2 中文AMR介绍
 在英文AMR的标注中，一般使用词语的首字母作为概念节点的编号，或者按照节点的出现顺序来直接分配编号，这导致计算机处理时无法对概念溯源，一定程度上影响了解析的精度。为了解决这一问题，Li et al.
@@ -257,8 +257,8 @@ Align-smatch
   </tr>
     <tr>
     <td align='center'>盲测集（Test C）</td>
-    <td align='center'>约3000句</td>
-    <td align='center'>约4万词</td>
+    <td align='center'>约2000句</td>
+    <td align='center'>约3万词</td>
   </tr>
 </tbody>
 </table>
