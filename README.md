@@ -9,12 +9,14 @@
 # <p align="center"><font size=50><strong>中文抽象语义表示解析评测任务</strong></font></p>
 
 # 最新消息：
-今年亮点：新增2000句问句语料，增强汉语的问句焦点和一句多问的分析能力！
 |时间|消息|
 |:---:|:---:|
 |3月1日|评测任务报名|
+|4月1日|LDC发布训练集以及验证集|
 
+![What's new?](https://img.shields.io/badge/CAMRP_2023-NEW-red.svg "English Version")
 
+今年亮点：新增2000句问句语料，增强汉语的问句焦点和一句多问的分析能力！
 
 [![Eng](https://img.shields.io/badge/README-English-yellow.svg "English Version")](./README_En.md)
 
@@ -22,9 +24,11 @@
 
 [![signup](https://img.shields.io/badge/CAMRP_2023-报名-blue.svg "sign up")](https://forms.office.com/r/67EyjvBFm2)
 
-- [ ] 2023年3月1日：<a href="https://forms.office.com/r/67EyjvBFm2">**评测报名**</a>开始，提供<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP%202022/tools">Align-smatch</a>评测软件下载地址。
+- [X] 2023年3月1日：<a href="https://forms.office.com/r/67EyjvBFm2">**评测报名**</a>开始，提供<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP%202022/tools">Align-smatch</a>评测软件下载地址。
 
-- [ ] 2023年4月1日：报名截止。
+- [X] 2023年4月1日：LDC发布训练集以及验证集给参赛队。
+
+- [ ] 2023年5月1日：报名截止。
 
 - [ ] 2023年6月1日：**本站**发布测试集（包含Test A、Test B和新的Test C）给参赛队。
 
@@ -37,6 +41,14 @@
 - [ ] 2023年7月10日：参赛队提交技术报告最终版。
 
 - [ ] 2023年8月3日-5日：<a href="http://cips-cl.org/static/CCL2023/cclEval/taskCollection/index.html">CCL 2023</a>评测研讨会，线上公布最终排名，评测结束。
+
+[![agreement](https://img.shields.io/badge/CAMRP_评测语料许可协议-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
+
+**参赛队伍需自行向LDC申请CAMRP 2022评测语料使用权，并签署保密协议：**
+1.	每支参赛队伍需指派一名联系负责人。
+2.	参赛队伍联系负责人需填写[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2023.pdf)，扫描后通过E-mail发送给LDC（<ldc@ldc.upenn.edu>）。
+3.	申请通过后，LDC将返回CAMRP v2.0E版本语料库给参赛队伍联系负责人，以供参赛队伍使用。该语料数据只可用于本次CAMRP 2023评测任务，不可有其他任何用途。
+4.	本次评测语料数据集的版权归<a href="https://www.ldc.upenn.edu/">LDC</a>所有。
 
 ![nnu](https://img.shields.io/badge/CAMRP_2023-NNU-green.svg "sign up")
 
