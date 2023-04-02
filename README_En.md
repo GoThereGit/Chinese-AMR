@@ -7,6 +7,9 @@
 # Important Dates
 * **Mar 1, 2023**
   * - [ ] Initial Public Call for Participation
+* **April 1, 2023**
+  * - [ ] Release of Training & Development Set
+  * - [ ] Availability of Evaluation Software <a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP%202022/tools">Align-smatch</a>
 
 
 [![Zh](https://img.shields.io/badge/README-Chinese-yellow.svg "Zh")](./README.md)
@@ -14,16 +17,20 @@
 **Chinese Version**: [README.md](./README.md)
 
 <a name="anchor1"></a>
-[![signup](https://img.shields.io/badge/CAMRP_2023-Google_Form-blue.svg "sign up")](https://forms.office.com/r/67EyjvBFm2)
+[![signup](https://img.shields.io/badge/CAMRP_2023-Microsoft_Form-blue.svg "sign up")](https://forms.office.com/r/67EyjvBFm2)
 
 **Entry Form:** 
 <a href="https://forms.office.com/r/67EyjvBFm2">CLICK ME</a>
 
 <a name="anchor2"></a>
 
-[![agreement](https://img.shields.io/badge/CAMRP_2023-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
+[![agreement](https://img.shields.io/badge/CAMRP_2023-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2023.pdf)
 
-
+**Participants must sign the LDC Evaluation License Agreement for the data/corpora used in the CAMRP 2023 Evaluation Task will be authorized via <a href="https://www.ldc.upenn.edu/">LDC</a> only:**
+1.	Each team should designate a member as the data contact person.
+2.	Each data contact person must fill in the [LDC Evaluation License Agreement](./docs/LDC_Evaluation_License_Agreement_CCL2023.pdf) and send a signed copy of the agreement to LDC (<ldc@ldc.upenn.edu>).
+3.	Participants must use the received data/corpora from LDC in the CAMRP 2023 Evaluation Task only.
+4.	For details, please refer to the [LDC Evaluation License Agreement](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf).
 
 
 [![body](https://img.shields.io/badge/CAMRP_2023-Nanjing_Normal_University-green.svg "CAMRP 2023")](https://github.com/GoThereGit/Chinese-AMR/blob/main/README.md)
@@ -40,7 +47,7 @@
   * **Jingya Lu** (Nanjing Normal University, Nanjing, China)
   * **Jin Chen** (Nanjing Normal University, Nanjing, China)
   * **Yuanyuan Xie** (Nanjing Normal University, Nanjing, China)
-  * **Yiguo Yuan** (Nanjing Normal University, Nanjing, China)
+  * **Yixuan Zhang** (Nanjing Normal University, Nanjing, China)
 
 # 1 Introduction
 With the growing maturity of morphological analysis and syntactic analysis techniques, 
@@ -54,7 +61,7 @@ And similar to AMR, the corpus of Chinese AMR (CAMR) <a href="https://aclantholo
 
 Our evaluation task is to parse input sentences and output AMR graphs of the targeted sentences with data from CAMR corpus. 
 It is noteworthy that the alignment of concept and relation are added in CAMR and some extra semantic role labels as well to better distinguish characteristics in Chinese. 
-The evaluation task in CoNLL 2020, however, failed to leverage the alignment of concept and relation and therefore in our CAMP 2022 evaluation task, 
+The evaluation task in CoNLL 2020, however, failed to leverage the alignment of concept and relation and therefore in our CAMP 2023 evaluation task, 
 we aim to better evaluate the performance of automatic parsing via the newly-designed metric named Align-smatch, 
 which contains the alignment of concept and relation.
 
@@ -129,7 +136,7 @@ We offer three kinds of data sets including: **CAMR text**, **dependency analysi
 [![sample](https://img.shields.io/badge/sample-CAMR_text-red.svg "CAMR_text")](./docs/samples/CAMR_text.txt)
 
 <div align=center>
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/Figure_3.png">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/CAMRP%202022/docs/figures/figure_3.png">
  <p>Figure 3: Data sample of CAMR text representation</p>
 </div>
 
@@ -201,7 +208,7 @@ The data in blind test is not released yet. Table 1 shows the distribution of ea
 # 4 Evaluation Metrics and Modalities
 ## 4.1 Smatch 
 
-As the most widely-used evaluation metric, smatch focuses on the overlapping of two AMR graphs. For two AMR graphs to be matched, smatch first renames the nodes of AMR graphs and transforms each AMR graph into a set of triples <a href="https://aclanthology.org/P13-2131.pdf">(S. Cai et al., 2013)</a>. There are three categories of triples as following:
+As the most widely-used evaluation metric, smatch focuses on the overlapping of two AMR graphs. For two AMR graphs to be matched, smatch first renames the nodes of AMR graphs and transforms each AMR graph into a set of triples <a href="https://aclanthology.org/P13-2131.pdf">(Cai et al., 2013)</a>. There are three categories of triples as following:
 
 1.	**Node triple: instance(node_index, concept).**
 
@@ -476,8 +483,8 @@ To better parse and evaluate Chinese AMR, our evaluation task use Align-smatch a
 </table>
 
 # 5 Writing the Technical Report
-1.	Technical report can be written in both **Chinese** or **English**.
-2.	Technical report should be formatted according to <a href="http://cips-cl.org/static/CCL2022/downloads/ccl2022_template.zip">CCL 2022 template</a>.
+1.	Technical report can be written in either **Chinese** or **English**.
+2.	Technical report should be formatted according to <a href="http://cips-cl.org/static/CCL2023/downloads/ccl2023_template.zip">CCL 2023 template</a>.
 3.	The maximum length should be 4 pages (excluding references).
 4.	Technical report should include at least the following sections: **introduction**, **evaluation results**, **result analysis** and **references**.
 
