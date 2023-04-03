@@ -1,5 +1,5 @@
 <div align="center">
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/img/2023logo.png" width="200">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/img/2023logo.png" width=200>
 </div>
 
 
