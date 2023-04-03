@@ -5,16 +5,35 @@
 # <p align="center">Chinese Abstract Meaning Representation Parsing 2023</p>
 
 # Important Dates
-* **Mar 1, 2023**
-  * - [ ] Initial Public Call for Participation
+* **March 1, 2023**
+  * - [X] Initial Public Call for Participation
 * **April 1, 2023**
-  * - [ ] Release of Training & Development Set
-  * - [ ] Availability of Evaluation Software <a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP%202022/tools">Align-smatch</a>
+  * - [X] Release of Training & Development Set
+  * - [X] Availability of Evaluation Software <a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP%202022/tools">Align-smatch</a>
+* **May 1, 2023**
+  * - [ ] Enrolment Deadline
+* **June 1, 2023**
+  * - [ ] Release of Test Set
+* **June 10, 2023**
+  * - [ ] Submission of Auto-annotated Data
+* **June 15, 2023**
+  * - [ ] Release of Gold-Standard Chinese AMR
+* **June 25, 2023**
+  * - [ ] Submission of Technical Report
+  * - [ ] Preliminary Evaluation Results
+* **July 10, 2023**
+  * - [ ] Camera-Ready Technical Report
+  * - [ ] Evaluation Period
+* **August 3-5, 2023**
+  * - [ ] Release of Final Rankings Online
+  * - [ ] Workshop for Technical Evaluation Tasks of CCL 2023
 
 
 [![Zh](https://img.shields.io/badge/README-Chinese-yellow.svg "Zh")](./README.md)
 
-**Chinese Version**: [README.md](./README.md)
+- **Chinese Version**: [README.md](./README.md)
+
+- The brand-new CAMR homepage is on the way: <a href="https://www.camrp.tech">Welcome to CAMR!</a>
 
 <a name="anchor1"></a>
 [![signup](https://img.shields.io/badge/CAMRP_2023-Microsoft_Form-blue.svg "sign up")](https://forms.office.com/r/67EyjvBFm2)
@@ -119,18 +138,14 @@ namely the **relation alignment**.
 </div>
 
 ## 1.3 Summary
-In a nutshell, to better promote and advance the development of Chinese AMR parsing, 
-we Nanjing Normal University hereby present this evaluation task of CAMRP 2022. 
+In a nutshell, to better promote and advance the development of Chinese AMR parsing and follow the steps of CAMRP 2022, 
+we Nanjing Normal University hereby present this evaluation task of CAMRP 2023. 
 Unlike the cross-framework/cross-lingual task of MRP held by CoNLL 2020, 
-we aim to evaluate Chinese AMR parsing **only**, and of course with Align-smatch metric. 
+we aim to evaluate Chinese AMR parsing **only**, and use Align-smatch as the main metric. 
 
-# 2 Important Dates
 
-**Entry Form:**
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwkl_wQl64VxpIE4tJU9jtHTZpwas-PvPmJb_BCKYIe0qqw/viewform?usp=pp_url">CLICK ME</a>
-
-# 3 Data
-## 3.1 Data Sample
+# 2 Data
+## 2.1 Data Sample
 We offer three kinds of data sets including: **CAMR text**, **dependency analysis result** and **CAMR tuple**. 
 
 [![sample](https://img.shields.io/badge/sample-CAMR_text-red.svg "CAMR_text")](./docs/samples/CAMR_text.txt)
@@ -151,7 +166,7 @@ All files are encoded in UTF-8.
  <p>Figure 4: Data sample of dependency analysis result</p>
 </div>
 
-Figure 4 is a copy of dependency analysis result. Note that in the closed modality, participants are allowed to use dependency analysis results as the external resource for training (more info please refer to <a href="#anchor4.3">4.3 Two Modalities</a>).
+Figure 4 is a copy of dependency analysis result. Note that in the closed modality, participants are allowed to use dependency analysis results as the external resource for training (more info please refer to <a href="#anchor3.3">3.3 Two Modalities</a>).
 
 [![sample](https://img.shields.io/badge/sample-CAMR_tuple-blue.svg "CAMR_tuple")](./docs/samples/CAMR_tuple.txt)
 
@@ -162,13 +177,13 @@ Figure 4 is a copy of dependency analysis result. Note that in the closed modali
 
 Figure 5 is a copy of CAMR tuple representation including sentence ID (sid), node_1 ID (nid1), concept_1 (concept1), co-reference node_1 (coref1), relation (rel), relation ID (rid), relation alignment word (ralign), node_2 ID (nid2), concept_2 (concept2) and co-reference node_2 (coref2).
 
-## 3.2 Data Set
+## 2.2 Data Set
 Chinese Abstract Meaning Representation Corpus was constructed and cooperated by Nanjing Normal University and Bradeis University from 2015. 
-Specifically, the data offered in this CAMRP 2022 is the <a href="https://catalog.ldc.upenn.edu/LDC2021T13">CAMR v2.0</a> released via Linguisitc Data Consortium (LDC),
+Specifically, the data offered in this CAMRP 2023 is the <a href="https://catalog.ldc.upenn.edu/LDC2021T13">CAMR v2.0E</a> released via Linguisitc Data Consortium (LDC),
 of which the original data was from Chinese Tree Bank 8.0 including 20,000 Chinese sentences in total. 
 The data sets as usual include training set, validation set and test set, and have been proven with high quality in the evaluation task in CoNLL 2020. 
 We hereby use the exact same data sets in order to see whether there is any progression of Chinese AMR parsing in recent two years. 
-Blind set (Test B) including 2000 sentences is also provided to measure the generalization performance of parsers.
+Blind set (Test B & Test C) including 4,000 sentences is also provided to measure the generalization performance of parsers.
 The data in blind test is not released yet. Table 1 shows the distribution of each data set:
 
 <table align="center">
@@ -201,12 +216,17 @@ The data in blind test is not released yet. Table 1 shows the distribution of ea
     <td align='center'>2000 (approx.)</td>
     <td align='center'>40,000 (approx.)</td>
   </tr>
+  <tr>
+    <td align='center'>Test C</td>
+    <td align='center'>2000 (approx.)</td>
+    <td align='center'>30,000 (approx.)</td>
+  </tr>
 </tbody>
 </table>
 
 
-# 4 Evaluation Metrics and Modalities
-## 4.1 Smatch 
+# 3 Evaluation Metrics and Modalities
+## 3.1 Smatch 
 
 As the most widely-used evaluation metric, smatch focuses on the overlapping of two AMR graphs. For two AMR graphs to be matched, smatch first renames the nodes of AMR graphs and transforms each AMR graph into a set of triples <a href="https://aclanthology.org/P13-2131.pdf">(Cai et al., 2013)</a>. There are three categories of triples as following:
 
@@ -283,7 +303,7 @@ Specifically, **Precision** is the ratio of the maximum number of the matching t
 
 Although smatch has been prevailing since it came up, it has some flaws. When searching arc triples to be matched, smatch only considers whether the relations are the same but does not examine the concept nodes. It sometimes leads to such situation that two sentence with completely different semantics yet get oddly high matching scores <a href="https://arxiv.org/pdf/1905.10726.pdf">(Song et al., 2019)</a>.
 
-## 4.2 Main metric: Align-smatch
+## 3.2 Main metric: Align-smatch
 With two types of information added, including concept alignment and relation alignment, Align-smatch now transforms Chinese AMR graph into tuples <a href="http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.638.pdf">(Xiao et al., 2022)</a>. 
 
 1.	**The new triple for concept alignment: anchor(node_index, token_num).**
@@ -364,9 +384,9 @@ $$ P = {{count(Matching\enspace Tuples)} \over {count(Generated\enspace Tuples)}
 $$ R = {{count(Matching\enspace Tuples)} \over {count(Gold\enspace Tuples)}} $$
 $$ F_β=(1+β^2)\*\frac{(P\*R)}{(β^2\*P)+R} $$
 
-<a name="anchor4.3"></a>
+<a name="anchor3.3"></a>
 
-## 4.3 Two Modalities
+## 3.3 Two Modalities
 The evaluation task includes **Open Modality** and **Closed Modality**:
 1.	Once chosen Closed Modality, the participants must use the training data, test data and pre-trained model which are all designated in advance. No alternative is allowed. We also offer dependency analysis results of the train set for each team under Closed Modality. HIT_Roberta from Harbin Institue of Technology <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9599397">(Cui et al., 2021)</a> as pre-trained model is highly recommended. 
 2.	Once chosen Open Modality, the participants are allowed to use pre-trained model and external resources such as named entities and dependency analysis results with no limits. Note that all kinds of resources that participants employ should be mentioned and written in detail in the final technical report. Manual correction is forbidden in both modalities.
@@ -410,7 +430,7 @@ The evaluation task includes **Open Modality** and **Closed Modality**:
 </table>
 
 
-To better parse and evaluate Chinese AMR, our evaluation task use Align-smatch as the main metric. The CAMR parsing results each team generates should contain the alignment information of concept and relation. Table 5 is a full example of evaluation scores output includes two metrics, two modalities and two different test sets, which are, therefore, eight tests in total. Note that Smatch scores are optional for we rank participants referring to the F-scores under **Align-smatch metric only**.
+To better parse and evaluate Chinese AMR, our evaluation task use Align-smatch as the main metric. The CAMR parsing results each team generates should contain the alignment information of concept and relation. Table 5 is a complete example of evaluation scores output includes two metrics, two modalities and two different test sets, which are, therefore, eight runs/results in total. Note that Smatch scores are optional for we rank participants referring to the F-scores under **Align-smatch metric only**.
 
 
 <table align="center">
@@ -482,17 +502,19 @@ To better parse and evaluate Chinese AMR, our evaluation task use Align-smatch a
 </tbody>
 </table>
 
-# 5 Writing the Technical Report
+# 4 Writing the Technical Report
 1.	Technical report can be written in either **Chinese** or **English**.
 2.	Technical report should be formatted according to <a href="http://cips-cl.org/static/CCL2023/downloads/ccl2023_template.zip">CCL 2023 template</a>.
 3.	The maximum length should be 4 pages (excluding references).
 4.	Technical report should include at least the following sections: **introduction**, **evaluation results**, **result analysis** and **references**.
 
-# 6 Awards
-Awards include **First Prize**, **Second Prize** and **Third Prize**, 
+# 5 Awards
+1. Awards include **First Prize**, **Second Prize** and **Third Prize**, 
 and each team will be awarded with a unique certificate presented by **Chinese Information Processing Society of China** (CIPS).
+2. Bonus for winning is 10,000 RMB in total sponsored by XiaoNiu Tech limited company.
 
-# 7 References
+
+# 6 References
 1. Banarescu, Laura, et al. "Abstract meaning representation for sembanking." Proceedings of the 7th linguistic annotation workshop and interoperability with discourse. 2013.
 2. Li, Bin, et al. "Building a Chinese AMR bank with concept and relation alignments." Linguistic Issues in Language Technology 18 (2019).
 3. Cai, Shu, and Kevin Knight. "Smatch: an evaluation metric for semantic feature structures." Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers). 2013.
