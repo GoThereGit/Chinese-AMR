@@ -63,10 +63,11 @@
 * Student Members:
   * **Zhixing Xu** (Nanjing Normal University, Nanjing, China)
   * **Liming Xiao** (Nanjing Normal University, Nanjing, China)
+  * **Yixuan Zhang** (Nanjing Normal University, Nanjing, China)
   * **Jingya Lu** (Nanjing Normal University, Nanjing, China)
   * **Jin Chen** (Nanjing Normal University, Nanjing, China)
   * **Yuanyuan Xie** (Nanjing Normal University, Nanjing, China)
-  * **Yixuan Zhang** (Nanjing Normal University, Nanjing, China)
+  * **Bolin Chang** (Nanjing Normal University, Nanjing, China)
 
 # 1 Introduction
 With the growing maturity of morphological analysis and syntactic analysis techniques, 
