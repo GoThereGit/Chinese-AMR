@@ -10,7 +10,7 @@
 * **April 1, 2023**
   * - [X] Release of Training & Development Set
   * - [X] Availability of Evaluation Software <a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP%202022/tools">Align-smatch</a>
-* **May 1, 2023**
+* **May 15, 2023**
   * - [ ] Enrolment Deadline
 * **June 1, 2023**
   * - [ ] Release of Test Set
