@@ -29,7 +29,7 @@
 
 - [X] 2023年4月1日：LDC发布训练集以及验证集给参赛队。
 
-- [ ] 2023年5月25日：报名截止。
+- [X] 2023年5月25日：报名截止。
 
 - [ ] 2023年6月1日：**本站**发布测试集（包含Test A、Test B和新的Test C）给参赛队。
 
@@ -37,11 +37,13 @@
 
 - [ ] 2023年6月12日：**本站**发布测试集（包含Test A、Test B和新的Test C）黄金标准答案给参赛队。
 
+- [ ] 2023年6月15日：公布参赛队成绩与排名。
+
 - [ ] 2023年6月21日：参赛队提交中文抽象语义表示评测任务技术报告，用于审稿。
 
-- [ ] 2023年7月7日：参赛队提交技术报告最终版。
+- [ ] 2023年6月25日：参赛队提交技术报告最终版。
 
-- [ ] 2023年8月3日-5日：<a href="http://cips-cl.org/static/CCL2023/cclEval/taskCollection/index.html">CCL 2023</a>评测研讨会，线上公布最终排名，评测结束。
+- [ ] 2023年8月3日-5日：<a href="http://cips-cl.org/static/CCL2023/cclEval/taskCollection/index.html">CCL 2023</a>评测研讨会。
 
 [![agreement](https://img.shields.io/badge/CAMRP_评测语料许可协议-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
 
