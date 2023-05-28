@@ -1,11 +1,8 @@
-###
-###
-# To run this camr_to_tuples.py, you need following command with two arguments:
-# ''' python camr_to_tuples.py -input camr.txt -output tuples.txt '''
-# The input files are in camr text representation format, and output files are in camr tuples representation format.
-###
-
-
+'''
+To run this camr_to_tuples.py, you need following command with two arguments:
+<python camr_to_tuples.py -input camr.txt -output tuples.txt>
+The input files are in camr text representation format, and output files are in camr tuples representation format.
+'''
 
 # !/usr/bin/env python
 # -*- coding:utf-8 -*-
