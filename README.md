@@ -247,7 +247,7 @@ Align-smatch
 - PKU_open_testC_1.txt
 - PKU_open_testC_2.txt
 
-所有结果需打包在一个文件夹内并压缩后发送至邮箱<libin.njnu@gmail.com>
+所有结果需打包在一个文件夹内并压缩后发送至邮箱<libin.njnu@gmail.com>，邮件名称为“CAMRP2023+参赛队名+submitdata”。
 
 ## 2.3 数据集
 中文抽象语义表示语料库（Chinese Abstract Meaning Representation Corpus）于2015年开始，由南京师范大学和美国布兰迪斯大学合作构建
