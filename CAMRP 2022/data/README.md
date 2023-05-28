@@ -13,7 +13,7 @@ with four forms:
 
 Note that this repo doesn't offer data sets of training and validation (excluding max length files). Participants should contact [LDC](https://github.com/GoThereGit/Chinese-AMR/blob/main/docs/LDC_Evaluation_License_Agreement_CCL2022.pdf) to acquire the **train set** and **dev set** used in evaluation task.
 
-Max length is required for evaluation tool Align-smatch. Please refer to [./tools/GUIDELINE.md](https://github.com/GoThereGit/Chinese-AMR/blob/main/tools/GUIDELINE.md) for more details.
+Max length is required for evaluation tool Align-smatch. Please refer to [../tools/GUIDELINE.md](https://github.com/GoThereGit/Chinese-AMR/blob/main/tools/GUIDELINE.md) for more details.
 
 **Test set** and **max length files** of all three data sets will be released via this repo.
 
