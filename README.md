@@ -224,12 +224,30 @@
 |1617|x10|教训|-|:quant|-|-|x8|1|-|
 |1617|x10|教训|-|:cunit|-|-|x9|个|-|
 
-**评测标准：**
+**评测指标：**
 
 ``
 Align-smatch
 ``
 
+**自动标注结果提交格式：**
+
+每个分项最多提交两个结果，每个结果命名格式如下：
+
+``
+<team>_<modality>_<test>_<run>.txt
+``
+
+参考样例：
+
+- PKU_open_testA_1.txt
+- PKU_open_testA_2.txt
+- PKU_open_testB_1.txt
+- PKU_open_testB_2.txt
+- PKU_open_testC_1.txt
+- PKU_open_testC_2.txt
+
+所有结果需打包在一个文件夹内并压缩后发送至邮箱<libin.njnu@gmail.com>
 
 ## 2.3 数据集
 中文抽象语义表示语料库（Chinese Abstract Meaning Representation Corpus）于2015年开始，由南京师范大学和美国布兰迪斯大学合作构建
