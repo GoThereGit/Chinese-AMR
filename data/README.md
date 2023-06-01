@@ -1,10 +1,11 @@
-## 本次CAMRP 2023评测任务共提供三个测试集，详情信息如下：
+## 本次CAMRP 2023评测任务共提供三个测试集，详细信息如下：
 
 ||testA|testB|testC|
 |:---:|:---:|:---:|:---:|
 |测试语料|√|√|√|
 |token长度|√|√|√|
 |依存句法结果|√|×|×|
+  
 
 - **token长度**（max_len.txt）为使用<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP%202022/tools">**Align-smatch**</a>评测得分时必须的文件，详见使用说明。
 - 测试集testA额外提供对应的**依存句法分析结果**。
