@@ -14,6 +14,7 @@
 |3月1日|评测任务报名|
 |4月1日|LDC发布训练集以及验证集|
 |5月1日|报名截止日期推迟至5月25日|
+|6月1日|<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">**测试集**</a>发布|
 
 ![What's new?](https://img.shields.io/badge/CAMRP_2023-NEW-red.svg "English Version")
 
@@ -31,7 +32,7 @@
 
 - [X] 2023年5月25日：报名截止。
 
-- [ ] 2023年6月1日：**本站**发布测试集（包含Test A、Test B和新的Test C）给参赛队。
+- [X] 2023年6月1日：**本站**发布<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">**测试集**</a>（包含Test A、Test B和新的Test C）给参赛队。
 
 - [ ] 2023年6月7日：参赛队提交自动标注的数据。
 
