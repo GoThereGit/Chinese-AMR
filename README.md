@@ -15,6 +15,7 @@
 |4月1日|LDC发布训练集以及验证集|
 |5月1日|报名截止日期推迟至5月25日|
 |6月1日|<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">**测试集**</a>发布|
+|6月7日|自动标注结果提交截止时间推迟至**6月8日23:59 PM**|
 
 ![What's new?](https://img.shields.io/badge/CAMRP_2023-NEW-red.svg "English Version")
 
