@@ -34,7 +34,7 @@
 
 - [X] 2023年6月1日：**本站**发布<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">**测试集**</a>（包含Test A、Test B和新的Test C）给参赛队。
 
-- [ ] 2023年6月7日：参赛队提交自动标注的数据。
+- [ ] 2023年6月7日：参赛队提交自动标注的数据（提交格式详见<a href="#anchor2.2">2.2 任务说明</a>）。
 
 - [ ] 2023年6月12日：**本站**发布测试集（包含Test A、Test B和新的Test C）黄金标准答案给参赛队。
 
