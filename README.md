@@ -16,6 +16,7 @@
 |5月1日|报名截止日期推迟至5月25日|
 |6月1日|<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">**测试集**</a>发布|
 |6月7日|自动标注结果提交截止时间推迟至**6月8日23:59 PM**|
+|6月12日|测试集黄金标准答案发布时间推迟至**6月14日**|
 
 ![What's new?](https://img.shields.io/badge/CAMRP_2023-NEW-red.svg "English Version")
 
@@ -35,9 +36,9 @@
 
 - [X] 2023年6月1日：**本站**发布<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">**测试集**</a>（包含Test A、Test B和新的Test C）给参赛队。
 
-- [ ] 2023年6月7日：参赛队提交自动标注的数据（提交格式详见<a href="#anchor2.2">2.2 任务说明</a>）。
+- [X] 2023年6月8日：参赛队提交自动标注的数据（提交格式详见<a href="#anchor2.2">2.2 任务说明</a>）。
 
-- [ ] 2023年6月12日：**本站**发布测试集（包含Test A、Test B和新的Test C）黄金标准答案给参赛队。
+- [ ] 2023年6月14日：**本站**发布测试集（包含Test A、Test B和新的Test C）黄金标准答案给参赛队。
 
 - [ ] 2023年6月15日：公布参赛队成绩与排名。
 
