@@ -499,7 +499,7 @@
     <td>0.8416</td>
   </tr>
   <tr>
-    <td rowspan="2">WLNLP</td>
+    <td rowspan="2">WestlakeNLP</td>
     <td>1</td>
     <td>0.7024</td>
     <td>0.7440</td>
@@ -625,7 +625,7 @@
     <td>0.7945</td>
   </tr>
   <tr>
-    <td rowspan="2">WLNLP</td>
+    <td rowspan="2">WestlakeNLP</td>
     <td>1</td>
     <td>0.6863</td>
     <td>0.7042</td>
@@ -751,7 +751,7 @@
     <td>0.8569</td>
   </tr>
   <tr>
-    <td rowspan="2">WLNLP</td>
+    <td rowspan="2">WestlakeNLP</td>
     <td>1</td>
     <td>0.8249</td>
     <td>0.8273</td>
