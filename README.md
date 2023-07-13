@@ -1,4 +1,4 @@
-![image](https://github.com/GoThereGit/Chinese-AMR/assets/103251889/1f542ae4-470f-427f-bcf4-a2fc4abe0b82)<div align="center">
+<div align="center">
 <img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/img/2023logo.png" width=200>
 </div>
 
