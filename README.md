@@ -1,4 +1,4 @@
-<div align="center">
+![image](https://github.com/GoThereGit/Chinese-AMR/assets/103251889/1f542ae4-470f-427f-bcf4-a2fc4abe0b82)<div align="center">
 <img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/img/2023logo.png" width=200>
 </div>
 
@@ -18,6 +18,764 @@
 |6月7日|自动标注结果提交截止时间推迟至**6月8日23:59 PM**|
 |6月12日|测试集黄金标准答案发布时间推迟至**6月14日**|
 |6月15日|获奖排名将在参赛队提交技术报告后公布|
+
+# 评测排名：
+
+<table align='center'>
+ <p align='center'>Table 1: Closed Test A</p>
+<thead>
+  <tr>
+    <th rowspan="2">Team</th>
+    <th rowspan="2">Run</th>
+    <th colspan="3">Align-smatch</th>
+    <th colspan="3">Smatch</th>
+    <th colspan="3">MRP</th>
+  </tr>
+  <tr>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="2">BUPT</td>
+    <td>1</td>
+    <td>0.7682</td>
+    <td>0.7774</td>
+    <td>0.7728</td>
+    <td>0.7539</td>
+    <td>0.7598</td>
+    <td>0.7569</td>
+    <td>0.8086 </td>
+    <td>0.8057 </td>
+    <td>0.8071 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>0.7644</td>
+    <td>0.784</td>
+    <td>0.7741</td>
+    <td>0.735</td>
+    <td>0.7529</td>
+    <td>0.7438</td>
+    <td>0.8035 </td>
+    <td>0.7947 </td>
+    <td>0.7991 </td>
+  </tr>
+  <tr>
+    <td rowspan="2">GDUFE</td>
+    <td>1</td>
+    <td>0.7287</td>
+    <td>0.808</td>
+    <td>0.7663</td>
+    <td>0.7121</td>
+    <td>0.7905</td>
+    <td>0.7492</td>
+    <td>0.8308 </td>
+    <td>0.7631 </td>
+    <td>0.7955 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="2">SUDA</td>
+    <td>1</td>
+    <td>0.7824</td>
+    <td>0.8183</td>
+    <td>0.8</td>
+    <td>0.7696</td>
+    <td>0.8104</td>
+    <td>0.7895</td>
+    <td>0.8463 </td>
+    <td>0.8142 </td>
+    <td>0.8299 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>0.7654</td>
+    <td>0.8185</td>
+    <td>0.7911</td>
+    <td>0.7515</td>
+    <td>0.8104</td>
+    <td>0.7798</td>
+    <td>0.8460 </td>
+    <td>0.7963 </td>
+    <td>0.8204 </td>
+  </tr>
+  <tr>
+    <td rowspan="2">WHU</td>
+    <td>1</td>
+    <td>0.749</td>
+    <td>0.7894</td>
+    <td>0.7687</td>
+    <td>0.7326</td>
+    <td>0.7528</td>
+    <td>0.7426</td>
+    <td>0.8036 </td>
+    <td>0.7941 </td>
+    <td>0.7988 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</tbody>
+</table>
+
+<table align='center'>
+ <p align='center'>Table 2: Closed Test B</p>
+<thead>
+  <tr>
+    <th rowspan="2">Team</th>
+    <th rowspan="2">Run</th>
+    <th colspan="3">Align-smatch</th>
+    <th colspan="3">Smatch</th>
+    <th colspan="3">MRP</th>
+  </tr>
+  <tr>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="2">BUPT</td>
+    <td>1</td>
+    <td>0.6959</td>
+    <td>0.7103</td>
+    <td>0.703</td>
+    <td>0.6999</td>
+    <td>0.7045</td>
+    <td>0.7022</td>
+    <td>0.7564 </td>
+    <td>0.7527 </td>
+    <td>0.7545 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>0.6968</td>
+    <td>0.7209</td>
+    <td>0.7087</td>
+    <td>0.6872</td>
+    <td>0.7041</td>
+    <td>0.6956</td>
+    <td>0.7484 </td>
+    <td>0.7509 </td>
+    <td>0.7497 </td>
+  </tr>
+  <tr>
+    <td rowspan="2">GDUFE</td>
+    <td>1</td>
+    <td>0.6118</td>
+    <td>0.7575</td>
+    <td>0.6769</td>
+    <td>0.6111</td>
+    <td>0.7515</td>
+    <td>0.6741</td>
+    <td>0.7921 </td>
+    <td>0.6617 </td>
+    <td>0.7210 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="2">SUDA</td>
+    <td>1</td>
+    <td>0.7028</td>
+    <td>0.7516</td>
+    <td>0.7264</td>
+    <td>0.7119</td>
+    <td>0.7569</td>
+    <td>0.7337</td>
+    <td>0.7964 </td>
+    <td>0.7529 </td>
+    <td>0.7740 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>0.6968</td>
+    <td>0.7535</td>
+    <td>0.724</td>
+    <td>0.7058</td>
+    <td>0.7622</td>
+    <td>0.7329</td>
+    <td>0.8008 </td>
+    <td>0.7452 </td>
+    <td>0.7720 </td>
+  </tr>
+  <tr>
+    <td rowspan="2">WHU</td>
+    <td>1</td>
+    <td>0.6783</td>
+    <td>0.7241</td>
+    <td>0.7004</td>
+    <td>0.6823</td>
+    <td>0.7028</td>
+    <td>0.6924</td>
+    <td>0.7489 </td>
+    <td>0.7488 </td>
+    <td>0.7488 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</tbody>
+</table>
+
+<table align='center'>
+ <p align='center'>Table 3: Closed Test C</p>
+<thead>
+  <tr>
+    <th rowspan="2">Team</th>
+    <th rowspan="2">Run</th>
+    <th colspan="3">Align-smatch</th>
+    <th colspan="3">Smatch</th>
+    <th colspan="3">MRP</th>
+  </tr>
+  <tr>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="2">BUPT</td>
+    <td>1</td>
+    <td>0.7862</td>
+    <td>0.8096</td>
+    <td>0.7977</td>
+    <td>0.798</td>
+    <td>0.7925</td>
+    <td>0.7952</td>
+    <td>0.8354 </td>
+    <td>0.8386 </td>
+    <td>0.8370 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>0.7777</td>
+    <td>0.806</td>
+    <td>0.7916</td>
+    <td>0.7562</td>
+    <td>0.778</td>
+    <td>0.7669</td>
+    <td>0.8300 </td>
+    <td>0.8072 </td>
+    <td>0.8185 </td>
+  </tr>
+  <tr>
+    <td rowspan="2">GDUFE</td>
+    <td>1</td>
+    <td>0.7308</td>
+    <td>0.8238</td>
+    <td>0.7745</td>
+    <td>0.7161</td>
+    <td>0.8048</td>
+    <td>0.7578</td>
+    <td>0.8489 </td>
+    <td>0.7653 </td>
+    <td>0.8049 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="2">SUDA</td>
+    <td>1</td>
+    <td>0.7951</td>
+    <td>0.8331</td>
+    <td>0.8137</td>
+    <td>0.787</td>
+    <td>0.8265</td>
+    <td>0.8063</td>
+    <td>0.8652 </td>
+    <td>0.8282 </td>
+    <td>0.8463 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>0.805</td>
+    <td>0.8111</td>
+    <td>0.8081</td>
+    <td>0.8102</td>
+    <td>0.8126</td>
+    <td>0.8114</td>
+    <td>0.8563 </td>
+    <td>0.8445 </td>
+    <td>0.8504 </td>
+  </tr>
+  <tr>
+    <td rowspan="2">WHU</td>
+    <td>1</td>
+    <td>0.7635</td>
+    <td>0.8098</td>
+    <td>0.7859</td>
+    <td>0.7548</td>
+    <td>0.7798</td>
+    <td>0.7671</td>
+    <td>0.8313 </td>
+    <td>0.8069 </td>
+    <td>0.8189 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</tbody>
+</table>
+
+<table align='center'>
+ <p align='center'>Table 4: Open Test A</p>
+<thead>
+  <tr>
+    <th rowspan="2">Team</th>
+    <th rowspan="2">Run</th>
+    <th colspan="3">Align-smatch</th>
+    <th colspan="3">Smatch</th>
+    <th colspan="3">MRP</th>
+  </tr>
+  <tr>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="2">GDUFE</td>
+    <td>1</td>
+    <td>0.756</td>
+    <td>0.7553</td>
+    <td>0.7556</td>
+    <td>0.7403</td>
+    <td>0.7333</td>
+    <td>0.7368</td>
+    <td>0.7832 </td>
+    <td>0.7944 </td>
+    <td>0.7887 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="2">SJTU</td>
+    <td>1</td>
+    <td>0.4645</td>
+    <td>0.4741</td>
+    <td>0.4692</td>
+    <td>0.6094</td>
+    <td>0.6173</td>
+    <td>0.6133</td>
+    <td>0.5131 </td>
+    <td>0.5022 </td>
+    <td>0.5076 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="2">SUDA</td>
+    <td>1</td>
+    <td>0.8174</td>
+    <td>0.8081</td>
+    <td>0.8128</td>
+    <td>0.806</td>
+    <td>0.796</td>
+    <td>0.801</td>
+    <td>0.8375 </td>
+    <td>0.8456 </td>
+    <td>0.8415 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>0.8179</td>
+    <td>0.8082</td>
+    <td>0.813</td>
+    <td>0.8054</td>
+    <td>0.7955</td>
+    <td>0.8004</td>
+    <td>0.8376 </td>
+    <td>0.8457 </td>
+    <td>0.8416 </td>
+  </tr>
+  <tr>
+    <td rowspan="2">WLNLP</td>
+    <td>1</td>
+    <td>0.7024</td>
+    <td>0.744</td>
+    <td>0.7226</td>
+    <td>0.6936</td>
+    <td>0.73</td>
+    <td>0.7114</td>
+    <td>0.7816 </td>
+    <td>0.7322 </td>
+    <td>0.7561 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</tbody>
+</table>
+
+<table align='center'>
+ <p align='center'>Table 5: Open Test B</p>
+<thead>
+  <tr>
+    <th rowspan="2">Team</th>
+    <th rowspan="2">Run</th>
+    <th colspan="3">Align-smatch</th>
+    <th colspan="3">Smatch</th>
+    <th colspan="3">MRP</th>
+  </tr>
+  <tr>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="2">GDUFE</td>
+    <td>1</td>
+    <td>0.6733</td>
+    <td>0.6971</td>
+    <td>0.685</td>
+    <td>0.6778</td>
+    <td>0.6882</td>
+    <td>0.683</td>
+    <td>0.7394 </td>
+    <td>0.7306 </td>
+    <td>0.7350 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="2">SJTU</td>
+    <td>1</td>
+    <td>0.4568</td>
+    <td>0.4644</td>
+    <td>0.4606</td>
+    <td>0.6001</td>
+    <td>0.6037</td>
+    <td>0.6019</td>
+    <td>0.5137 </td>
+    <td>0.5099 </td>
+    <td>0.5118 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="2">SUDA</td>
+    <td>1</td>
+    <td>0.7485</td>
+    <td>0.7433</td>
+    <td>0.7459</td>
+    <td>0.7635</td>
+    <td>0.7505</td>
+    <td>0.757</td>
+    <td>0.7899 </td>
+    <td>0.7963 </td>
+    <td>0.7931 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>0.7503</td>
+    <td>0.7439</td>
+    <td>0.7471</td>
+    <td>0.7669</td>
+    <td>0.7521</td>
+    <td>0.7595</td>
+    <td>0.7916 </td>
+    <td>0.7975 </td>
+    <td>0.7945 </td>
+  </tr>
+  <tr>
+    <td rowspan="2">WLNLP</td>
+    <td>1</td>
+    <td>0.6863</td>
+    <td>0.7042</td>
+    <td>0.6952</td>
+    <td>0.693</td>
+    <td>0.7021</td>
+    <td>0.6975</td>
+    <td>0.7501 </td>
+    <td>0.7301 </td>
+    <td>0.7400 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</tbody>
+</table>
+
+<table align='center'>
+ <p align='center'>Table 6: Open Test C</p>
+<thead>
+  <tr>
+    <th rowspan="2">Team</th>
+    <th rowspan="2">Run</th>
+    <th colspan="3">Align-smatch</th>
+    <th colspan="3">Smatch</th>
+    <th colspan="3">MRP</th>
+  </tr>
+  <tr>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="2">GDUFE</td>
+    <td>1</td>
+    <td>0.7814</td>
+    <td>0.773</td>
+    <td>0.7772</td>
+    <td>0.7691</td>
+    <td>0.7521</td>
+    <td>0.7605</td>
+    <td>0.8020 </td>
+    <td>0.8181 </td>
+    <td>0.8100 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="2">SJTU</td>
+    <td>1</td>
+    <td>0.5839</td>
+    <td>0.6282</td>
+    <td>0.6052</td>
+    <td>0.684</td>
+    <td>0.7262</td>
+    <td>0.7045</td>
+    <td>0.6697 </td>
+    <td>0.6228 </td>
+    <td>0.6454 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td rowspan="2">SUDA</td>
+    <td>1</td>
+    <td>0.8212</td>
+    <td>0.8206</td>
+    <td>0.8209</td>
+    <td>0.8195</td>
+    <td>0.8164</td>
+    <td>0.8179</td>
+    <td>0.8575 </td>
+    <td>0.8566 </td>
+    <td>0.8571 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>0.8213</td>
+    <td>0.8211</td>
+    <td>0.8212</td>
+    <td>0.8186</td>
+    <td>0.8163</td>
+    <td>0.8175</td>
+    <td>0.8576 </td>
+    <td>0.8563 </td>
+    <td>0.8569 </td>
+  </tr>
+  <tr>
+    <td rowspan="2">WLNLP</td>
+    <td>1</td>
+    <td>0.8249</td>
+    <td>0.8273</td>
+    <td>0.8261</td>
+    <td>0.8118</td>
+    <td>0.8143</td>
+    <td>0.813</td>
+    <td>0.8561 </td>
+    <td>0.8549 </td>
+    <td>0.8555 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</tbody>
+</table>
 
 ![What's new?](https://img.shields.io/badge/CAMRP_2023-NEW-red.svg "English Version")
 
