@@ -22,6 +22,14 @@
 
 # 评测排名：
 
+🥇**SUDA**
+
+🥈**WestlakeNLP**
+
+🥉**SJTU**
+
+CAMRP 2023评测论文现已被收录进<a href='https://aclanthology.org/events/ccl-2023/'>ACL Anthology</a>
+
 <table align='center'>
  <p align='center'>Table 1: Closed Test A</p>
 <thead>
@@ -804,7 +812,7 @@
 
 - [X] 2023年6月25日：参赛队提交技术报告最终版。
 
-- [ ] 2023年8月3日-5日：<a href="http://cips-cl.org/static/CCL2023/cclEval/taskCollection/index.html">CCL 2023</a>评测研讨会。
+- [X] 2023年8月3日-5日：<a href="http://cips-cl.org/static/CCL2023/cclEval/taskCollection/index.html">CCL 2023</a>评测研讨会。
 
 [![agreement](https://img.shields.io/badge/CAMRP_评测语料许可协议-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
 
