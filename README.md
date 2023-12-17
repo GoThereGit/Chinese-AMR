@@ -25,7 +25,7 @@
 
 **English Version:** <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/README_En.md">README_En.md</a>
 
-[![signup](https://img.shields.io/badge/CAMRP_2024-报名-blue.svg "sign up")](https://forms.office.com/r/GS7ze5GcY7)
+[![signup](https://img.shields.io/badge/CAMRP_2024-日程-blue.svg "sign up")](https://forms.office.com/r/GS7ze5GcY7)
 
 - [ ] 2024年1月1日：<a href="https://forms.office.com/r/GS7ze5GcY7">**评测任务报名**</a>开始，提供<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP%202022/tools">**Align-smatch**</a>评测软件下载地址。
 
@@ -43,11 +43,11 @@
 
 - [ ] 2024年5月25日：参赛队提交技术报告最终版。
 
-- [ ] 2024年7月：评测论文录用通知，参赛队Camera-Ready版论文提交ACL/CCL Anthology收录。
+- [ ] 2024年7月1日：评测论文录用通知，参赛队Camera-Ready版论文提交ACL/CCL Anthology收录。
 
-- [ ] 2024年8月：CCL 2024评测研讨会。
+- [ ] 2024年7月25日-28日：CCL 2024评测研讨会。
 
-[![agreement](https://img.shields.io/badge/CAMRP_评测语料许可协议-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf)
+[![agreement](https://img.shields.io/badge/CAMRP_评测语料许可协议-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2023.pdf)
 
 **参赛队伍需自行向LDC申请CAMRP 2024评测语料使用权，并签署保密协议：**
 1.	每支参赛队伍需指派一名联系负责人。
