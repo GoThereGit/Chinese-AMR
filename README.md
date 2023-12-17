@@ -58,12 +58,12 @@
 ![nnu](https://img.shields.io/badge/CAMRP_2024-NNU-green.svg "sign up")
 
 * 组织者：
-  * 李斌（南京师范大学）（联系邮箱：<libin.njnu@gmail.com>）
+  * 李斌（南京师范大学）[![Email](https://img.shields.io/badge/Email-%F0%9F%93%A7-blue)](mailto:libin.njnu@gmail.com)
   * 曲维光（南京师范大学）
   * 周俊生（南京师范大学）
  
 * 工作人员（研究生）：
-  * 许智星（南京师范大学）（联系邮箱：<xzx0828@live.com>）
+  * 许智星（南京师范大学）[![Email](https://img.shields.io/badge/Email-%F0%9F%93%A7-blue)](mailto:xzx0828@live.com) 
   * 张艺璇（南京师范大学）
   * 芦靖雅（南京师范大学）
   * 陈瑾（南京师范大学）
