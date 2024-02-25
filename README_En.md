@@ -1,32 +1,35 @@
 <div align="center">
-<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/img/2023logo.png" width="200">
+<img src = "https://github.com/GoThereGit/Chinese-AMR/blob/main/img/camrp2024.png" width=200>
 </div>
 
-# <p align="center">Chinese Abstract Meaning Representation Parsing 2023</p>
+
+
+# <p align="center">Chinese Abstract Meaning Representation Parsing 2024</p>
 
 # Important Dates
-* **March 1, 2023**
-  * - [X] Initial Public Call for Participation
-* **April 1, 2023**
-  * - [X] Release of Training & Development Set
-  * - [X] Availability of Evaluation Software <a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP%202022/tools">Align-smatch</a>
-* **May 25, 2023**
+* **March 1, 2024**
+  * - [ ] Initial Public Call for Participation
+  * - [ ] Release of Training & Development Set
+  * - [ ] Availability of Evaluation Software <a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP%202022/tools">Align-smatch</a>
+* **May 15, 2024**
   * - [ ] Enrolment Deadline
-* **June 1, 2023**
+* **May 1, 2024**
   * - [ ] Release of Test Set
-* **June 10, 2023**
+* **May 8, 2024**
   * - [ ] Submission of Auto-annotated Data
-* **June 15, 2023**
+* **May 14, 2024**
   * - [ ] Release of Gold-Standard Chinese AMR
-* **June 25, 2023**
+* **May 21, 2024**
   * - [ ] Submission of Technical Report
   * - [ ] Preliminary Evaluation Results
-* **July 10, 2023**
-  * - [ ] Camera-Ready Technical Report
+* **May 25, 2024**
+  * - [ ] Submission of Technical Report
   * - [ ] Evaluation Period
-* **August 3-5, 2023**
+* **July 1, 2024**
+  * - [ ] Camera-Ready Technical Report
+* **July 25-28, 2024**
   * - [ ] Release of Final Rankings Online
-  * - [ ] Workshop for Technical Evaluation Tasks of CCL 2023
+  * - [ ] Workshop for Technical Evaluation Tasks of CCL 2024
 
 
 [![Zh](https://img.shields.io/badge/README-Chinese-yellow.svg "Zh")](./README.md)
@@ -36,23 +39,24 @@
 - The brand-new CAMR homepage is on the way: <a href="https://www.camrp.tech">Welcome to CAMR!</a>
 
 <a name="anchor1"></a>
-[![signup](https://img.shields.io/badge/CAMRP_2023-Microsoft_Form-blue.svg "sign up")](https://forms.office.com/r/67EyjvBFm2)
+[![signup](https://img.shields.io/badge/CAMRP_2024-Microsoft_Form-blue.svg "sign up")](https://forms.office.com/r/GS7ze5GcY7)
 
 **Entry Form:** 
-<a href="https://forms.office.com/r/67EyjvBFm2">CLICK ME</a>
+<a href="https://forms.office.com/r/GS7ze5GcY7">CLICK ME</a>
+
 
 <a name="anchor2"></a>
 
-[![agreement](https://img.shields.io/badge/CAMRP_2023-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2023.pdf)
+[![agreement](https://img.shields.io/badge/CAMRP_2024-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2024.pdf)
 
-**Participants must sign the LDC Evaluation License Agreement for the data/corpora used in the CAMRP 2023 Evaluation Task will be authorized via <a href="https://www.ldc.upenn.edu/">LDC</a> only:**
+**Participants must sign the LDC Evaluation License Agreement for the data/corpora used in the CAMRP 2024 Evaluation Task will be authorized via <a href="https://www.ldc.upenn.edu/">LDC</a> only:**
 1.	Each team should designate a member as the data contact person.
-2.	Each data contact person must fill in the [LDC Evaluation License Agreement](./docs/LDC_Evaluation_License_Agreement_CCL2023.pdf) and send a signed copy of the agreement to LDC (<ldc@ldc.upenn.edu>).
-3.	Participants must use the received data/corpora from LDC in the CAMRP 2023 Evaluation Task only.
-4.	For details, please refer to the [LDC Evaluation License Agreement](./docs/LDC_Evaluation_License_Agreement_CCL2022.pdf).
+2.	Each data contact person must fill in the [LDC Evaluation License Agreement](./docs/LDC_Evaluation_License_Agreement_CCL2024.pdf) and send a signed copy of the agreement to LDC (<ldc@ldc.upenn.edu>).
+3.	Participants must use the received data/corpora from LDC in the CAMRP 2024 Evaluation Task only.
+4.	For details, please refer to the [LDC Evaluation License Agreement](./docs/LDC_Evaluation_License_Agreement_CCL2024.pdf).
 
 
-[![body](https://img.shields.io/badge/CAMRP_2023-Nanjing_Normal_University-green.svg "CAMRP 2023")](https://github.com/GoThereGit/Chinese-AMR/blob/main/README.md)
+[![body](https://img.shields.io/badge/CAMRP_2024-Nanjing_Normal_University-green.svg "CAMRP 2024")](https://github.com/GoThereGit/Chinese-AMR/blob/main/README.md)
 
 * Organizers:
   * **Bin Li** (Nanjing Normal University, Nanjing, China) (E-mail: <libin.njnu@gmail.com>)
@@ -62,11 +66,9 @@
  
 * Student Members:
   * **Zhixing Xu** (Nanjing Normal University, Nanjing, China)
-  * **Liming Xiao** (Nanjing Normal University, Nanjing, China)
   * **Yixuan Zhang** (Nanjing Normal University, Nanjing, China)
   * **Jingya Lu** (Nanjing Normal University, Nanjing, China)
   * **Jin Chen** (Nanjing Normal University, Nanjing, China)
-  * **Yuanyuan Xie** (Nanjing Normal University, Nanjing, China)
   * **Bolin Chang** (Nanjing Normal University, Nanjing, China)
 
 # 1 Introduction
@@ -512,7 +514,6 @@ To better parse and evaluate Chinese AMR, our evaluation task use Align-smatch a
 # 5 Awards
 1. Awards include **First Prize**, **Second Prize** and **Third Prize**, 
 and each team will be awarded with a unique certificate presented by **Chinese Information Processing Society of China** (CIPS).
-2. Bonus for winning is 10,000 RMB in total sponsored by XiaoNiu Tech limited company.
 
 
 # 6 References
