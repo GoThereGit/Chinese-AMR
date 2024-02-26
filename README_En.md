@@ -62,13 +62,11 @@
   * **Bin Li** (Nanjing Normal University, Nanjing, China) (E-mail: <libin.njnu@gmail.com>)
   * **Weiguang Qu** (Nanjing Normal University, Nanjing, China)
   * **Junsheng Zhou** (Nanjing Normal University, Nanjing, China)
-  * **Nianwen Xue** (Brandeis University, Waltham, US)
- 
+  
 * Student Members:
   * **Zhixing Xu** (Nanjing Normal University, Nanjing, China)
   * **Yixuan Zhang** (Nanjing Normal University, Nanjing, China)
   * **Jingya Lu** (Nanjing Normal University, Nanjing, China)
-  * **Jin Chen** (Nanjing Normal University, Nanjing, China)
 
 # 1 Introduction
 With the growing maturity of morphological analysis and syntactic analysis techniques, 
