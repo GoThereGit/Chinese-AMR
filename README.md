@@ -66,7 +66,7 @@
   * 许智星（南京师范大学）[![Email](https://img.shields.io/badge/Email-%F0%9F%93%A7-blue)](mailto:xzx0828@live.com) 
   * 张艺璇（南京师范大学）
   * 芦靖雅（南京师范大学）
-  * 陈瑾（南京师范大学）
+
     
 
 # 1 评测内容	
