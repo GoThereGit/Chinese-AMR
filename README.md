@@ -12,6 +12,7 @@
 |时间|消息|
 |:---:|:---:|
 |3月1日|评测任务报名|
+|3月10日|评测报名推迟至3月31日|
 
 
 
@@ -27,11 +28,13 @@
 
 [![signup](https://img.shields.io/badge/CAMRP_2024-日程-blue.svg "sign up")](https://forms.office.com/r/GS7ze5GcY7)
 
-- [ ] 2024年3月1日：<a href="https://forms.office.com/r/GS7ze5GcY7">**评测任务报名**</a>开始，提供<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP%202022/tools">**Align-smatch**</a>评测软件下载地址。
+- [X] 2024年3月1日：<a href="https://forms.office.com/r/GS7ze5GcY7">**评测任务报名**</a>开始，提供<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP%202022/tools">**Align-smatch**</a>评测软件下载地址。
 
-- [ ] 2024年3月1日：LDC发布训练集以及验证集给参赛队。
+- [X] 2024年3月1日：LDC发布训练集以及验证集给参赛队。
 
-- [ ] 2024年3月15日：评测任务报名截止。
+- [ ] ~2024年3月15日：评测任务报名截止。~
+
+- [ ] 2024年3月31日：评测任务报名截止。
 
 - [ ] 2024年5月1日：**本站**发布<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">**测试集**</a>（包含Test A、Test B和新的Test C）给参赛队。
 
