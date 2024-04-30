@@ -32,11 +32,11 @@
 
 - [X] 2024年3月1日：LDC发布训练集以及验证集给参赛队。
 
-- [ ] ~2024年3月15日：评测任务报名截止。~
+- [X] ~2024年3月15日：评测任务报名截止。~
 
-- [ ] 2024年3月31日：评测任务报名截止。
+- [X] 2024年3月31日：评测任务报名截止。
 
-- [ ] 2024年5月1日：**本站**发布<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">**测试集**</a>（包含Test A、Test B和新的Test C）给参赛队。
+- [X] 2024年5月1日：**本站**发布<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">**测试集**</a>（包含Test A、Test B和新的Test C）给参赛队。
 
 - [ ] 2024年5月8日：参赛队提交自动标注的数据（提交格式详见<a href="#anchor2.2">2.2 任务说明</a>）。
 
