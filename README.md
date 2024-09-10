@@ -8,12 +8,7 @@
 
 # <p align="center"><font size=50><strong>第四届中文抽象语义表示解析评测任务</strong></font></p>
 
-# 最新消息：
-|时间|消息|
-|:---:|:---:|
-|3月1日|评测任务报名|
-|3月10日|评测报名推迟至3月31日|
-|5月1日|测试集发布|
+
 
 
 
@@ -39,17 +34,17 @@
 
 - [X] 2024年5月1日：**本站**发布<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">**测试集**</a>（包含Test A、Test B和新的Test C）给参赛队。
 
-- [ ] 2024年5月8日：参赛队提交自动标注的数据（提交格式详见<a href="#anchor2.2">2.2 任务说明</a>）。
+- [X] 2024年5月8日：参赛队提交自动标注的数据（提交格式详见<a href="#anchor2.2">2.2 任务说明</a>）。
 
-- [ ] 2024年5月14日：**本站**发布测试集（包含Test A、Test B和新的Test C）黄金标准答案给参赛队。
+- [X] 2024年5月14日：**本站**发布测试集（包含Test A、Test B和新的Test C）黄金标准答案给参赛队。
 
-- [ ] 2024年5月21日：参赛队提交中文抽象语义表示评测任务技术报告，用于审稿。
+- [X] 2024年5月21日：参赛队提交中文抽象语义表示评测任务技术报告，用于审稿。
 
-- [ ] 2024年5月25日：参赛队提交技术报告最终版。
+- [X] 2024年5月25日：参赛队提交技术报告最终版。
 
-- [ ] 2024年7月1日：评测论文录用通知，参赛队Camera-Ready版论文提交ACL/CCL Anthology收录。
+- [X] 2024年7月1日：评测论文录用通知，参赛队Camera-Ready版论文提交ACL/CCL Anthology收录。
 
-- [ ] 2024年7月25日-28日：CCL 2024评测研讨会。
+- [X] 2024年7月25日-28日：CCL 2024评测研讨会。
 
 [![agreement](https://img.shields.io/badge/CAMRP_评测语料许可协议-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2024.pdf)
 
