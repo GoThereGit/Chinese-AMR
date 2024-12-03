@@ -8,28 +8,28 @@
 
 # Important Dates
 * **March 1, 2024**
-  * - [ ] Initial Public Call for Participation
-  * - [ ] Release of Training & Development Set
-  * - [ ] Availability of Evaluation Software <a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP%202022/tools">Align-smatch</a>
+  * - [X] Initial Public Call for Participation
+  * - [X] Release of Training & Development Set
+  * - [X] Availability of Evaluation Software <a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP%202022/tools">Align-smatch</a>
 * **May 15, 2024**
-  * - [ ] Enrolment Deadline
+  * - [X] Enrolment Deadline
 * **May 1, 2024**
-  * - [ ] Release of Test Set
+  * - [X] Release of Test Set
 * **May 8, 2024**
-  * - [ ] Submission of Auto-annotated Data
+  * - [X] Submission of Auto-annotated Data
 * **May 14, 2024**
-  * - [ ] Release of Gold-Standard Chinese AMR
+  * - [X] Release of Gold-Standard Chinese AMR
 * **May 21, 2024**
-  * - [ ] Submission of Technical Report
-  * - [ ] Preliminary Evaluation Results
+  * - [X] Submission of Technical Report
+  * - [X] Preliminary Evaluation Results
 * **May 25, 2024**
-  * - [ ] Submission of Technical Report
-  * - [ ] Evaluation Period
+  * - [X] Submission of Technical Report
+  * - [X] Evaluation Period
 * **July 1, 2024**
-  * - [ ] Camera-Ready Technical Report
+  * - [X] Camera-Ready Technical Report
 * **July 25-28, 2024**
-  * - [ ] Release of Final Rankings Online
-  * - [ ] Workshop for Technical Evaluation Tasks of CCL 2024
+  * - [X] Release of Final Rankings Online
+  * - [X] Workshop for Technical Evaluation Tasks of CCL 2024
 
 
 [![Zh](https://img.shields.io/badge/README-Chinese-yellow.svg "Zh")](./README.md)
