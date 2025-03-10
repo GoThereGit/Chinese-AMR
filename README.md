@@ -16,9 +16,11 @@
 
 **本届亮点**：新增6000+句篇章语料，关注**篇章指代消解**，考察模型对于篇章共指的解析能力！
 
+**往届评测论文**现已收录至**ACL Anthology**：<a href="https://aclanthology.org/volumes/2023.ccl-3/">CCL23-Eval</a>，<a href="https://aclanthology.org/volumes/2024.ccl-3/">CCL24-Eval</a>
+
 [![Eng](https://img.shields.io/badge/README-English-yellow.svg "English Version")](./README_En.md)
 
-**English Version:** <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/README_En.md">README_En.md</a>
+**English Version:** <a href="https://github.com/GoThereGit/Chinese-AMR/blob/main/README_En.md">README_En.md</a> 
 
 [![signup](https://img.shields.io/badge/CAMRP_2025-日程-blue.svg "sign up")](https://forms.office.com/r/wwU0NgZdJz)
 
@@ -42,6 +44,18 @@
 
 - [ ] 2025年8月11日-14日：CCL 2025评测研讨会。
 
+
+![nnu](https://img.shields.io/badge/CAMRP_2025-NNU-green.svg "sign up")
+
+* 组织者：
+  * 李斌（南京师范大学）[![Email](https://img.shields.io/badge/Email-%F0%9F%93%A7-blue)](mailto:libin.njnu@gmail.com)
+  * 曲维光（南京师范大学）
+  * 周俊生（南京师范大学）
+
+* 工作人员（研究生）：
+  * 许智星（南京师范大学）[![Email](https://img.shields.io/badge/Email-%F0%9F%93%A7-blue)](mailto:xzx0828@live.com) 
+  * 张艺璇（南京师范大学）
+  * 徐静（南京师范大学）
 
 # 1. 任务内容
 本次第五届中文抽象语义表示解析评测任务（CAMRP 2025）的重点和创新，在于自动解析中文篇章的共指链，将句子级AMR解析进一步拓展至篇章级AMR解析。
@@ -219,7 +233,7 @@ CAMR作为句子级标注语料，本身提供了包含共指关系在内的语�
 
 ## 3.1 作为主要标准的Align-smatch评测指标
 
-本次评测沿用Align-smatch（包含篇章共指解析评测）作为主要评测指标。Align-smatch与Smatch两种指标的区别在过去两届评测任务中已有相关介绍，详见[CAMRP 2024](https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP 2023)。 
+本次评测沿用Align-smatch（包含篇章共指解析评测）作为主要评测指标。Align-smatch与Smatch两种指标的区别在过去两届评测任务中已有相关介绍，详见<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/CAMRP 2023">CAMRP 2023</a>。 
 
 ## 3.2 模态选择
 
@@ -250,7 +264,7 @@ CAMR作为句子级标注语料，本身提供了包含共指关系在内的语�
 # 5 奖项设置
 
 - 本次评测将设置一、二、三等奖，由中国中文信息学会为本次评测获奖队伍提供荣誉证书。
-- 主办方为获奖队伍提供丰厚的奖金。
+- 主办方为获奖队伍提供奖金。
 
 # 6 参考文献
 
@@ -282,14 +296,4 @@ CAMR作为句子级标注语料，本身提供了包含共指关系在内的语�
    
    [14] Xu, Zhixing, et al. "The Fourth Chinese Abstract Meaning Representation Parsing Evaluation." *Proceedings of the 23rd Chinese National Conference on Computational Linguistics (Volume 3: Evaluations)*. 2024.
 
-![nnu](https://img.shields.io/badge/CAMRP_2025-NNU-green.svg "sign up")
 
-* 组织者：
-  * 李斌（南京师范大学）[![Email](https://img.shields.io/badge/Email-%F0%9F%93%A7-blue)](mailto:libin.njnu@gmail.com)
-  * 曲维光（南京师范大学）
-  * 周俊生（南京师范大学）
-
-* 工作人员（研究生）：
-  * 许智星（南京师范大学）[![Email](https://img.shields.io/badge/Email-%F0%9F%93%A7-blue)](mailto:xzx0828@live.com) 
-  * 张艺璇（南京师范大学）
-  * 徐静（南京师范大学）
