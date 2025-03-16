@@ -11,7 +11,6 @@
 
 
 
-
 ![What's new?](https://img.shields.io/badge/CAMRP_2025-NEW-red.svg "English Version")
 
 **本届亮点**：新增6000+句篇章语料，关注**篇章指代消解**，考察模型对于篇章共指的解析能力！
@@ -26,13 +25,13 @@
 
 - [X] 2025年3月1日：<a href="https://forms.office.com/r/wwU0NgZdJz">**评测任务报名**</a>开始。
 
-- [ ] 2025年3月15日：**本站**发布训练集以及验证集给参赛队。
+- [ ] 2025年3月20日：**LDC**发布训练集以及验证集给参赛队（详见<a href="#ldc">评测语料授权</a>）。
 
 - [ ] 2025年4月15日：评测任务报名截止。
 
-- [ ] 2025年5月1日：**本站**发布<a href="https://github.com/GoThereGit/Chinese-AMR/tree/main/data">**测试集**</a>给参赛队。
+- [ ] 2025年5月1日：**本站**发布**测试集**给参赛队。
 
-- [ ] 2025年5月8日：参赛队提交自动标注的数据（提交格式详见<a href="#anchor2.2">2.2 任务说明</a>）。
+- [ ] 2025年5月8日：参赛队提交自动标注的数据（提交格式详见<a href="#anchor2.2">2.3 任务说明</a>）。
 
 - [ ] 2025年5月14日：**本站**发布测试集黄金标准答案给参赛队。
 
@@ -43,6 +42,16 @@
 - [ ] 2025年7月1日：评测论文录用通知，参赛队Camera-Ready版论文提交ACL/CCL Anthology收录。
 
 - [ ] 2025年8月11日-14日：CCL 2025评测研讨会。
+
+
+<a name="ldc"></a>
+[![agreement](https://img.shields.io/badge/CAMRP_评测语料授权-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2025.pdf)
+
+**参赛队伍需自行向LDC申请CAMRP 2025评测语料使用权，并签署保密协议：**
+1.	每支参赛队伍需指派一名联系负责人。
+2.	参赛队伍联系负责人需填写[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2025.pdf)，扫描后通过E-mail发送给LDC（<ldc@ldc.upenn.edu>）。
+3.	申请通过后，LDC将返回CAMRP v2.0E版本语料库给参赛队伍联系负责人，以供参赛队伍使用。该语料数据只可用于本次CAMRP 2025评测任务，不可有其他任何用途。
+4.	本次评测语料数据集的版权归<a href="https://www.ldc.upenn.edu/">LDC</a>所有。
 
 
 ![nnu](https://img.shields.io/badge/CAMRP_2025-NNU-green.svg "sign up")
@@ -173,6 +182,7 @@ CAMR作为句子级标注语料，本身提供了包含共指关系在内的语�
 - “x6”为先行词/共指词编号
 - “城市”为先行词/共指词
 
+<a name="anchor2.2"></a>
 #### 2.3 任务说明
 
 **任务输入**：（若干句子组成的篇章）
