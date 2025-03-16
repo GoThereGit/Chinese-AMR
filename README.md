@@ -47,11 +47,11 @@
 <a name="ldc"></a>
 [![agreement](https://img.shields.io/badge/CAMRP_评测语料授权-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2025.pdf)
 
-**参赛队伍需自行向LDC申请CAMRP 2025评测语料使用权，并签署保密协议：**
+**参赛队伍需自行向<a href="https://www.ldc.upenn.edu/">LDC</a>（Linguistic Data Consortium，语言数据联盟）申请CAMRP 2025评测语料使用权，并签署保密协议：**
 1.	每支参赛队伍需指派一名联系负责人。
 2.	参赛队伍联系负责人需填写[LDC评测语料许可协议](./docs/LDC_Evaluation_License_Agreement_CCL2025.pdf)，扫描后通过E-mail发送给LDC（<ldc@ldc.upenn.edu>）。
-3.	申请通过后，LDC将返回CAMRP v2.0E版本语料库给参赛队伍联系负责人，以供参赛队伍使用。该语料数据只可用于本次CAMRP 2025评测任务，不可有其他任何用途。
-4.	本次评测语料数据集的版权归<a href="https://www.ldc.upenn.edu/">LDC</a>所有。
+3.	申请通过后，**LDC**将返回**CAMRP v2.0E**版本语料（训练集和验证集）给参赛队伍联系负责人，以供参赛队伍使用。该语料数据只可用于本次CAMRP 2025评测任务，不可有其他任何用途。
+4.	本次评测语料数据集的版权归**LDC**所有。
 
 
 ![nnu](https://img.shields.io/badge/CAMRP_2025-NNU-green.svg "sign up")
