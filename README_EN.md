@@ -30,7 +30,7 @@
 - [ ] August 11-14, 2025: CCL 2025 Evaluation Workshop.
 
 <a name="ldc"></a>
-[![agreement](https://img.shields.io/badge/CAMRP_2025-Evaluation_Corpus_License-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2025.pdf)
+[![agreement](https://img.shields.io/badge/CAMRP_Licensing-LDC-red.svg "PDF")](./docs/LDC_Evaluation_License_Agreement_CCL2025.pdf)
 
 **Participating teams must apply for the CAMRP 2025 evaluation corpus from the <a href="https://www.ldc.upenn.edu/">LDC</a> (Linguistic Data Consortium) and sign a non-disclosure agreement:**
 1. Each team must designate a contact person.
