@@ -25,7 +25,7 @@
 
 - [X] 2025年3月1日：<a href="https://forms.office.com/r/wwU0NgZdJz">**评测任务报名**</a>开始。
 
-- [ ] 2025年3月20日：**LDC**发布训练集以及验证集给参赛队（详见<a href="#ldc">评测语料授权</a>）。
+- [x] 2025年3月20日：**LDC**发布训练集以及验证集给参赛队（详见<a href="#ldc">评测语料授权</a>）。
 
 - [ ] 2025年4月15日：评测任务报名截止。
 
@@ -87,7 +87,7 @@ CAMR作为句子级标注语料，本身提供了包含共指关系在内的语�
 
 其中，“:homo”（同形指代）“:zero”（零指代）出现的频次较高（以500篇语料为样本进行统计），符合汉语的语言学特点。为了更好地形成CAMR篇章共指语义图的统一框架，我们在标注过程中保留了CAMR体系中的语义角色关系标签，将先行词/共指词的句内语义角色关系与共指关系相互连结，如下文2.2数据样例所示。
 
-​因此，本届CAMRP评测共包含以下两个子任务：
+因此，本届CAMRP评测共包含以下两个子任务：
 
 
 - **CAMR解析**：给定分词后的句子，输出句子对应的CAMR图结构，要求包含概念对齐与关系对齐信息。
@@ -279,9 +279,9 @@ CAMR作为句子级标注语料，本身提供了包含共指关系在内的语�
 # 6 参考文献
 
    [1] 孙茂松等. "语言计算的重要国际前沿." 中文信息学报 28.1 (2014): 1-8.
-   
+
    [2] 肖力铭等. "基于概念关系对齐的中文抽象语义表示解析评测方法." 中文信息学报 36.1 (2022): 21-30.
-   
+
    [3] 戴玉玲等. "基于关系对齐的汉语虚词抽象语义表示与分析." 中文信息学报 34.4 (2020): 21-29.
 
    [4] Banarescu, Laura, et al. "Abstract meaning representation for sembanking." *Proceedings of the 7th linguistic annotation workshop and interoperability with discourse*. 2013.
@@ -303,7 +303,6 @@ CAMR作为句子级标注语料，本身提供了包含共指关系在内的语�
    [12] Xiao, Liming, et al. "Align-smatch: A novel evaluation method for chinese abstract meaning representation parsing based on alignment of concept and relation." *Proceedings of the Thirteenth Language Resources and Evaluation Conference*. 2022.
 
    [13] Xu, Zhixing, et al. "Overview of CCL23-Eval Task 2: The Third Chinese Abstract Meaning Representation Parsing Evaluation." *Proceedings of the 22nd Chinese National Conference on Computational Linguistics (Volume 3: Evaluations)*. 2023.
-   
-   [14] Xu, Zhixing, et al. "The Fourth Chinese Abstract Meaning Representation Parsing Evaluation." *Proceedings of the 23rd Chinese National Conference on Computational Linguistics (Volume 3: Evaluations)*. 2024.
 
+   [14] Xu, Zhixing, et al. "The Fourth Chinese Abstract Meaning Representation Parsing Evaluation." *Proceedings of the 23rd Chinese National Conference on Computational Linguistics (Volume 3: Evaluations)*. 2024.
 
