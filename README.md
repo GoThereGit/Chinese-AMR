@@ -97,7 +97,7 @@ CAMR作为句子级标注语料，本身提供了包含共指关系在内的语�
 ## 2.1 数据集
 中文抽象语义表示语料库（Chinese Abstract Meaning Representation Corpus）于2015年开始，由南京师范大学和美国布兰迪斯大学合作构建。语料库为在LDC（Linguistic Data Consortium）发布的[CAMR v2.0](https://catalog.ldc.upenn.edu/LDC2021T13)，约含2万中文句子，原始语料选自于宾州中文树库（Chinese Tree Bank 8.0，CTB 8.0），分为训练集、验证集和测试集。该语料已在CoNLL 2020和CAMRP 2022-2024进行过评测。本次评测任务将继续沿用该语料库，以比较两年来中文AMR语义解析的进展。
 
-本次评测任务新增了500篇篇章语料，语料源自宾州中文树库语料库中编号chtb0001-chtb0659中的6237句文本，涵盖经济、体育及生活等多种体裁。其中，200篇为验证集B，300篇为测试集C，用以考察解析系统在篇章共指上的性能表现。
+本次评测任务新增了500篇篇章语料，语料源自宾州中文树库语料库中编号chtb0001-chtb0659中的6237句文本，涵盖经济、体育及生活等多种体裁。其中，300篇为验证集，200篇为测试集C，用以考察解析系统在篇章共指上的性能表现。
 
 评测数据集详情具体如表2所示。相比前几届CAMRP评测任务，本次评测首次引入篇章级解析，为后续CAMR自动分析提供了新的方向与思路。
 
@@ -108,11 +108,11 @@ CAMR作为句子级标注语料，本身提供了包含共指关系在内的语�
 | 数据集                | 句子数    | 词例数     |
 | --------------------- | --------- | ---------- |
 | 训练集（句子级）      | 16,576    | 386,234    |
-| 验证集A（句子级）     | 1,789     | 41,822     |
-| 新增验证集B（篇章级） | 约2,500句 | 约64,000词 |
+| 验证集（句子级）     | 1,789     | 41,822     |
+| 新增验证集（篇章级） | 约3,800句 | 约96,000词 |
 | 测试集A（句子级）     | 1,713     | 39,228     |
 | 测试集B（句子级）     | 1,999     | 36,940     |
-| 新增测试集C（篇章级） | 约3,800句 | 约96,000词 |
+| 新增测试集C（篇章级） | 约2,400句 | 约64,000词 |
 
 ## 2.2 数据样例
 
@@ -259,7 +259,7 @@ CAMR作为句子级标注语料，本身提供了包含共指关系在内的语�
 |    算法    |       无限制       |  无限制  |
 | 预训练模型 |    HIT_Roberta     |  无限制  |
 |  外部资源  |  依存句法分析结果  |  无限制  |
-|    语料    | 指定训练集和测试集 |  无限制  |
+|    语料    | 指定训练集和验证集 |  无限制  |
 |  人工修正  |        禁止        |   禁止   |
 
 ​	为了更加完整、精确地解析CAMR，本次评测任务采用Align-smatch评测标准。各参赛队最终生成的CAMR中需包含概念对齐信息和关系对齐信息，最终成绩评分按照Align-smatch评测标准，取**测试集A**、**测试集B**和**测试集C**下的$F_1$值进行综合排名。其中，Smatch评分仅用于和其他语言的AMR解析进行对比，不计入最终排名。
@@ -278,31 +278,29 @@ CAMR作为句子级标注语料，本身提供了包含共指关系在内的语�
 
 # 6 参考文献
 
-   [1] 孙茂松等. "语言计算的重要国际前沿." 中文信息学报 28.1 (2014): 1-8.
+   [1] 孙茂松等. "语言计算的重要国际前沿." *中文信息学报* 28.1 (2014): 1-8.
 
-   [2] 肖力铭等. "基于概念关系对齐的中文抽象语义表示解析评测方法." 中文信息学报 36.1 (2022): 21-30.
+   [2] Banarescu, Laura, et al. "Abstract meaning representation for sembanking." *Proceedings of the 7th linguistic annotation workshop and interoperability with discourse*. 2013.
 
-   [3] 戴玉玲等. "基于关系对齐的汉语虚词抽象语义表示与分析." 中文信息学报 34.4 (2020): 21-29.
+   [3] Li, Bin, et al. "Annotating the little prince with chinese amrs." *Proceedings of the 10th linguistic annotation workshop held in conjunction with ACL 2016*. 2016.
 
-   [4] Banarescu, Laura, et al. "Abstract meaning representation for sembanking." *Proceedings of the 7th linguistic annotation workshop and interoperability with discourse*. 2013.
+   [4] Li, Bin, et al. "Building a Chinese AMR bank with concept and relation alignments." *Linguistic Issues in Language Technology*. 2019.
 
-   [5] Li, Bin, et al. "Annotating the little prince with chinese amrs." *Proceedings of the 10th linguistic annotation workshop held in conjunction with ACL 2016*. 2016.
+   [5] 肖力铭等. "基于概念关系对齐的中文抽象语义表示解析评测方法." *中文信息学报* 36.1 (2022): 21-30.
 
-   [6] Li, Bin, et al. "Building a Chinese AMR bank with concept and relation alignments." *Linguistic Issues in Language Technology*. 2019.
+   [6] 戴玉玲等. "基于关系对齐的汉语虚词抽象语义表示与分析." *中文信息学报* 34.4 (2020): 21-29.
 
-   [7] Ozaki, Hiroaki, et al. "Hitachi at MRP 2020: Text-to-graph-notation transducer." *Proceedings of the CoNLL 2020 Shared Task: Cross-Framework Meaning Representation Parsing*. 2020.
+   [7] Abzianidze, L., et al. "MRP 2020: The second shared task on cross-framework and cross-lingual meaning representation parsing." *Proceedings of the CoNLL 2020 Shared Task: Cross-Framework Meaning Representation Parsing*. 2020.
 
-   [8] Samuel, David, and Milan Straka. "ÚFAL at MRP 2020: Permutation-invariant Semantic Parsing in PERIN." *Proceedings of the CoNLL 2020 Shared Task: Cross-Framework Meaning Representation Parsing*. 2020.
+   [8] Cai, Shu, and Kevin Knight. "Smatch: an evaluation metric for semantic feature structures." *Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)*. 2013.
 
-   [9] Oepen, Stephan, et al. "MRP 2020: The second shared task on cross-framework and cross-lingual meaning representation parsing." *Proceedings of the CoNLL 2020 Shared Task: Cross-Framework Meaning Representation Parsing*. 2020.
+   [9] Cui, Yiming, et al. "Pre-training with whole word masking for chinese bert." *IEEE/ACM Transactions on Audio, Speech, and Language Processing*. 2021.
 
-   [10] Cai, Shu, and Kevin Knight. "Smatch: an evaluation metric for semantic feature structures." *Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)*. 2013.
+   [10] Xiao, Liming, et al. "Align-smatch: A novel evaluation method for chinese abstract meaning representation parsing based on alignment of concept and relation." *Proceedings of the Thirteenth Language Resources and Evaluation Conference*. 2022.   
 
-   [11] Cui, Yiming, et al. "Pre-training with whole word masking for chinese bert." *IEEE/ACM Transactions on Audio, Speech, and Language Processing*. 2021.
+   [11] Xu, Zhixing, et al. "Overview of CCL23-Eval Task 2: The Third Chinese Abstract Meaning Representation Parsing Evaluation." *Proceedings of the 22nd Chinese National Conference on Computational Linguistics (Volume 3: Evaluations)*. 2023.
 
-   [12] Xiao, Liming, et al. "Align-smatch: A novel evaluation method for chinese abstract meaning representation parsing based on alignment of concept and relation." *Proceedings of the Thirteenth Language Resources and Evaluation Conference*. 2022.
+   [12] Xu, Zhixing, et al. "The Fourth Chinese Abstract Meaning Representation Parsing Evaluation." *Proceedings of the 23rd Chinese National Conference on Computational Linguistics (Volume 3: Evaluations)*. 2024.
 
-   [13] Xu, Zhixing, et al. "Overview of CCL23-Eval Task 2: The Third Chinese Abstract Meaning Representation Parsing Evaluation." *Proceedings of the 22nd Chinese National Conference on Computational Linguistics (Volume 3: Evaluations)*. 2023.
-
-   [14] Xu, Zhixing, et al. "The Fourth Chinese Abstract Meaning Representation Parsing Evaluation." *Proceedings of the 23rd Chinese National Conference on Computational Linguistics (Volume 3: Evaluations)*. 2024.
+   [13] 张艺璇等. "从句子图到篇章图——基于抽象语义表示的篇章级共指标注体系研究". *外语学刊* 2025(01):19-28.
 
